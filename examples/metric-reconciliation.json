@@ -1,0 +1,24 @@
+{
+  "metric_id": "task_completion",
+  "definition_version": "1.0",
+  "purpose_ref": "help_users_complete_tasks_reliably",
+  "reported": 0.95,
+  "reconciled": 0.82,
+  "counts": {
+    "received": 100,
+    "verified_complete": 82,
+    "incomplete": 8,
+    "failed": 6,
+    "excluded": 4
+  },
+  "findings": [
+    "The reported completion rate is 95%. Counting all received tasks gives 82%.",
+    "Record excluded tasks and preserve the definition version."
+  ],
+  "evidence_refs": [
+    "invented_records_v1"
+  ],
+  "limitations": [
+    "This example uses invented records."
+  ]
+}

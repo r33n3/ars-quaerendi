@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Metric Integrity Report",
+  "type": "object",
+  "required": [
+    "metric_id",
+    "definition_version",
+    "purpose_ref",
+    "reported",
+    "reconciled",
+    "counts",
+    "findings"
+  ],
+  "properties": {
+    "metric_id": {
+      "type": "string"
+    },
+    "definition_version": {
+      "type": "string"
+    },
+    "purpose_ref": {
+      "type": "string"
+    },
+    "reported": {
+      "type": "number"
+    },
+    "reconciled": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "counts": {
+      "type": "object",
+      "required": [
+        "received",
+        "verified_complete",
+        "incomplete",
+        "failed",
+        "excluded"
+      ],
+      "properties": {
+        "received": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "verified_complete": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "incomplete": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "failed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "excluded": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

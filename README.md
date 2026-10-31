@@ -1,6 +1,6 @@
-# Ars Quaerendi Unified v2.1
+# Ars Quaerendi Unified v2.2
 
-Seven reusable skills for research, planning, tool development and reliability engineering. People can follow the instructions directly or use them with a compatible AI agent. Each skill can be used independently.
+Eight reusable skills for research, planning, tool development and reliability engineering. People can follow the instructions directly or use them with a compatible AI agent. Each skill can be used independently.
 
 | Skill | Purpose |
 |---|---|
@@ -11,6 +11,7 @@ Seven reusable skills for research, planning, tool development and reliability e
 | discovery | Investigate unexpected observations and promising leads. |
 | contribution | Preserve useful results, including work from incomplete projects. |
 | `reliability-by-construction` | Improve correctness, repeatability, robustness and recovery. |
+| `performance-metric-integrity` | Check performance reports and evaluate proposed improvements. |
 
 ## Use
 
@@ -50,6 +51,10 @@ Record the scope and supporting evidence with each assessment. Authorization rem
 Run `python3 tests/validate.py` to check package structure, JSON syntax and schema compliance when the `jsonschema` library is available.
 
 Use the scenarios in `tests/acceptance.md` to evaluate behavior against an unmodified agent with matched tools and budgets. Record observed results and overhead.
+
+## Changes in v2.2
+
+Added `performance-metric-integrity`, a report schema, examples using invented records and guidance in `docs/integration-flow.md`. These cover measure definitions, calculation checks, trends, related outcomes and decisions about improvements.
 
 ## Changes in v2.1
 

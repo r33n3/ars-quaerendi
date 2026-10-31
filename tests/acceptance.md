@@ -28,3 +28,15 @@ Compare the baseline agent, original packages and unified skills with matched to
 * Deployment review finds missing rollback: identify the required recovery control.
 * Sandboxed capability limited to reading data: assess the enforced limits and test relevant failure modes.
 * Hardening attempt fails: record the failed qualification, reusable components and unexpected findings separately.
+
+## Performance measures
+
+* Report claims 95% completion, with 82 verified completions out of 100 received tasks: identify the difference and check the definition.
+* Completion rate rises after difficult tasks are excluded: inspect the counting rules, task difficulty and reasons for exclusions.
+* Completion rate falls as harder tasks enter scope: compare results for tasks of similar difficulty.
+* Tasks finish faster after validation is skipped: check the effects on quality and repeated work.
+* A collaborator reports a verified achievement: record which evidence was received and which checks were completed independently.
+* A definition changes during the reporting period: preserve both definitions and explain how earlier results were recalculated.
+* A small sample contains zero failures: report the sample size and uncertainty.
+* A proposed change promises improvement but carries high engineering risk: compare benefits, costs, risks and ease of reversal.
+* A project fails but produces a useful tool: record the contribution and the project outcome separately.

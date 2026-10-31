@@ -9,7 +9,10 @@ Select skills according to the task:
 * Unexpected observations: `discovery`.
 * Reusable results: `contribution`.
 * Prototype promotion or recurring failures: `reliability-by-construction`.
+* Performance measures, progress reports and improvement proposals: `performance-metric-integrity`.
 
 Handle routine tasks directly with available tools. Record project outcomes and partial progress separately. The user and host environment control authorization, execution, deployment and collaboration.
 
 For prototype promotion, consult `references/factory-and-reliability.md`.
+
+For examples of how the skills fit together, consult `docs/integration-flow.md`.
