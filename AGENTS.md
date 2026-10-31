@@ -17,3 +17,5 @@ Handle routine tasks directly with available tools. Record project outcomes and 
 For prototype promotion, consult `references/factory-and-reliability.md`.
 
 For examples of how the skills fit together, consult `docs/integration-flow.md`.
+
+For consequential negotiations, promises, disputed claims or decisions about continued investment, consult `references/institutional-resilience-advanced.md` when those methods would help. Assess behavior through evidence and preserve the user's control of commitments and goals.

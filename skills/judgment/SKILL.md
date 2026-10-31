@@ -7,6 +7,10 @@ description: Assess whether evidence supports a claim and its intended use
 ## When to use
 Assess whether evidence supports a claim and its intended use. Use existing tools directly for routine tasks.
 
+## Available tools
+
+Choose methods that fit the tools and access available in the current session. Work from supplied material when access is limited. State which searches, tests or checks were completed, which remain unverified and what would be needed to complete them.
+
 ## Method
 Identify claim, intended use, risk and reversibility. Select J0 exploratory, J1 plausible, J2 supported, J3 verified in tested scope, J4 qualified for specified deployment. Run repeatable tests and checks of source history first. When interpretation needs review, start with one focused challenge and set a limit on revision attempts. Use concrete counterexamples to test conclusions. Mark missing evidence as inconclusive. Recommend proceeding, limiting use, revising, requesting evidence, seeking review or stopping. State which uses the recommendation covers. The user and host environment control authorization.
 

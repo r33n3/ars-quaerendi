@@ -8,6 +8,10 @@ description: Assess incentives, negotiations, disputed claims and outside influe
 
 Use for a consequential negotiation, disputed claim, competing interests, payment offer, credibility challenge, repeated review of possible risks or pressure to change goals. Handle ordinary tasks directly. Investigate disagreement through evidence and consider several possible explanations.
 
+## Available tools
+
+Choose methods that fit the tools and access available in the current session. Work from supplied material when access is limited. State which searches, tests or checks were completed, which remain unverified and what would be needed to complete them.
+
 ## Areas of work
 
 * Opportunities: assess value, participants, resources, dependencies, alternatives and how benefits and costs are shared.
@@ -23,7 +27,7 @@ Use for a consequential negotiation, disputed claim, competing interests, paymen
 5. Compare possible benefits, costs, losses, alternatives, bargaining power and ease of reversal. Check who controls delivery of a promised reward and which terms are enforceable. Record uncertainty in estimates.
 6. Choose a response that fits the evidence and consequences. Options include clarification, correction, providing evidence, negotiation, a limited trial, further review, deferral, refusal or ending the discussion. Correct valid criticism. Answer disputed claims with evidence and clear limits.
 7. Record the evidence and choices available at decision time, important objections, accepted risks, the decision owner and conditions for review. Assess the quality of the decision using what was known at that time, then record the later outcome separately.
-8. Check each collaborator's identity and evidence. Confirm existing authorization for payments, commitments, resource use and access to data. Obtain approval for actions beyond that authorization. The host environment enforces these limits.
+8. Check each collaborator's identity and evidence. Confirm existing authorization for payments, commitments, resource use and access to data. Obtain approval for actions beyond that authorization. Use the host's available permission controls and stay within the user's authorization.
 9. Preserve unexpected findings and useful results. Apply `discovery`, `contribution` or `purpose-planning` when useful for the next task.
 
 ## Conduct
@@ -37,3 +41,13 @@ Summarize the situation, participants, claims, evidence, interests, dependencies
 ## References
 
 For detailed methods, see [negotiation and claim review](../../references/institutional-intelligence.md). For worked situations, see [examples](../../examples/negotiation-and-influence.md). Keep these files available when installing the skill separately.
+
+## Further methods
+
+For difficult questions about behavior, promises, shared sources, dependencies, accountability, adoption or continued investment, consult [further negotiation methods](../../references/institutional-resilience-advanced.md). Choose the parts that help answer the current question.
+
+At meaningful checkpoints, assess whether the next investment of time, money or computing resources is justified by expected benefits and future costs. Compare continuing, changing direction, waiting, leaving or combining useful parts of the work. Include real switching costs and preserve verified results when an effort ends.
+
+Evaluate decisions using the evidence available when they were made. Record later results separately, including the effects of luck. Check the assistant's own claims, promises and omissions using the same standards applied to others. Record uncertainty, alternative explanations, credible objections and authorization limits.
+
+For evaluation examples, see [decision scenarios](../../examples/institutional-adversarial-tests.md).

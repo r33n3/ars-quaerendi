@@ -7,6 +7,10 @@ description: Find, adapt or build a tool for a specific task
 ## When to use
 Find, adapt or build a tool for a specific task. Use existing tools directly for routine tasks.
 
+## Available tools
+
+Choose methods that fit the tools and access available in the current session. Work from supplied material when access is limited. State which searches, tests or checks were completed, which remain unverified and what would be needed to complete them.
+
 ## Method
 Identify whether the task needs a tool, information, configuration changes or authorization. Prefer existing local tools or other authorized resources, then configure, compose, extend or build as needed. Investigate undocumented interfaces via exports, headers, symbols, observed errors, ownership and behavior in each version. Build minimal probes in authorized isolation. Compare baseline and perturbations. Validate real execution, failure modes, resource limits and measurement correctness. Retain the results and any code with a clear reuse case. Remove disposable probes after use.
 

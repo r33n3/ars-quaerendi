@@ -1,4 +1,4 @@
-# Ars Quaerendi Unified v2.3
+# Ars Quaerendi Unified v2.4
 
 Nine reusable skills for research, planning, tools, reliability, performance measures and negotiations. People can follow the instructions directly or use them with a compatible AI agent. Each skill can be used independently.
 
@@ -19,6 +19,15 @@ Nine reusable skills for research, planning, tools, reliability, performance mea
 Choose the skill that fits the task. Combine skills when the work calls for several methods. The person or host agent controls goals, execution, permissions and collaboration.
 
 Record the project outcome, verified milestones, findings and reusable contributions separately. Keep unexpected leads available for later investigation. Share material with collaborators when authorized.
+
+## Chats, work and coding sessions
+
+* In a chat, attach or paste the selected `SKILL.md` and any references needed for the task. State the question and ask the assistant to apply the method.
+* For work tasks, use the methods to research questions, review reports, plan projects, compare proposals or prepare negotiations.
+* In a coding session, make the selected files available to the agent. Use them to investigate behavior, assess evidence, improve tools or check reliability.
+* For personal use, follow the instructions directly and keep your own notes and evidence.
+
+An agent can apply the methods when the host supplies the text as context. Automatic discovery, file access and tool use depend on the host. Searches, tests and external actions require the relevant tools, access and permissions. State what was actually checked and what remains uncertain.
 
 ## Install
 
@@ -49,9 +58,15 @@ Record the scope and supporting evidence with each assessment. Authorization rem
 
 ## Validation
 
+The Python validator is an optional check for people maintaining the package. The `jsonschema` library enables full schema checks. Reading and applying the skill instructions uses the text itself.
+
 Run `python3 tests/validate.py` to check package structure, JSON syntax and schema compliance when the `jsonschema` library is available.
 
 Use the scenarios in `tests/acceptance.md` to evaluate behavior against an unmodified agent with matched tools and budgets. Record observed results and overhead.
+
+## Changes in v2.4
+
+Expanded `institutional-intelligence` with guidance on promises, reliability of collaborators, shared sources, switching costs, accountability, adoption and decisions about further investment. Added three evaluation examples and eight negotiation acceptance scenarios. Clarified use in chats, work tasks and coding sessions, with tool availability guidance in every skill. The collection still contains nine skills.
 
 ## Changes in v2.3
 

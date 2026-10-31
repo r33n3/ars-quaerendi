@@ -7,6 +7,10 @@ description: Investigate unexpected observations, patterns and promising leads
 ## When to use
 Investigate unexpected observations, patterns and promising leads. Use existing tools directly for routine tasks.
 
+## Available tools
+
+Choose methods that fit the tools and access available in the current session. Work from supplied material when access is limited. State which searches, tests or checks were completed, which remain unverified and what would be needed to complete them.
+
 ## Method
 Record expected versus observed results, raw evidence, environment and provenance. Separate anomaly from interpretation. Test for instrument errors, confounders, coverage and coincidence. Change representation where helpful: bytes, hex, entropy, parsed structure, visualization, numerical patterns or execution traces. Develop alternative hypotheses and simple tests that distinguish the explanations. Record leads outside the current task for later investigation. Check prior work before claiming novelty and ask the user before changing the goal.
 

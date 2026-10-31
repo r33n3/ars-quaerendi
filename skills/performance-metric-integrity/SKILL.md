@@ -8,6 +8,10 @@ description: Define performance measures, check reported results against source 
 
 Use when defining success measures, reviewing progress reports or dashboards, comparing performance over time, investigating conflicting results or deciding whether a proposed improvement is worth its cost and risk.
 
+## Available tools
+
+Choose methods that fit the tools and access available in the current session. Work from supplied material when access is limited. State which searches, tests or checks were completed, which remain unverified and what would be needed to complete them.
+
 ## Method
 
 1. State the intended outcome, the people or tasks covered and the decision the measure will support. Check how the measure reflects the actual outcome.

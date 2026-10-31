@@ -34,3 +34,5 @@ Choose the amount of testing according to the consequences of failure. Record re
 ## Negotiations and disputed claims
 
 Start with the user's purpose and existing permissions. Identify the offer or claim, supporting evidence, interests, costs and possible consequences. Use other skills when a specific question needs research or checking. Propose a response with clear limits and identify any authorization needed for commitments, access or changes to goals. Keep a record of the evidence and options available when the decision was made.
+
+For difficult decisions about collaborators, promises, shared sources, accountability or continued investment, consult [further negotiation methods](../references/institutional-resilience-advanced.md). Apply the parts relevant to the decision.

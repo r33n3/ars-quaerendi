@@ -7,6 +7,10 @@ description: Preserve useful partial results and record what was learned
 ## When to use
 Preserve useful partial results and record what was learned. Use existing tools directly for routine tasks.
 
+## Available tools
+
+Choose methods that fit the tools and access available in the current session. Work from supplied material when access is limited. State which searches, tests or checks were completed, which remain unverified and what would be needed to complete them.
+
 ## Method
 Record the project outcome separately from partial progress. Identify verified methods, tools, experiments, insights, negative results and unexpected useful results. Assess each contribution for evidence, scope, limits, privacy and reuse. Report what worked, what was learned and what remains. Distinguish progress, achievement, actual adoption and project success. Recommend discard, note, useful for this task or reusable. Support each contribution with evidence of its value or use. Share with collaborators when authorized.
 

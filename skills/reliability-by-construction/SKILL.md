@@ -7,6 +7,10 @@ description: Improve correctness, repeatability, robustness and recovery when pr
 ## Invoke when
 A prototype is being promoted; repeated failures indicate a design weakness; a distributed task needs dependable recovery; a tool's side effects matter.
 
+## Available tools
+
+Choose methods that fit the tools and access available in the current session. Work from supplied material when access is limited. State which searches, tests or checks were completed, which remain unverified and what would be needed to complete them.
+
 ## Method
 1. Define the version, inputs, environment, permissions, resources and dependencies being tested. Describe the consequences of failure.
 2. Separate **correctness**, **repeatability**, **robustness**, and **resilience**. Record the evidence for each property, including tests beyond the expected successful case.
