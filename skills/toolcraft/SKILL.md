@@ -1,10 +1,14 @@
 ---
 name: toolcraft
-description: Agents can use this skill to find, adapt or build a tool for a defined task. Use when available tools leave a practical capability gap, a file format is unfamiliar or repeated manual work needs a helper. Return a tested approach, its limits and useful artifacts.
+description: Agents can use this meta skill to find, adapt or build a tool for a defined task. Use when available tools leave a practical capability gap, a file format is unfamiliar or repeated manual work needs a helper. Return a tested approach, its limits and useful artifacts.
 ---
 # Toolcraft: Finding and Building Tools
 
 Use this skill to identify a missing capability and choose a practical way to supply it. It covers existing tools, configuration, small scripts, unfamiliar interfaces, limited experiments and checks of actual behavior.
+
+## Meta skill role
+
+Agents use this meta skill to decide which capability is missing and how to supply it. Task skills can operate an existing parser, convert a file or execute a script. Toolcraft guides the choice, adaptation and checks, and may produce a new helper.
 
 ## When to use
 

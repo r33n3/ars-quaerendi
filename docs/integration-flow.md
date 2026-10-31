@@ -1,5 +1,7 @@
 # Using the skills together
 
+The package provides agent meta skills for choosing methods, assessing evidence and deciding how to proceed. Regular task skills perform specific work such as extracting records, calculating figures or executing tests. One or more agents can apply both kinds during a task. See [meta skills and task skills](meta-skills.md) for the distinction.
+
 ## Control of the work
 
 The person or host agent controls the purpose, execution, permissions and collaboration. Each participant checks its own permissions and the evidence received from others.

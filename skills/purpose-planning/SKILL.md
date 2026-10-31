@@ -1,10 +1,14 @@
 ---
 name: purpose-planning
-description: Agents can use this skill to turn the user's purpose into goals, priorities and a practical plan. Use for broad requests, competing tasks, project changes or agreed follow up. Return justified goals, milestones, dependencies and stopping conditions.
+description: Agents can use this meta skill to turn the user's purpose into goals, priorities and a practical plan. Use for broad requests, competing tasks, project changes or agreed follow up. Return justified goals, milestones, dependencies and stopping conditions.
 ---
 # Purpose Planning: Goals and Work Plans
 
 Use this skill to decide what work serves the user's purpose and how to approach it. It considers value, assumptions, effort, risks, dependencies and reasons to revise or stop a plan.
+
+## Meta skill role
+
+Agents use this meta skill to choose goals, priorities and a plan that serves the user's purpose. Task skills carry out the selected work, such as preparing a schedule, editing files or producing a report.
 
 ## When to use
 

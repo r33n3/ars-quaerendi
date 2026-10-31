@@ -1,10 +1,14 @@
 ---
 name: contribution
-description: Agents can use this skill to identify useful results, lessons and reusable work from a task or project. Use for project reviews, incomplete efforts, knowledge records or transfer of a method. Return verified contributions, their source, limits and possible reuse alongside the project outcome.
+description: Agents can use this meta skill to identify useful results, lessons and reusable work from a task or project. Use for project reviews, incomplete efforts, knowledge records or transfer of a method. Return verified contributions, their source, limits and possible reuse alongside the project outcome.
 ---
 # Contribution: Useful Results and Lessons
 
 Use this skill to preserve work that has demonstrated value. It covers findings, methods, components, failed hypotheses, lessons and unexpected useful results, with evidence of what each result supports.
+
+## Meta skill role
+
+Agents use this meta skill to identify what should be retained from completed or partial work and why it may be useful elsewhere. Task skills can save an artifact or update a record. Contribution guides the evidence, attribution, limits and proposed reuse recorded with it.
 
 ## When to use
 

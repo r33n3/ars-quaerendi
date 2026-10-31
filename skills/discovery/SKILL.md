@@ -1,10 +1,14 @@
 ---
 name: discovery
-description: Agents can use this skill to examine unexpected observations, recurring patterns and promising leads. Use for surprising test results, unusual records, operational incidents or patterns across discussions. Return observations, possible explanations and checks that could distinguish them.
+description: Agents can use this meta skill to examine unexpected observations, recurring patterns and promising leads. Use for surprising test results, unusual records, operational incidents or patterns across discussions. Return observations, possible explanations and checks that could distinguish them.
 ---
 # Discovery: Unexpected Findings and New Leads
 
 Use this skill to investigate something that differs from expectations or suggests a useful new question. It checks measurement errors, missing context, coincidence and alternative explanations before developing a lead.
+
+## Meta skill role
+
+Agents use this meta skill to examine surprises and choose what to investigate next. Task skills can collect logs, calculate values or organize notes. Discovery helps explain an unexpected pattern and identify a useful follow up check.
 
 ## When to use
 

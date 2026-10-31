@@ -1,10 +1,14 @@
 ---
 name: performance-metric-integrity
-description: Agents can use this skill to define performance measures and check reports against source records. Use for dashboards, progress reviews, changed counting rules or improvement proposals. Return recalculated results, trend limits, related outcomes and options for improvement.
+description: Agents can use this meta skill to define performance measures and check reports against source records. Use for dashboards, progress reviews, changed counting rules or improvement proposals. Return recalculated results, trend limits, related outcomes and options for improvement.
 ---
 # Performance and Metric Integrity: Measures and Report Checks
 
 Use this skill to examine how a measure is defined, calculated and interpreted. It checks inclusion rules, exclusions, missing records, comparable groups, source history and whether related outcomes support the reported improvement.
+
+## Meta skill role
+
+Agents use this focused meta skill to decide how a measure should be defined, checked and interpreted. Task skills can query records or calculate a rate. Performance and Metric Integrity examines the counting rules, comparison and evidence behind the reported result.
 
 ## When to use
 

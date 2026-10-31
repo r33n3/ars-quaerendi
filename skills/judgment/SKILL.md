@@ -1,10 +1,14 @@
 ---
 name: judgment
-description: Agents can use this skill to assess whether evidence supports a claim, decision or intended use. Use for completed research, proposed releases, performance reports or disputed conclusions. Return a recommendation tied to evidence, scope and uncertainty.
+description: Agents can use this meta skill to assess whether evidence supports a claim, decision or intended use. Use for completed research, proposed releases, performance reports or disputed conclusions. Return a recommendation tied to evidence, scope and uncertainty.
 ---
 # Judgment: Evidence and Readiness Review
 
 Use this skill to review a conclusion or proposed action against its supporting evidence. It examines source history, completed checks, counterexamples, consequences of error and the limits of a recommendation.
+
+## Meta skill role
+
+Agents use this meta skill to decide what a result supports and whether it is ready for an intended use. A task skill can run tests or extract records; Judgment assesses the evidence, uncertainty and limits of the resulting conclusion.
 
 ## When to use
 

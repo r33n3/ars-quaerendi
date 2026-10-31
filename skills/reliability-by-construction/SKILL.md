@@ -1,10 +1,14 @@
 ---
 name: reliability-by-construction
-description: Agents can use this skill to prepare tools or systems for repeated use by improving correctness, testing and recovery. Use when a prototype is being reused, failures recur or side effects matter. Return operating limits, failure checks, test evidence and readiness for a defined use.
+description: Agents can use this meta skill to prepare tools or systems for repeated use by improving correctness, testing and recovery. Use when a prototype is being reused, failures recur or side effects matter. Return operating limits, failure checks, test evidence and readiness for a defined use.
 ---
 # Reliability by Construction: Design, Testing and Recovery
 
 Use this skill to make expected behavior and recovery dependable within a defined setting. It connects design choices, permissions, repeatable tests, relevant failure conditions, monitoring and restoration of earlier versions.
+
+## Meta skill role
+
+Agents use this focused meta skill to choose design controls and evidence needed for dependable use. Task skills can implement a control or execute a test. Reliability by Construction connects those actions to expected behavior, relevant failures and recovery.
 
 ## When to use
 

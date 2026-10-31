@@ -1,10 +1,14 @@
 ---
 name: institutional-intelligence
-description: Agents can use this skill to assess negotiations, incentives, promises and disputed claims while preserving user control. Use for supplier offers, project disagreements, competing priorities or consequential meeting comments. Return supported observations, alternative interpretations and response options.
+description: Agents can use this meta skill to assess negotiations, incentives, promises and disputed claims while preserving user control. Use for supplier offers, project disagreements, competing priorities or consequential meeting comments. Return supported observations, alternative interpretations and response options.
 ---
 # Institutional Intelligence: Negotiations, Incentives and Claims
 
 Use this skill to understand interests, commitments, influence and competing claims in a decision. It examines source evidence, bargaining conditions, dependencies, shared sources, future costs and the authorization needed for a proposed response.
+
+## Meta skill role
+
+Agents use this focused meta skill to assess interests, promises and claims when choosing a response. Task skills can capture a transcript, extract contract terms or draft a message. Institutional Intelligence guides the interpretation, alternatives and authorization needed for action.
 
 ## When to use
 

@@ -1,10 +1,14 @@
 ---
 name: inquiry
-description: Agents can use this skill to investigate unfamiliar questions, find original sources and test competing explanations. Use for research, unclear technical behavior, disputed facts or authorized research practice. Return findings, supporting evidence and open questions.
+description: Agents can use this meta skill to investigate unfamiliar questions, find original sources and test competing explanations. Use for research, unclear technical behavior, disputed facts or authorized research practice. Return findings, supporting evidence and open questions.
 ---
 # Inquiry: Research and Source Checking
 
 Use this skill to build an explanation from available evidence. It covers search terms, original sources, repeated claims from one source, alternative explanations and small tests that could change the conclusion.
+
+## Meta skill role
+
+Agents use this meta skill to guide how they investigate a question and select evidence. A task skill can retrieve documents or run an experiment; Inquiry helps choose the check and interpret what it establishes.
 
 ## When to use
 

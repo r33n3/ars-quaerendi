@@ -1,14 +1,35 @@
-# Ars Quaerendi Agent Skills v2.5
+# Ars Quaerendi Agent Meta Skills v2.5
 
-Nine agent skills for investigating questions, planning work, assessing evidence, improving tools, reviewing performance and understanding negotiations or disagreements. An agent or several agents can use each skill to carry out a defined part of a task using the material and tools available in the session.
+A package of nine agent meta skills for investigating questions, planning work, assessing evidence, improving tools, reviewing performance and understanding negotiations or disagreements. An agent or several agents can use each skill to carry out a defined part of a task using the material and tools available in the session.
 
 Apply them to research, coding, project planning, operations, reporting, supplier review, learning and meeting notes. One agent can use several skills during a task. When collaboration is authorized, several agents can use selected skills for different parts of the work. People can also follow the methods directly. Supply the skill files and task context through the host, whose features determine automatic discovery.
+
+## Meta skills and regular task skills
+
+A **meta skill** guides how an agent approaches work. It helps the agent choose a method, examine evidence, handle uncertainty, assess results or carry learning into another task.
+
+A **regular task skill** describes how to perform a particular operation or produce a defined result. Examples include extracting fields from a document, calculating a report, running a test suite or exporting meeting notes.
+
+| Aspect | Meta skill | Regular task skill |
+|---|---|---|
+| Main purpose | Guide the choice of methods, checks and conclusions. | Perform a defined operation or produce an artifact. |
+| Typical result | A reasoned plan, assessment, interpretation or reusable lesson. | Extracted data, a completed calculation, a file or test results. |
+| Reuse | Applies the method across different tasks and settings. | Applies a procedure to a particular task or tool. |
+| Example | Judgment assesses whether completed tests support a release. | A test execution skill runs the specified tests and records their results. |
+
+An agent can use both together. For example, a task skill captures meeting comments, while Institutional Intelligence examines commitments and competing claims. A data calculation skill produces a completion rate, while Performance and Metric Integrity checks its definition and interpretation.
+
+The categories describe a skill's main role. Both kinds can be reused across projects. Some skills combine both kinds of work, and both can produce concrete artifacts. Toolcraft, for example, guides a capability decision and may also build a helper. Here, meta skill is a descriptive category within the existing skill format. Select each method according to the task and available evidence.
+
+Inquiry, Purpose Planning, Judgment, Discovery and Contribution provide general meta skills. Toolcraft, Reliability by Construction, Performance and Metric Integrity, and Institutional Intelligence focus those methods on particular areas of work.
+
+See [how meta skills work with task skills](docs/meta-skills.md) for examples and a guide to reviewing the distinction.
 
 ## Skill names and selection
 
 The titles describe each skill's role. The identifiers match the folder names and the `name` fields in the skill files. Use an identifier when selecting or referring to a skill.
 
-| Agent skill | Identifier | Choose it for |
+| Meta skill | Identifier | Choose it for |
 |---|---|---|
 | [Inquiry: Research and Source Checking](skills/inquiry/SKILL.md) | `inquiry` | Investigating an open question, disputed fact or uncertain explanation. |
 | [Purpose Planning: Goals and Work Plans](skills/purpose-planning/SKILL.md) | `purpose-planning` | Choosing goals, setting priorities and planning follow up. |

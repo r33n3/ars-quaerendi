@@ -1,5 +1,7 @@
 # Agent integration
 
+This package provides meta skills that guide methods, evidence assessment and decisions across tasks. Apply them alongside the task skills and tools needed to perform the work. See `docs/meta-skills.md` for the distinction and examples.
+
 Select skills according to the task:
 
 * Research or uncertainty: `inquiry`.

@@ -1,5 +1,7 @@
 # Examples of what agents can do with the skills
 
+These examples show agents using the package's meta skills alongside regular task skills and tools. The meta skills guide choices, evidence checks and interpretation. Task skills perform work such as reading files, calculating values or producing artifacts. See [the distinction](meta-skills.md) for details.
+
 An agent or several agents can use the skills for the tasks below. Supply the selected skill files and task material. Select the methods needed for the question. When collaboration is authorized, divide work according to available access and record the evidence and limits of each part. Execution depends on the host's tools, access and permissions. Record actual results when evaluating these intended uses.
 
 ## Research
