@@ -20,6 +20,10 @@ Choose a skill according to the work at hand:
 
 Combine skills as needed. Record the reason for using each one and keep the work within the user's purpose.
 
+## Meeting note taking agents
+
+Use the skills to examine meeting comments, commitments, disputed claims and recurring behaviors in supplied notes. Include speaker labels and source locations in findings, and keep observations separate from tentative interpretations. See the [meeting review guide](meeting-notes.md) for selection, expected inputs and a result format.
+
 ## From experiments to deployment
 
 1. Explore the question through small experiments. Record findings, failures and promising leads.

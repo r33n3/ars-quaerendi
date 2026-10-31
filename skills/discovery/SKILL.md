@@ -1,11 +1,14 @@
 ---
 name: discovery
-description: Investigate unexpected observations, patterns and promising leads
+description: Help an agent examine unexpected observations, recurring patterns and promising leads. Use for surprising test results, unusual records or patterns in meeting comments. Return observations, possible explanations and checks that could distinguish them.
 ---
-# Discovery
+# Discovery: Unexpected Findings and New Leads
+
+Use this skill to investigate something that differs from expectations or suggests a useful new question. It checks measurement errors, missing context, coincidence and alternative explanations before developing a lead.
 
 ## When to use
-Investigate unexpected observations, patterns and promising leads. Use existing tools directly for routine tasks.
+
+Use when an observation is surprising, a pattern appears across records or an unrelated finding could be useful. In meeting work, use it to identify recurring questions, changing positions or unresolved concerns across available notes.
 
 ## Available tools
 
@@ -14,6 +17,10 @@ Choose methods that fit the tools and access available in the current session. W
 ## Method
 Record expected versus observed results, raw evidence, environment and provenance. Separate anomaly from interpretation. Test for instrument errors, confounders, coverage and coincidence. Change representation where helpful: bytes, hex, entropy, parsed structure, visualization, numerical patterns or execution traces. Develop alternative hypotheses and simple tests that distinguish the explanations. Record leads outside the current task for later investigation. Check prior work before claiming novelty and ask the user before changing the goal.
 
+## Expected result
+
+Return the observation with source references, possible explanations, available checks, open questions and any lead worth preserving. Describe the amount of evidence behind a claimed pattern.
+
 ## Shared contract
 * D documented; O directly observed; R independently reproduced; H hypothesis; U unknown; X contradicted.
 * The person or host agent controls purpose, permissions, tool execution and collaboration.
@@ -21,3 +28,9 @@ Record expected versus observed results, raw evidence, environment and provenanc
 * Report evidence, tested scope, limitations, progress and the reason for continuing or stopping.
 
 See `references/` in the package for extended methods.
+
+## Example request
+
+Review these three meeting notes for recurring concerns about delivery dates. Link each observation to a comment and suggest explanations worth checking.
+
+For analysis of meeting comments, commitments and recurring behaviors, see [meeting notes](../../docs/meeting-notes.md).

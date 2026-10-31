@@ -1,12 +1,14 @@
 ---
 name: institutional-intelligence
-description: Assess incentives, negotiations, disputed claims and outside influence while preserving evidence and user control.
+description: Help an agent assess negotiations, incentives, promises and disputed claims while preserving user control. Use for consequential offers, workplace disagreements or meeting comments about ownership, resources and priorities. Return supported observations, alternative interpretations and response options.
 ---
-# Institutional Intelligence
+# Institutional Intelligence: Negotiations, Incentives and Claims
+
+Use this skill to understand interests, commitments, influence and competing claims in a decision. It examines source evidence, bargaining conditions, dependencies, shared sources, future costs and the authorization needed for a proposed response.
 
 ## When to use
 
-Use for a consequential negotiation, disputed claim, competing interests, payment offer, credibility challenge, repeated review of possible risks or pressure to change goals. Handle ordinary tasks directly. Investigate disagreement through evidence and consider several possible explanations.
+Use for consequential negotiations, payment offers, competing interests, credibility challenges or pressure to change goals. In meeting work, examine specific comments, commitments, disagreements and recurring communication behaviors. Mark interpretations of traits or motives as tentative and link them to evidence.
 
 ## Available tools
 
@@ -51,3 +53,9 @@ At meaningful checkpoints, assess whether the next investment of time, money or 
 Evaluate decisions using the evidence available when they were made. Record later results separately, including the effects of luck. Check the assistant's own claims, promises and omissions using the same standards applied to others. Record uncertainty, alternative explanations, credible objections and authorization limits.
 
 For evaluation examples, see [decision scenarios](../../examples/institutional-adversarial-tests.md).
+
+## Example request
+
+Review these meeting notes for commitments, disputed claims and changes in priorities. Identify who said what, possible interpretations and follow up questions.
+
+For analysis of meeting comments, commitments and recurring behaviors, see [meeting notes](../../docs/meeting-notes.md).

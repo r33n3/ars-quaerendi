@@ -1,12 +1,14 @@
 ---
 name: performance-metric-integrity
-description: Define performance measures, check reported results against source records, assess trends and evaluate proposed improvements.
+description: Help an agent define performance measures and check reports against source records. Use for dashboards, progress reviews, changed counting rules or improvement proposals. Return recalculated results, trend limits, related outcomes and options for improvement.
 ---
-# Performance and Metric Integrity
+# Performance and Metric Integrity: Measures and Report Checks
+
+Use this skill to examine how a measure is defined, calculated and interpreted. It checks inclusion rules, exclusions, missing records, comparable groups, source history and whether related outcomes support the reported improvement.
 
 ## When to use
 
-Use when defining success measures, reviewing progress reports or dashboards, comparing performance over time, investigating conflicting results or deciding whether a proposed improvement is worth its cost and risk.
+Use when defining success measures, reviewing dashboards or meeting reports, comparing performance over time or investigating conflicting numbers. Also use it to compare the expected benefits, costs and risks of a proposed improvement.
 
 ## Available tools
 
@@ -37,3 +39,7 @@ Choose methods that fit the tools and access available in the current session. W
 Report the measure and its definition, source coverage, recalculated result, reported result, differences, related outcomes, trend limits and options for improvement. Recommend an experiment, continued observation, revision or a stop, with the supporting evidence.
 
 For detailed guidance, see [measurement checks](../../references/metric-integrity-and-reconciliation.md) and [reliability guidance](../../references/factory-and-reliability.md) in the full package. Keep these references available when installing the skill separately.
+
+## Example request
+
+Check the completion rate reported in this meeting against the task log. Explain the counting rules, exclusions and difference from the previous period.

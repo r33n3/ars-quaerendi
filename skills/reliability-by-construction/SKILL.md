@@ -1,11 +1,14 @@
 ---
 name: reliability-by-construction
-description: Improve correctness, repeatability, robustness and recovery when preparing tools or agents for reuse or deployment.
+description: Help an agent prepare tools or systems for repeated use by improving correctness, testing and recovery. Use when a prototype is being reused, failures recur or side effects matter. Return operating limits, failure checks, test evidence and readiness for a defined use.
 ---
-# Reliability by Construction
+# Reliability by Construction: Design, Testing and Recovery
 
-## Invoke when
-A prototype is being promoted; repeated failures indicate a design weakness; a distributed task needs dependable recovery; a tool's side effects matter.
+Use this skill to make expected behavior and recovery dependable within a defined setting. It connects design choices, permissions, repeatable tests, relevant failure conditions, monitoring and restoration of earlier versions.
+
+## When to use
+
+Use when a prototype is moving toward repeated use or deployment, a failure exposes a design weakness or a task can leave partial changes. Choose the depth of review according to the consequences of failure.
 
 ## Available tools
 
@@ -34,3 +37,7 @@ Choose methods that fit the tools and access available in the current session. W
 Report the operating conditions, required behavior, possible failures, test results, coverage and remaining risks. State whether the system is ready for the intended use and identify the next useful improvement.
 
 For extended promotion guidance, see [factory-and-reliability.md](../../references/factory-and-reliability.md) in the full package. Keep this reference available if installing the skill separately.
+
+## Example request
+
+Review this meeting export helper before it runs on every session. Check repeated requests, missing files, partial writes and recovery after interruption.

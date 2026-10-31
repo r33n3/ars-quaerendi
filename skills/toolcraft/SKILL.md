@@ -1,11 +1,14 @@
 ---
 name: toolcraft
-description: Find, adapt or build a tool for a specific task
+description: Help an agent find, adapt or build a tool for a defined task. Use when available tools leave a practical capability gap, a file format is unfamiliar or repeated manual work needs a helper. Return a tested approach, its limits and useful artifacts.
 ---
-# Toolcraft
+# Toolcraft: Finding and Building Tools
+
+Use this skill to identify a missing capability and choose a practical way to supply it. It covers existing tools, configuration, small scripts, unfamiliar interfaces, limited experiments and checks of actual behavior.
 
 ## When to use
-Find, adapt or build a tool for a specific task. Use existing tools directly for routine tasks.
+
+Use when a task needs a parser, conversion, extraction, calculation or another capability that available tools only partly support. Begin by checking existing resources and access.
 
 ## Available tools
 
@@ -14,6 +17,10 @@ Choose methods that fit the tools and access available in the current session. W
 ## Method
 Identify whether the task needs a tool, information, configuration changes or authorization. Prefer existing local tools or other authorized resources, then configure, compose, extend or build as needed. Investigate undocumented interfaces via exports, headers, symbols, observed errors, ownership and behavior in each version. Build minimal probes in authorized isolation. Compare baseline and perturbations. Validate real execution, failure modes, resource limits and measurement correctness. Retain the results and any code with a clear reuse case. Remove disposable probes after use.
 
+## Expected result
+
+Return the chosen approach, the reason for choosing it, artifacts created, execution evidence, known limits and remaining checks. Identify which temporary work is worth retaining.
+
 ## Shared contract
 * D documented; O directly observed; R independently reproduced; H hypothesis; U unknown; X contradicted.
 * The person or host agent controls purpose, permissions, tool execution and collaboration.
@@ -21,3 +28,7 @@ Identify whether the task needs a tool, information, configuration changes or au
 * Report evidence, tested scope, limitations, progress and the reason for continuing or stopping.
 
 See `references/` in the package for extended methods.
+
+## Example request
+
+Find a way to extract action items from these exported meeting files. Check an existing parser first and test the result on the supplied sample.
