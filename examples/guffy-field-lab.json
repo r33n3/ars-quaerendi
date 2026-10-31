@@ -4,7 +4,7 @@
   "status": "inconclusive",
   "evidence": [
     {
-      "claim": "Metadata-only changes preserved tensor hashes in the reported A\u2013C corpus",
+      "claim": "Metadata-only changes preserved tensor hashes in the reported A through C corpus",
       "status": "O",
       "source": "User-provided Field Lab 002 note"
     },
@@ -24,7 +24,7 @@
     {
       "name": "Named tensor attribution",
       "reuse": "task_only",
-      "evidence_ref": "Reported A\u2013D milestone"
+      "evidence_ref": "Reported A through D milestone"
     }
   ]
 }

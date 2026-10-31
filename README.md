@@ -1,47 +1,67 @@
 # Ars Quaerendi Unified v2.1
-**The Art of Inquiry**. HCU-inspired, not affiliated with HCU.
 
-An independent collection of seven reusable skills for people and AI agents. Use each skill on its own or combine them as needed, without a required agent framework or peer network. The collection consolidates Ars Quaerendi, Telos, Instrumentum, Judicium, Contribution Harvesting and Anomaly & Serendipity Recognition, with reliability engineering for reusable capabilities.
+Seven reusable skills for research, planning, tool development and reliability engineering. People can follow the instructions directly or use them with a compatible AI agent. Each skill can be used independently.
 
-| Skill | Question |
+| Skill | Purpose |
 |---|---|
-| inquiry | What do we need to understand? |
-| purpose-planning | Which goals serve our authorized purpose? |
-| toolcraft | What tool should we reuse, borrow or build? |
-| judgment | Is the evidence sufficient for the next use? |
-| discovery | What unexpected pattern or serendipitous lead appeared? |
-| contribution | What useful value emerged even if the project failed? |
-| reliability-by-construction | How do we make a prototype repeatable, robust and resilient for its intended use? |
+| inquiry | Research unfamiliar questions and test explanations. |
+| purpose-planning | Choose goals and plan work within the user's stated purpose. |
+| toolcraft | Find, adapt or build a tool for a specific task. |
+| judgment | Assess whether evidence supports an intended use. |
+| discovery | Investigate unexpected observations and promising leads. |
+| contribution | Preserve useful results, including work from incomplete projects. |
+| reliability-by-construction | Improve correctness, repeatability, robustness and recovery. |
 
-## Architecture and flows
-Skills are **advisory methods** that people can follow directly or use with a compatible AI agent. The person or host agent controls purpose, goals, execution and permissions. Choose skills selectively:
+## Use
 
-- Unknown question → Inquiry; unexpected observation → Discovery.
-- Purpose-driven goal → Purpose & Planning; missing capability → Toolcraft.
-- Consequential decision → Judgment; partial or reusable outcome → Contribution.
-- Prototype promotion or recurring failures → Reliability by Construction.
-- Results may loop back to any skill. **No mandatory pipeline.**
-- External tools or collaborators are optional. Validate received evidence and share material only with authorization.
+Choose the skill that fits the task. Combine skills when the work calls for several methods. The person or host agent controls goals, execution, permissions and collaboration.
 
-Progress-oriented feedback records **parent outcome, verified milestones, learning, unexpected discoveries, and transferable contributions** separately. Serendipity is explicitly preserved even if unrelated to the parent goal. Avoid reward hacking: no XP merely for retries or manufactured anomalies.
+Record the project outcome, verified milestones, findings and reusable contributions separately. Keep unexpected leads available for later investigation. Share material with collaborators when authorized.
 
 ## Install
-For manual use, read any `skills/<name>/SKILL.md` and consult the package's `references/` as needed. No installation is required.
 
-Extract ZIP and, from this folder, run for Codex installations using the common skills path:
+For manual use, read `skills/<name>/SKILL.md` and consult `references/` as needed.
+
+For an agent host, copy the skill folders to its configured skills directory. For example:
+
 ```bash
 mkdir -p ~/.agents/skills
 cp -R skills/* ~/.agents/skills/
 ```
-Verify your agent host's actual skills directory. Keep the package's `references/` available alongside your installation; the copy command above installs only the skill folders. Merge optional `AGENTS.md` guidance with existing instructions. Archive older packages to avoid duplicate skill routing.
+
+This command copies the skill folders. Keep the full package available for shared references. Check reference paths when installing individual skills. Merge the optional `AGENTS.md` guidance with your existing instructions. Remove older installed versions when replacing a skill.
 
 ## Evidence and judgment
-D documented; O observed; R independently reproduced; H hypothesis; U unknown; X contradicted.
-J0 exploratory; J1 plausible; J2 supported; J3 verified within tested scope; J4 qualified for defined use. These are **not permissions**.
+
+Evidence labels:
+
+- D: documented in a source.
+- O: directly observed.
+- R: independently reproduced.
+- H: hypothesis.
+- U: unknown.
+- X: contradicted.
+
+Judgment levels:
+
+- J0: exploratory.
+- J1: plausible.
+- J2: supported.
+- J3: verified within the tested scope.
+- J4: qualified for a defined use.
+
+Record the scope and supporting evidence with each assessment. Authorization remains with the user and host environment.
 
 ## Validation
-Run `python3 tests/validate.py`. This checks structure and JSON data, not behavioral effectiveness. Run scenarios in `tests/acceptance.md` against an unmodified agent baseline to measure actual value and overhead.
 
-## v2.1: Reliability and capability progression
+Run `python3 tests/validate.py` to check package structure, JSON syntax and schema compliance when the `jsonschema` library is available.
 
-Added `reliability-by-construction` as a seventh optional skill and `references/factory-and-reliability.md` for moving prototypes toward reliable use. Experimental success, engineering repeatability, resilience, and scoped deployment qualification are separate outcomes. People or their chosen host environment control deployment and authorization; no new coordinator or automatic promotion is introduced.
+Use the scenarios in `tests/acceptance.md` to evaluate behavior against an unmodified agent with matched tools and budgets. Record observed results and overhead.
+
+## Changes in v2.1
+
+Added `reliability-by-construction`, a reliability promotion example and guidance in `references/factory-and-reliability.md`. These cover prototype testing, recovery, deployment readiness and evidence requirements for a defined use.
+
+## Origins
+
+The collection consolidates Ars Quaerendi, Telos, Instrumentum, Judicium, Contribution Harvesting and Anomaly & Serendipity Recognition. Its research methods draw on HCU and Fravia; the package is independent of those sources.

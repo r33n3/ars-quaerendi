@@ -1,6 +1,6 @@
 ---
 name: reliability-by-construction
-description: Engineer repeatability, correctness, robustness, and resilience before promoting experimental tools or agents into consequential or reusable use.
+description: Improve correctness, repeatability, robustness and recovery when preparing tools or agents for reuse or deployment.
 ---
 # Reliability by Construction
 
@@ -9,18 +9,18 @@ A prototype is being promoted; repeated failures indicate a design weakness; a d
 
 ## Method
 1. Define **operating envelope** (version, inputs, environment, permissions, resources, dependencies) and intended consequence of failure.
-2. Separate **correctness**, **repeatability**, **robustness**, and **resilience**. Passing a happy-path test proves none of the others.
-3. State critical invariants. Prefer structural prevention (atomic writes, bounded interfaces, least authority, idempotency) over retrying or judging every conceivable failure.
-4. Identify credible failure modes using actual architecture, traces, incidents and threat model; rank by consequence, exposure and detectability. Do not invent endless hypotheticals.
-5. Choose the least expensive proof suitable to the stage: deterministic tests, property tests, fault injection, model checking when justified, or independent reproduction.
+2. Separate **correctness**, **repeatability**, **robustness**, and **resilience**. Record the evidence for each property, including tests beyond the expected successful case.
+3. State critical invariants. Use structural controls such as atomic writes, bounded interfaces, least authority and idempotency to prevent identified failures.
+4. Identify credible failure modes using actual architecture, traces, incidents and threat model; rank by consequence, exposure and detectability. Keep the review focused on failures supported by the design or evidence.
+5. Choose evidence appropriate to the stage and cost: deterministic tests, property tests, fault injection, model checking when justified, or independent reproduction.
 6. Test recovery and containment: crashes, timeouts, malformed inputs, resource exhaustion, partial responses, restart, duplicate delivery, and peer partitions **as applicable**.
-7. Distinguish observed reliability from statistical guarantees. Zero failures in a small sample is not proof of zero failure probability. Record sample sizes and coverage.
+7. Distinguish observed reliability from statistical guarantees. Record sample sizes, coverage and uncertainty in failure-rate estimates.
 8. If a test fails, determine whether the instrument, implementation, assumption or architecture failed. Prefer eliminating the failure class over repeated patches where economical.
-9. Return a **scoped readiness recommendation**; do not grant permissions or certify universal trust.
-10. Capture partial achievements and unexpected observations. If available and useful, apply `contribution` and `discovery` for those records; neither skill is required.
+9. Recommend readiness for the tested version, environment and intended use. The user and host environment control permissions.
+10. Capture partial achievements and unexpected observations. Apply `contribution` and `discovery` when useful for those records.
 
 ## Stage-aware evidence
-- Explore: isolated experiments and observation; do not require production reliability.
+- Explore: isolated experiments and observation with limits appropriate to the experiment.
 - Prototype: deterministic functional and regression checks.
 - Pilot: realistic variations, bounded permissions and recovery exercises.
 - Production: defined SLOs, monitoring, rollback, incident response and environment-specific qualification.

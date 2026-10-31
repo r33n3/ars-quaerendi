@@ -1,10 +1,10 @@
 # Example: Promote a temporary A2A task helper
 
-A prototype completes one remote task correctly (O). It is **not** automatically production-ready.
+A prototype completes one remote task correctly (O). Record this as one observed success within the tested scope. Assess deployment readiness through the tests below.
 
-Operating envelope: two authenticated agents, read-only requests, fixed tool version. This example uses optional agent-to-agent (A2A) collaboration; no particular framework or network is required.
+Operating envelope: two authenticated agents, read-only requests, fixed tool version. This example uses agent-to-agent (A2A) collaboration between independently authorized participants.
 
-Invariants: request IDs unique, duplicates have no extra side effects, cancellation is reconciled, peer-side permission check remains authoritative.
+Invariants: request IDs are unique, duplicate delivery has the same effects as a single request, cancellation is reconciled, and each participant enforces its own permissions.
 
 Fault tests: duplicate delivery, disconnect/reconnect, owner restart, malformed result, timeout after execution.
 
