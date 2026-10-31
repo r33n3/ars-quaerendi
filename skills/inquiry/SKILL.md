@@ -1,6 +1,6 @@
 ---
 name: inquiry
-description: Help an agent investigate unfamiliar questions, find original sources and test competing explanations. Use for research, unclear technical behavior, disputed facts or authorized research practice. Return findings, supporting evidence and open questions.
+description: Agents can use this skill to investigate unfamiliar questions, find original sources and test competing explanations. Use for research, unclear technical behavior, disputed facts or authorized research practice. Return findings, supporting evidence and open questions.
 ---
 # Inquiry: Research and Source Checking
 

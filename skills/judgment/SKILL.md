@@ -1,6 +1,6 @@
 ---
 name: judgment
-description: Help an agent assess whether evidence supports a claim, decision or intended use. Use for completed research, proposed releases, performance reports or disputed conclusions. Return a recommendation tied to evidence, scope and uncertainty.
+description: Agents can use this skill to assess whether evidence supports a claim, decision or intended use. Use for completed research, proposed releases, performance reports or disputed conclusions. Return a recommendation tied to evidence, scope and uncertainty.
 ---
 # Judgment: Evidence and Readiness Review
 

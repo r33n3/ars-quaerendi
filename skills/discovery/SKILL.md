@@ -1,6 +1,6 @@
 ---
 name: discovery
-description: Help an agent examine unexpected observations, recurring patterns and promising leads. Use for surprising test results, unusual records, operational incidents or patterns across discussions. Return observations, possible explanations and checks that could distinguish them.
+description: Agents can use this skill to examine unexpected observations, recurring patterns and promising leads. Use for surprising test results, unusual records, operational incidents or patterns across discussions. Return observations, possible explanations and checks that could distinguish them.
 ---
 # Discovery: Unexpected Findings and New Leads
 

@@ -1,6 +1,6 @@
 ---
 name: performance-metric-integrity
-description: Help an agent define performance measures and check reports against source records. Use for dashboards, progress reviews, changed counting rules or improvement proposals. Return recalculated results, trend limits, related outcomes and options for improvement.
+description: Agents can use this skill to define performance measures and check reports against source records. Use for dashboards, progress reviews, changed counting rules or improvement proposals. Return recalculated results, trend limits, related outcomes and options for improvement.
 ---
 # Performance and Metric Integrity: Measures and Report Checks
 

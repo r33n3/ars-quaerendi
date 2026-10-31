@@ -20,11 +20,11 @@ Choose a skill according to the work at hand:
 
 Combine skills as needed. Record the reason for using each one and keep the work within the user's purpose.
 
-## Agent roles
+## Uses across tasks
 
-Research agents can investigate claims and assess evidence. Coding agents can investigate failures, develop helpers and test recovery. Project agents can plan work, operations agents can review recurring incidents, and reporting agents can check measures against records. Supplier review agents can assess promises and terms. Knowledge agents can preserve methods for reuse. Meeting agents can examine comments and commitments.
+An agent or several agents can use the skills to investigate claims, assess evidence, diagnose failures, develop helpers, plan work and test recovery. Other uses include reviewing recurring incidents, checking reported measures, assessing supplier promises, preserving reusable methods and examining meeting comments.
 
-See [agent examples](agent-examples.md) for task material, suggested skills, expected results and example requests. Roles describe the work an existing agent performs. The host supplies its tools, access and execution controls.
+See [agent examples](agent-examples.md) for task material, suggested skills, expected results and example requests. Choose skills for each part of the task. One agent may apply several methods, or authorized collaborators may divide the work. The host supplies tools, access and execution controls.
 
 ## Meeting note taking agents
 

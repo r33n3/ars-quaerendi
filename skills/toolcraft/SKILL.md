@@ -1,6 +1,6 @@
 ---
 name: toolcraft
-description: Help an agent find, adapt or build a tool for a defined task. Use when available tools leave a practical capability gap, a file format is unfamiliar or repeated manual work needs a helper. Return a tested approach, its limits and useful artifacts.
+description: Agents can use this skill to find, adapt or build a tool for a defined task. Use when available tools leave a practical capability gap, a file format is unfamiliar or repeated manual work needs a helper. Return a tested approach, its limits and useful artifacts.
 ---
 # Toolcraft: Finding and Building Tools
 

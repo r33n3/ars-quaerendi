@@ -1,6 +1,6 @@
 ---
 name: institutional-intelligence
-description: Help an agent assess negotiations, incentives, promises and disputed claims while preserving user control. Use for supplier offers, project disagreements, competing priorities or consequential meeting comments. Return supported observations, alternative interpretations and response options.
+description: Agents can use this skill to assess negotiations, incentives, promises and disputed claims while preserving user control. Use for supplier offers, project disagreements, competing priorities or consequential meeting comments. Return supported observations, alternative interpretations and response options.
 ---
 # Institutional Intelligence: Negotiations, Incentives and Claims
 

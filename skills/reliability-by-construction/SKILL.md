@@ -1,6 +1,6 @@
 ---
 name: reliability-by-construction
-description: Help an agent prepare tools or systems for repeated use by improving correctness, testing and recovery. Use when a prototype is being reused, failures recur or side effects matter. Return operating limits, failure checks, test evidence and readiness for a defined use.
+description: Agents can use this skill to prepare tools or systems for repeated use by improving correctness, testing and recovery. Use when a prototype is being reused, failures recur or side effects matter. Return operating limits, failure checks, test evidence and readiness for a defined use.
 ---
 # Reliability by Construction: Design, Testing and Recovery
 

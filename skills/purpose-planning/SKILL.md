@@ -1,6 +1,6 @@
 ---
 name: purpose-planning
-description: Help an agent turn the user's purpose into goals, priorities and a practical plan. Use for broad requests, competing tasks, project changes or agreed follow up. Return justified goals, milestones, dependencies and stopping conditions.
+description: Agents can use this skill to turn the user's purpose into goals, priorities and a practical plan. Use for broad requests, competing tasks, project changes or agreed follow up. Return justified goals, milestones, dependencies and stopping conditions.
 ---
 # Purpose Planning: Goals and Work Plans
 

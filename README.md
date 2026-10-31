@@ -1,8 +1,8 @@
 # Ars Quaerendi Agent Skills v2.5
 
-Nine agent skills for investigating questions, planning work, assessing evidence, improving tools, reviewing performance and understanding negotiations or disagreements. Each skill contains instructions an agent can apply to the material and tools available in the session.
+Nine agent skills for investigating questions, planning work, assessing evidence, improving tools, reviewing performance and understanding negotiations or disagreements. An agent or several agents can use each skill to carry out a defined part of a task using the material and tools available in the session.
 
-Use them with research, coding, project planning, operations, reporting, supplier review, learning and meeting note taking agents. People can also follow the methods directly. Supply the selected skill files and the task context to the agent. Automatic discovery depends on the host application's support for skills.
+Apply them to research, coding, project planning, operations, reporting, supplier review, learning and meeting notes. One agent can use several skills during a task. When collaboration is authorized, several agents can use selected skills for different parts of the work. People can also follow the methods directly. Supply the skill files and task context through the host, whose features determine automatic discovery.
 
 ## Skill names and selection
 
@@ -24,74 +24,74 @@ The titles describe each skill's role. The identifiers match the folder names an
 
 ### Inquiry
 
-The agent researches a question, traces claims to original sources and considers explanations that could account for the evidence. It groups repeated claims from one source and identifies checks that could change the conclusion.
+Agents can use `inquiry` to research a question, trace claims to original sources and consider explanations that fit the evidence. The method groups repeated claims from one source and identifies checks that could change the conclusion.
 
-Expect findings with sources, competing explanations, unresolved questions and a justified next check. A research agent might compare conflicting reports, while a coding agent might investigate an unfamiliar failure.
+Expect findings with sources, competing explanations, unresolved questions and a justified next check. For example, agents can compare conflicting research reports or investigate an unfamiliar code failure.
 
 ### Purpose Planning
 
-The agent connects possible goals to the user's purpose, compares priorities and builds a plan with milestones, dependencies and limits. It revises the plan when evidence changes and identifies decisions that need authorization.
+Agents can use `purpose-planning` to connect goals to the user's purpose, compare priorities and build a plan with milestones, dependencies and limits. The method supports revising plans as evidence changes and identifying decisions that need authorization.
 
-Expect proposed goals, priorities, owners where agreed, missing ownership, review points and stopping conditions. A project agent can use it to replan after a delay or organize a broad request into achievable work.
+Expect proposed goals, priorities, owners where agreed, missing ownership, review points and stopping conditions. For example, agents can replan after a delay or organize a broad request into achievable work.
 
 ### Toolcraft
 
-The agent identifies a capability gap, checks existing tools and chooses whether to configure, combine, extend or build a helper. It uses limited experiments to test actual behavior and records the useful artifacts.
+Agents can use `toolcraft` to identify a capability gap, check existing tools and choose whether to configure, combine, extend or build a helper. The method uses limited experiments to test behavior and records useful artifacts.
 
-Expect a chosen approach, reasons, execution evidence, limits and remaining tests. A coding agent might produce a small parser for an unfamiliar data export or a helper for repeated calculations.
+Expect a chosen approach, reasons, execution evidence, limits and remaining tests. For example, agents can produce a small parser for an unfamiliar data export or a helper for repeated calculations.
 
 ### Judgment
 
-The agent reviews whether the available evidence supports a claim, interpretation or intended use. It examines completed checks, conflicting evidence, consequences and uncertainty.
+Agents can use `judgment` to assess whether available evidence supports a claim, interpretation or intended use. The method examines completed checks, conflicting evidence, consequences and uncertainty.
 
-Expect a recommendation with its supporting evidence, tested scope and missing checks. A release review agent can assess whether completed tests support the proposed use and identify remaining checks.
+Expect a recommendation with its supporting evidence, tested scope and missing checks. For example, agents can assess whether completed release tests support the proposed use and identify remaining checks.
 
 ### Discovery
 
-The agent investigates unexpected observations and patterns, including possible errors, missing context and coincidence. It develops explanations and simple checks that could distinguish them.
+Agents can use `discovery` to investigate unexpected observations and patterns, including possible errors, missing context and coincidence. The method develops explanations and simple checks that could distinguish them.
 
-Expect a source linked observation, alternative explanations and a lead worth testing or preserving. An operations agent might find a pattern in timeout records, while a research agent might preserve an unexpected experimental result.
+Expect a source linked observation, alternative explanations and a lead worth testing or preserving. For example, agents can find a pattern in timeout records or preserve an unexpected experimental result.
 
 ### Contribution
 
-The agent identifies useful findings, methods, components and lessons from work, including incomplete or cancelled projects. It records the evidence of value and the limits of reuse.
+Agents can use `contribution` to identify useful findings, methods, components and lessons from work, including incomplete or cancelled projects. The method records evidence of value and limits on reuse.
 
-Expect the project outcome and a separate account of verified contributions, attribution and reuse options. A knowledge agent can retain a verified method from a cancelled project and record whether another task successfully reused it.
+Expect the project outcome and a separate account of verified contributions, attribution and reuse options. For example, agents can retain a verified method from a cancelled project and record whether another task successfully reused it.
 
 ### Reliability by Construction
 
-The agent defines expected behavior and operating conditions, identifies relevant failures and checks recovery. It connects design choices with tests of repeated requests, interruptions, partial changes and other conditions that matter to the intended use.
+Agents can use `reliability-by-construction` to define expected behavior and operating conditions, identify relevant failures and check recovery. The method connects design choices with tests of repeated requests, interruptions, partial changes and other conditions that matter to the intended use.
 
-Expect operating limits, failure checks, test results, coverage, remaining risks and readiness for a defined use. An automation agent can apply it to repeated requests, failed writes and recovery after an interruption.
+Expect operating limits, failure checks, test results, coverage, remaining risks and readiness for a defined use. For example, agents can assess repeated requests, failed writes and recovery after an interruption.
 
 ### Performance and Metric Integrity
 
-The agent checks how a measure is defined, which records are counted and how the result is calculated. It compares similar groups and periods, examines exclusions and checks related outcomes such as quality and repeated work.
+Agents can use `performance-metric-integrity` to check how a measure is defined, which records are counted and how the result is calculated. The method compares similar groups and periods, examines exclusions and checks related outcomes such as quality and repeated work.
 
-Expect recalculated results, reported differences, source coverage, trend limits and options for improvement. A reporting agent can check a completion rate against task records or compare quality before and after a change.
+Expect recalculated results, reported differences, source coverage, trend limits and options for improvement. For example, agents can check a completion rate against task records or compare quality before and after a change.
 
 ### Institutional Intelligence
 
-The agent reviews interests, commitments, claims, promises and outside pressure. It examines evidence, alternative interpretations, dependencies, costs and the authorization needed for proposed responses.
+Agents can use `institutional-intelligence` to review interests, commitments, claims, promises and outside pressure. The method examines evidence, alternative interpretations, dependencies, costs and the authorization needed for proposed responses.
 
-Expect a situation summary, supported observations, disputed claims, response options and follow up questions. A supplier review agent can check promised terms and alternatives. A meeting agent can examine commitments and disagreements, with tentative interpretations linked to specific comments.
+Expect a situation summary, supported observations, disputed claims, response options and follow up questions. For example, agents can check supplier promises and alternatives or examine meeting commitments and disagreements. Keep tentative interpretations linked to specific evidence.
 
-## Example agents that can use the skills
+## Examples of what agents can use the skills to do
 
-These are examples of agent roles. Give an existing agent the selected skill files and the task material. Choose the methods that fit the question, access and authorization available.
+These examples describe work that one or more agents can carry out with the skills. Supply the selected skill files and task material. Choose methods that fit the question, access and authorization available. For shared work, record the sources, completed checks and open questions for each part.
 
-| Agent role | Example task | Skills it might use | Expected result |
+| Context | What agents can use the skills to do | Useful skills | Expected result |
 |---|---|---|---|
-| Research agent | Investigate conflicting claims in supplied reports. | `inquiry`, `judgment` | Findings linked to sources, competing explanations and missing evidence. |
-| Coding and debugging agent | Investigate an intermittent file import failure. | `inquiry`, `toolcraft`, `reliability-by-construction` | A tested explanation or clearly stated uncertainty, a useful fix and recovery checks. |
-| Project planning agent | Replan work after a dependency slips. | `purpose-planning`, `judgment` | Priorities, milestones, dependencies and decisions needing authorization. |
-| Operations and automation agent | Review a recurring job that sometimes runs twice. | `discovery`, `reliability-by-construction` | Evidence of the pattern, relevant failure checks and a recovery plan. |
-| Reporting agent | Check a claimed improvement against the underlying records. | `performance-metric-integrity`, `judgment` | Recalculated measures, counting rules, differences and limits on the conclusion. |
-| Supplier review agent | Compare an offer with promises about future price or capacity. | `institutional-intelligence`, `inquiry` | Verified terms, uncertain claims, alternatives and questions for negotiation. |
-| Knowledge and learning agent | Preserve methods from completed work or run authorized research practice. | `contribution`, `inquiry`, `judgment` | Reusable lessons or a practice record with evidence and limits. |
-| Meeting note taking agent | Identify comments, commitments and recurring concerns in supplied notes. | `institutional-intelligence`, `discovery`, `judgment` | Speaker linked findings, tentative interpretations and follow up questions. |
+| Research | Investigate conflicting claims in supplied reports. | `inquiry`, `judgment` | Findings linked to sources, competing explanations and missing evidence. |
+| Coding and debugging | Investigate an intermittent file import failure. | `inquiry`, `toolcraft`, `reliability-by-construction` | A tested explanation or clearly stated uncertainty, a useful fix and recovery checks. |
+| Project planning | Replan work after a dependency slips. | `purpose-planning`, `judgment` | Priorities, milestones, dependencies and decisions needing authorization. |
+| Operations and automation | Review a recurring job that sometimes runs twice. | `discovery`, `reliability-by-construction` | Evidence of the pattern, relevant failure checks and a recovery plan. |
+| Reporting | Check a claimed improvement against the underlying records. | `performance-metric-integrity`, `judgment` | Recalculated measures, counting rules, differences and limits on the conclusion. |
+| Supplier review | Compare an offer with promises about future price or capacity. | `institutional-intelligence`, `inquiry` | Verified terms, uncertain claims, alternatives and questions for negotiation. |
+| Knowledge and learning | Preserve methods from completed work or run authorized research practice. | `contribution`, `inquiry`, `judgment` | Reusable lessons or a practice record with evidence and limits. |
+| Meeting notes | Identify comments, commitments and recurring concerns in supplied notes. | `institutional-intelligence`, `discovery`, `judgment` | Speaker linked findings, tentative interpretations and follow up questions. |
 
-See [example tasks and requests for each agent](docs/agent-examples.md).
+See [example tasks and requests](docs/agent-examples.md).
 
 For the meeting example, supply speaker labels, timestamps or note references and relevant earlier records. Link observations to comments and keep interpretations of traits or motives tentative. See the [meeting review guide](docs/meeting-notes.md) and [worked example](examples/meeting-review.md).
 
@@ -147,7 +147,7 @@ Use the scenarios in `tests/acceptance.md` to evaluate behavior against an unmod
 
 ## Changes in v2.5
 
-Added optional research challenges, explanation review and guided investigative practice to the existing skills. Added a generic file comparison challenge with separate evaluator notes, plus examples for several agent roles. The collection still contains nine skills. Practice results and learning effectiveness require observation and evaluation in the chosen host.
+Added optional research challenges, explanation review and guided investigative practice to the existing skills. Added a generic file comparison challenge with separate evaluator notes, plus task examples for one or more agents. The collection still contains nine skills. Practice results and learning effectiveness require observation and evaluation in the chosen host.
 
 ## Changes in v2.4
 
