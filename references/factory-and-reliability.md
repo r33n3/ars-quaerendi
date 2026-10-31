@@ -20,10 +20,10 @@ People can apply this method directly, and agents can use it within their existi
 
 ## Sample reliability contract
 ```yaml
-capability: a2a_task_execution
+capability: shared_task_execution
 stage: pilot
 scope:
-  environment: trusted_p2p_mesh
+  environment: authenticated_collaborators
   permissions: delegated_read_only
 invariants:
   - duplicate_delivery_does_not_duplicate_side_effects

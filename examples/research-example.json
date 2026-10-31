@@ -1,12 +1,12 @@
 {
-  "id": "GUF-FL002",
+  "id": "RESEARCH002",
   "question": "Can static fingerprints distinguish benign fine tuning from learned backdoors?",
   "status": "inconclusive",
   "evidence": [
     {
       "claim": "Changes limited to metadata preserved tensor hashes in the reported A through C corpus",
       "status": "O",
-      "source": "User supplied Field Lab 002 note"
+      "source": "User supplied research note"
     },
     {
       "claim": "Static backdoor discrimination established",
@@ -15,7 +15,7 @@
   ],
   "leads": [
     {
-      "observation": "Subset L2 increased while TLSH distance decreased in two reported runs",
+      "observation": "Two similarity measures changed in opposite directions in two reported runs",
       "status": "needs_validation",
       "next_test": "Compare more controlled variants"
     }

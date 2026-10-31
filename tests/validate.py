@@ -5,7 +5,7 @@ for slug in ('inquiry','purpose-planning','toolcraft','judgment','discovery','co
  p=root/'skills'/slug/'SKILL.md'
  assert p.exists() and p.read_text().startswith('---\n')
 for p in (root/'schemas').glob('*.json'):json.loads(p.read_text())
-example=json.loads((root/'examples'/'guffy-field-lab.json').read_text())
+example=json.loads((root/'examples'/'research-example.json').read_text())
 assert example['status']=='inconclusive' and example['leads']
 try:
  import jsonschema

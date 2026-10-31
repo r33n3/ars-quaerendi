@@ -1,4 +1,4 @@
-# Example: Promote a temporary A2A task helper
+# Example: Prepare a shared task helper for reuse
 
 A prototype completes one remote task correctly (O). Record this as one observed success within the tested scope. Assess deployment readiness through the tests below.
 

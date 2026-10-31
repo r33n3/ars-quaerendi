@@ -22,14 +22,7 @@ Record the project outcome, verified milestones, findings and reusable contribut
 
 For manual use, read `skills/<name>/SKILL.md` and consult `references/` as needed.
 
-For an agent host, copy the skill folders to its configured skills directory. For example:
-
-```bash
-mkdir -p ~/.agents/skills
-cp -R skills/* ~/.agents/skills/
-```
-
-This command copies the skill folders. Keep the full package available for shared references. Check reference paths when installing individual skills. Merge the optional `AGENTS.md` guidance with your existing instructions. Remove older installed versions when replacing a skill.
+For an agent host, copy the skill folders to its configured skills directory. Keep the full package available for shared references. Check reference paths when installing individual skills. Merge the optional `AGENTS.md` guidance with your existing instructions. Remove older installed versions when replacing a skill.
 
 ## Evidence and judgment
 
@@ -61,7 +54,3 @@ Use the scenarios in `tests/acceptance.md` to evaluate behavior against an unmod
 ## Changes in v2.1
 
 Added `reliability-by-construction`, a reliability promotion example and guidance in `references/factory-and-reliability.md`. These cover prototype testing, recovery, deployment readiness and evidence requirements for a defined use.
-
-## Origins
-
-The collection consolidates Ars Quaerendi, Telos, Instrumentum, Judicium, Contribution Harvesting and Anomaly & Serendipity Recognition. Its research methods draw on HCU and Fravia; the package is independent of those sources.
