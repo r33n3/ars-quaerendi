@@ -5,12 +5,12 @@ Seven reusable skills for research, planning, tool development and reliability e
 | Skill | Purpose |
 |---|---|
 | inquiry | Research unfamiliar questions and test explanations. |
-| purpose-planning | Choose goals and plan work within the user's stated purpose. |
+| `purpose-planning` | Choose goals and plan work within the user's stated purpose. |
 | toolcraft | Find, adapt or build a tool for a specific task. |
 | judgment | Assess whether evidence supports an intended use. |
 | discovery | Investigate unexpected observations and promising leads. |
 | contribution | Preserve useful results, including work from incomplete projects. |
-| reliability-by-construction | Improve correctness, repeatability, robustness and recovery. |
+| `reliability-by-construction` | Improve correctness, repeatability, robustness and recovery. |
 
 ## Use
 
@@ -35,20 +35,20 @@ This command copies the skill folders. Keep the full package available for share
 
 Evidence labels:
 
-- D: documented in a source.
-- O: directly observed.
-- R: independently reproduced.
-- H: hypothesis.
-- U: unknown.
-- X: contradicted.
+* D: documented in a source.
+* O: directly observed.
+* R: independently reproduced.
+* H: hypothesis.
+* U: unknown.
+* X: contradicted.
 
 Judgment levels:
 
-- J0: exploratory.
-- J1: plausible.
-- J2: supported.
-- J3: verified within the tested scope.
-- J4: qualified for a defined use.
+* J0: exploratory.
+* J1: plausible.
+* J2: supported.
+* J3: verified within the tested scope.
+* J4: qualified for a defined use.
 
 Record the scope and supporting evidence with each assessment. Authorization remains with the user and host environment.
 
