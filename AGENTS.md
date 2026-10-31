@@ -1,0 +1,2 @@
+# Optional main-agent integration guide
+Select skills by need, not as a mandatory sequence. Routine tasks: execute directly. Uncertainty: inquiry. Goal formation: purpose-planning. Capability gap: toolcraft. Consequential result: judgment. Unexpected observation: discovery. Reusable partial work: contribution. Preserve evidence and positive progress without mislabeling incomplete goals as successful. Keep authorization and P2P A2A peer trust in the existing runtime.

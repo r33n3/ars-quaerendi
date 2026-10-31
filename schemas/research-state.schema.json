@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "id",
+    "question",
+    "status",
+    "evidence",
+    "leads",
+    "contributions"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "question": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "exploring",
+        "investigating",
+        "executing",
+        "complete",
+        "incomplete",
+        "failed",
+        "inconclusive",
+        "abandoned"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim",
+          "status"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "D",
+              "O",
+              "R",
+              "H",
+              "U",
+              "X"
+            ]
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "leads": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "observation",
+          "status"
+        ],
+        "properties": {
+          "observation": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "speculative",
+              "needs_validation",
+              "supported",
+              "dismissed"
+            ]
+          },
+          "next_test": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "contributions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "reuse"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "reuse": {
+            "enum": [
+              "unverified",
+              "task_only",
+              "reusable",
+              "discard"
+            ]
+          },
+          "evidence_ref": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

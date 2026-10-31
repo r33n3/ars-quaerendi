@@ -1,0 +1,2 @@
+# Constructive evaluation
+J0 idea, J1 plausible, J2 supported, J3 tested, J4 qualified for named context. Evidence is not authority. Deterministic checks first; targeted challenge if needed, no default majority votes. Preserve parent goal outcome separately from partial progress, learning, anomalies, and independently useful contributions. A falsified hypothesis may be a useful research result; repeated blind retries are not. Record real reuse, not arbitrary points. Treat anomalies as leads until validated.
