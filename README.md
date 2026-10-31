@@ -1,7 +1,7 @@
 # Ars Quaerendi Unified v2.0
 **The Art of Inquiry**. HCU-inspired, not affiliated with HCU.
 
-Six independently callable skills consolidated from Ars Quaerendi, Telos, Instrumentum, Judicium, Contribution Harvesting and Anomaly & Serendipity Recognition.
+An independent collection of six reusable skills for people and AI agents. Use each skill on its own or combine them as needed, without a required agent framework or peer network. The collection consolidates Ars Quaerendi, Telos, Instrumentum, Judicium, Contribution Harvesting and Anomaly & Serendipity Recognition.
 
 | Skill | Question |
 |---|---|
@@ -13,23 +13,25 @@ Six independently callable skills consolidated from Ars Quaerendi, Telos, Instru
 | contribution | What useful value emerged even if the project failed? |
 
 ## Architecture and flows
-Brokkr (or another existing main agent) owns purpose, goals, orchestration, local subagents, user settings and execution. Skills are **advisory methods**, not a second coordinator. Invoke selectively:
+Skills are **advisory methods** that people can follow directly or use with a compatible AI agent. The person or host agent controls purpose, goals, execution and permissions. Choose skills selectively:
 
 - Unknown question → Inquiry; unexpected observation → Discovery.
 - Purpose-driven goal → Purpose & Planning; missing capability → Toolcraft.
 - Consequential decision → Judgment; partial or reusable outcome → Contribution.
 - Results may loop back to any skill. **No mandatory six-step pipeline.**
-- A2A peers in the decentralized P2P mesh can offer capabilities, but each node enforces its own authority and validates received evidence. No automatic sharing.
+- External tools or collaborators are optional. Validate received evidence and share material only with authorization.
 
 Progress-oriented feedback records **parent outcome, verified milestones, learning, unexpected discoveries, and transferable contributions** separately. Serendipity is explicitly preserved even if unrelated to the parent goal. Avoid reward hacking: no XP merely for retries or manufactured anomalies.
 
 ## Install
+For manual use, read any `skills/<name>/SKILL.md` and consult the package's `references/` as needed. No installation is required.
+
 Extract ZIP and, from this folder, run for Codex installations using the common skills path:
 ```bash
 mkdir -p ~/.agents/skills
 cp -R skills/* ~/.agents/skills/
 ```
-Verify your agent host's actual skills directory. Merge optional `AGENTS.md` guidance with existing instructions; do not replace the main agent. Archive older packages to avoid duplicate skill routing.
+Verify your agent host's actual skills directory. Keep the package's `references/` available alongside your installation; the copy command above installs only the skill folders. Merge optional `AGENTS.md` guidance with existing instructions. Archive older packages to avoid duplicate skill routing.
 
 ## Evidence and judgment
 D documented; O observed; R independently reproduced; H hypothesis; U unknown; X contradicted.

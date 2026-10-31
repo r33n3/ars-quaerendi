@@ -12,7 +12,7 @@ Record expected versus observed results, raw evidence, environment and provenanc
 
 ## Shared contract
 - D documented; O directly observed; R independently reproduced; H hypothesis; U unknown; X contradicted.
-- Evidence level is not authorization. Main agent owns purpose, orchestration, permissions, tool execution and P2P A2A trust.
+- Evidence level is not authorization. The person or host agent controls purpose, permissions, tool execution and any optional collaboration.
 - Do not fabricate measurements, search results or execution. Prefer the smallest informative next action.
 - Output scoped evidence, limitations, progress and a justified next step or stop.
 
