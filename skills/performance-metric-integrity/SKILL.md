@@ -42,4 +42,4 @@ For detailed guidance, see [measurement checks](../../references/metric-integrit
 
 ## Example request
 
-Check the completion rate reported in this meeting against the task log. Explain the counting rules, exclusions and difference from the previous period.
+Check the reported improvement against the source records. Explain the counting rules, exclusions and differences between comparable periods.

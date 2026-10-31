@@ -1,6 +1,6 @@
 ---
 name: contribution
-description: Help an agent identify useful results, lessons and reusable work from a task or project. Use for project reviews, incomplete efforts or meeting summaries. Return verified contributions, their source, limits and possible reuse alongside the project outcome.
+description: Help an agent identify useful results, lessons and reusable work from a task or project. Use for project reviews, incomplete efforts, knowledge records or transfer of a method. Return verified contributions, their source, limits and possible reuse alongside the project outcome.
 ---
 # Contribution: Useful Results and Lessons
 
@@ -8,7 +8,7 @@ Use this skill to preserve work that has demonstrated value. It covers findings,
 
 ## When to use
 
-Use when work ends, a project changes direction or useful results could be lost in a broad success or failure summary. In meeting work, use it to record decisions, supported insights, useful proposals and unresolved issues.
+Use when work ends, a project changes direction or a method could help another task. Research, coding, knowledge and work assistants can preserve verified components, findings, decisions and open questions.
 
 ## Available tools
 
@@ -29,6 +29,10 @@ Return the project outcome and a separate record of useful contributions, source
 
 See `references/` in the package for extended methods.
 
+## Transferring a useful method
+
+When a method is worth reusing, record what it explains, when it applies, counterexamples, instruments, reproduction steps and possible uses. Keep a proposed analogy separate from a tested transfer. Record whether another task actually used the method successfully. See [guided research practice](../../references/research-apprenticeship.md) for an optional explanation and transfer review.
+
 ## Example request
 
-Summarize the useful findings from this project review, including tested components from the cancelled work and questions that remain open.
+Preserve useful methods and tested components from this cancelled experiment. Record their evidence, limits and possible uses in future work.

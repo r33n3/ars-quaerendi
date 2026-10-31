@@ -1,6 +1,6 @@
 ---
 name: purpose-planning
-description: Help an agent turn the user's purpose into goals, priorities and a practical plan. Use for broad requests, competing tasks, meeting follow up or changing project conditions. Return justified goals, milestones, dependencies and stopping conditions.
+description: Help an agent turn the user's purpose into goals, priorities and a practical plan. Use for broad requests, competing tasks, project changes or agreed follow up. Return justified goals, milestones, dependencies and stopping conditions.
 ---
 # Purpose Planning: Goals and Work Plans
 
@@ -8,7 +8,7 @@ Use this skill to decide what work serves the user's purpose and how to approach
 
 ## When to use
 
-Use when the desired outcome is broad, several tasks compete for attention or new evidence changes the plan. In meeting work, use it to turn agreed decisions into proposed follow up and identify missing owners or dates.
+Use when the desired outcome is broad, tasks compete for attention or new evidence changes a plan. Project agents can compare priorities, research agents can plan investigations and work assistants can organize agreed follow up.
 
 ## Available tools
 
@@ -31,4 +31,4 @@ See `references/` in the package for extended methods.
 
 ## Example request
 
-Turn these meeting decisions into a work plan. Preserve assigned owners and dates, and identify actions whose ownership is still unclear.
+Replan this project after the supplier delay. Compare priorities, preserve existing commitments and identify decisions that need authorization.

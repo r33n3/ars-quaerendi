@@ -1,6 +1,6 @@
 ---
 name: inquiry
-description: Help an agent investigate unfamiliar questions, find original sources and test competing explanations. Use for research, unclear technical behavior or meeting claims that need checking. Return findings, supporting evidence and open questions.
+description: Help an agent investigate unfamiliar questions, find original sources and test competing explanations. Use for research, unclear technical behavior, disputed facts or authorized research practice. Return findings, supporting evidence and open questions.
 ---
 # Inquiry: Research and Source Checking
 
@@ -8,7 +8,7 @@ Use this skill to build an explanation from available evidence. It covers search
 
 ## When to use
 
-Use when a question needs investigation, sources disagree or an explanation is uncertain. In meeting work, use it to check factual claims and research questions raised by participants.
+Use when a question needs investigation, sources disagree or an explanation is uncertain. Research agents can compare claims, coding agents can investigate behavior and work assistants can check factual statements.
 
 ## Available tools
 
@@ -29,6 +29,10 @@ Return the question, sources examined, findings, competing explanations and rema
 
 See `references/` in the package for extended methods.
 
+## Optional research practice
+
+When the user requests investigative practice or evaluation, use [guided research practice](../../references/research-apprenticeship.md). Select a challenge with clear limits and keep the evaluator's preparation and answers separate from the investigator's context. Record explanations, instrument choices, distinguishing tests, failed attempts and evidence. Assess the method and the result separately.
+
 ## Example request
 
-Investigate the claim in these meeting notes that changing the storage format will halve our costs. Identify the assumptions and evidence needed.
+Investigate the conflicting explanations in these reports. Trace the original sources, list the assumptions and identify a check that could resolve the disagreement.

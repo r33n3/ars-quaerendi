@@ -19,3 +19,7 @@ For prototype promotion, consult `references/factory-and-reliability.md`.
 For examples of how the skills fit together, consult `docs/integration-flow.md`.
 
 For consequential negotiations, promises, disputed claims or decisions about continued investment, consult `references/institutional-resilience-advanced.md` when those methods would help. Assess behavior through evidence and preserve the user's control of commitments and goals.
+
+For examples of research, coding, planning, operations, reporting, supplier review, learning and meeting agents, consult `docs/agent-examples.md`.
+
+When the user requests investigative practice or evaluation, consult `references/research-apprenticeship.md`. Choose a limited challenge, keep evaluator answers separate and record evidence of the method and result. Explanation review can help transfer significant findings to another task.

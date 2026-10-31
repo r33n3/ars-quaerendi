@@ -20,6 +20,12 @@ Choose a skill according to the work at hand:
 
 Combine skills as needed. Record the reason for using each one and keep the work within the user's purpose.
 
+## Agent roles
+
+Research agents can investigate claims and assess evidence. Coding agents can investigate failures, develop helpers and test recovery. Project agents can plan work, operations agents can review recurring incidents, and reporting agents can check measures against records. Supplier review agents can assess promises and terms. Knowledge agents can preserve methods for reuse. Meeting agents can examine comments and commitments.
+
+See [agent examples](agent-examples.md) for task material, suggested skills, expected results and example requests. Roles describe the work an existing agent performs. The host supplies its tools, access and execution controls.
+
 ## Meeting note taking agents
 
 Use the skills to examine meeting comments, commitments, disputed claims and recurring behaviors in supplied notes. Include speaker labels and source locations in findings, and keep observations separate from tentative interpretations. See the [meeting review guide](meeting-notes.md) for selection, expected inputs and a result format.
@@ -40,3 +46,7 @@ Choose the amount of testing according to the consequences of failure. Record re
 Start with the user's purpose and existing permissions. Identify the offer or claim, supporting evidence, interests, costs and possible consequences. Use other skills when a specific question needs research or checking. Propose a response with clear limits and identify any authorization needed for commitments, access or changes to goals. Keep a record of the evidence and options available when the decision was made.
 
 For difficult decisions about collaborators, promises, shared sources, accountability or continued investment, consult [further negotiation methods](../references/institutional-resilience-advanced.md). Apply the parts relevant to the decision.
+
+## Guided research practice
+
+When requested, an agent can practice investigation through a challenge with clear limits, recorded evidence and separate evaluation criteria. Use explanation review to document how a result was obtained and test a proposed transfer on another task. See [guided research practice](../references/research-apprenticeship.md).

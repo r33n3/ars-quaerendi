@@ -1,6 +1,6 @@
 ---
 name: institutional-intelligence
-description: Help an agent assess negotiations, incentives, promises and disputed claims while preserving user control. Use for consequential offers, workplace disagreements or meeting comments about ownership, resources and priorities. Return supported observations, alternative interpretations and response options.
+description: Help an agent assess negotiations, incentives, promises and disputed claims while preserving user control. Use for supplier offers, project disagreements, competing priorities or consequential meeting comments. Return supported observations, alternative interpretations and response options.
 ---
 # Institutional Intelligence: Negotiations, Incentives and Claims
 
@@ -8,7 +8,7 @@ Use this skill to understand interests, commitments, influence and competing cla
 
 ## When to use
 
-Use for consequential negotiations, payment offers, competing interests, credibility challenges or pressure to change goals. In meeting work, examine specific comments, commitments, disagreements and recurring communication behaviors. Mark interpretations of traits or motives as tentative and link them to evidence.
+Use for consequential negotiations, payment offers, competing interests, credibility challenges or pressure to change goals. Supplier review, project and meeting agents can examine claims, commitments and alternatives. Keep interpretations of traits or motives tentative and linked to evidence.
 
 ## Available tools
 
@@ -56,6 +56,6 @@ For evaluation examples, see [decision scenarios](../../examples/institutional-a
 
 ## Example request
 
-Review these meeting notes for commitments, disputed claims and changes in priorities. Identify who said what, possible interpretations and follow up questions.
+Compare this supplier offer with our requirements and current agreement. Identify verified terms, uncertain promises, alternatives and questions to resolve before any commitment.
 
 For analysis of meeting comments, commitments and recurring behaviors, see [meeting notes](../../docs/meeting-notes.md).

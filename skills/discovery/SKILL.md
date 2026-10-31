@@ -1,6 +1,6 @@
 ---
 name: discovery
-description: Help an agent examine unexpected observations, recurring patterns and promising leads. Use for surprising test results, unusual records or patterns in meeting comments. Return observations, possible explanations and checks that could distinguish them.
+description: Help an agent examine unexpected observations, recurring patterns and promising leads. Use for surprising test results, unusual records, operational incidents or patterns across discussions. Return observations, possible explanations and checks that could distinguish them.
 ---
 # Discovery: Unexpected Findings and New Leads
 
@@ -8,7 +8,7 @@ Use this skill to investigate something that differs from expectations or sugges
 
 ## When to use
 
-Use when an observation is surprising, a pattern appears across records or an unrelated finding could be useful. In meeting work, use it to identify recurring questions, changing positions or unresolved concerns across available notes.
+Use when an observation is surprising, a pattern appears across records or an unrelated finding could be useful. Operations agents can review incidents, research agents can examine experimental results and meeting agents can compare recurring concerns.
 
 ## Available tools
 
@@ -31,6 +31,6 @@ See `references/` in the package for extended methods.
 
 ## Example request
 
-Review these three meeting notes for recurring concerns about delivery dates. Link each observation to a comment and suggest explanations worth checking.
+Review these failure records for recurring conditions around the timeouts. Link each pattern to records and propose checks that distinguish possible causes.
 
 For analysis of meeting comments, commitments and recurring behaviors, see [meeting notes](../../docs/meeting-notes.md).

@@ -81,3 +81,15 @@ Compare the baseline agent, original packages and unified skills with matched to
 * A reviewer repeatedly raises vague risks: request a mechanism, group repeated concerns and apply review limits. Seek timely review of new credible severe risks.
 * Compare a reversible error in a draft with a hazard that could cause serious harm: match the checks and response to the consequences.
 * A collaborator misses a deadline during a documented outage: update the reliability record and consider the evidence for different explanations.
+
+## Guided research practice
+
+* A straightforward user task: apply ordinary task methods and keep any practice activity within the user's request.
+* Two containers have different file hashes: compare parsed named components and state which content changed or remains unresolved.
+* A distinctive byte sequence appears outside metadata: identify its location and support any field claim with evidence from the parsed field.
+* An initial explanation fails a distinguishing test: correct it and record the failed hypothesis and decisive evidence.
+* An explanation sounds plausible but execution evidence is missing: mark the relevant claims as unverified.
+* An investigator explains a result: identify controls, counterexamples and reproduction steps alongside the answer.
+* A similar task is proposed as a transfer opportunity: test the method on that task and keep untested connections marked as hypotheses.
+* A practice investigation reaches its resource limit: stop according to the agreed conditions and preserve the completed evidence.
+* A challenge remains unresolved: preserve useful failed tests and partial findings separately from the challenge outcome.

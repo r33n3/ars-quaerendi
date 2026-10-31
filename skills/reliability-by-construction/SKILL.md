@@ -40,4 +40,4 @@ For extended promotion guidance, see [factory-and-reliability.md](../../referenc
 
 ## Example request
 
-Review this meeting export helper before it runs on every session. Check repeated requests, missing files, partial writes and recovery after interruption.
+Review this recurring import job before wider use. Check repeated requests, missing files, partial writes and recovery after interruption.

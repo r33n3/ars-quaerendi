@@ -29,6 +29,10 @@ Return the chosen approach, the reason for choosing it, artifacts created, execu
 
 See `references/` in the package for extended methods.
 
+## Tools for research practice
+
+For an authorized research challenge, choose a small instrument that can distinguish the competing explanations. Explain why it helps and check it on a known sample. Keep temporary code and artifacts separate from the working project. See [guided research practice](../../references/research-apprenticeship.md) when setting up or supporting an evaluation.
+
 ## Example request
 
-Find a way to extract action items from these exported meeting files. Check an existing parser first and test the result on the supplied sample.
+Find a way to read this unfamiliar data export. Check existing parsers first, test the approach on the supplied sample and record unsupported parts.

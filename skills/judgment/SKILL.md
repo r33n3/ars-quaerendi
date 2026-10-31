@@ -1,6 +1,6 @@
 ---
 name: judgment
-description: Help an agent assess whether evidence supports a claim, decision or intended use. Use for completed research, proposed releases, disputed conclusions or interpretations of meeting comments. Return a recommendation tied to evidence, scope and uncertainty.
+description: Help an agent assess whether evidence supports a claim, decision or intended use. Use for completed research, proposed releases, performance reports or disputed conclusions. Return a recommendation tied to evidence, scope and uncertainty.
 ---
 # Judgment: Evidence and Readiness Review
 
@@ -8,7 +8,7 @@ Use this skill to review a conclusion or proposed action against its supporting 
 
 ## When to use
 
-Use when findings are ready for a decision, a conclusion is disputed or a tool is being considered for a particular use. In meeting analysis, use it to check whether notes support an interpretation of a comment or recurring behavior.
+Use when findings are ready for a decision, a conclusion is disputed or a tool is being considered for a particular use. Research, release review, reporting and meeting agents can use it to assess what the available record supports.
 
 ## Available tools
 
@@ -29,8 +29,12 @@ Return the claim and intended use, supporting and conflicting evidence, complete
 
 See `references/` in the package for extended methods.
 
+## Reviewing an explanation
+
+When a significant result or research challenge needs explanation, compare the account with the actual records and artifacts. Check the initial expectation, observations, alternative explanations, decisive test, limits and reproduction steps. Mark unsupported parts as unverified and narrow conclusions to the evidence. See [guided research practice](../../references/research-apprenticeship.md) for the optional explanation review method.
+
 ## Example request
 
-Review whether these notes support the conclusion that a participant agreed to own the work. Cite the relevant comments and identify ambiguity.
+Review this proposed release using the test results and known limits. State which uses the evidence supports and which checks remain open.
 
 For analysis of meeting comments, commitments and recurring behaviors, see [meeting notes](../../docs/meeting-notes.md).
