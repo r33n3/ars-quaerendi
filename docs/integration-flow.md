@@ -16,6 +16,7 @@ Choose a skill according to the work at hand:
 * Use `contribution` to preserve useful results.
 * Use `reliability-by-construction` to prepare a prototype for repeated use or deployment.
 * Use `performance-metric-integrity` to check reported results and evaluate proposed improvements.
+* Use `institutional-intelligence` to assess negotiations, disputed claims, incentives and outside pressure to change goals.
 
 Combine skills as needed. Record the reason for using each one and keep the work within the user's purpose.
 
@@ -29,3 +30,7 @@ Combine skills as needed. Record the reason for using each one and keep the work
 6. Use the evidence to propose improvements. Preserve earlier definitions, findings and failed attempts so comparisons remain meaningful.
 
 Choose the amount of testing according to the consequences of failure. Record reported progress and independently verified progress separately. Assess an agent's performance through source records and independent checks.
+
+## Negotiations and disputed claims
+
+Start with the user's purpose and existing permissions. Identify the offer or claim, supporting evidence, interests, costs and possible consequences. Use other skills when a specific question needs research or checking. Propose a response with clear limits and identify any authorization needed for commitments, access or changes to goals. Keep a record of the evidence and options available when the decision was made.

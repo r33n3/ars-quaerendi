@@ -10,6 +10,7 @@ Select skills according to the task:
 * Reusable results: `contribution`.
 * Prototype promotion or recurring failures: `reliability-by-construction`.
 * Performance measures, progress reports and improvement proposals: `performance-metric-integrity`.
+* Negotiations, disputed claims, competing incentives and pressure to change goals: `institutional-intelligence`.
 
 Handle routine tasks directly with available tools. Record project outcomes and partial progress separately. The user and host environment control authorization, execution, deployment and collaboration.
 

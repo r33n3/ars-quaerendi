@@ -1,6 +1,6 @@
-# Ars Quaerendi Unified v2.2
+# Ars Quaerendi Unified v2.3
 
-Eight reusable skills for research, planning, tool development and reliability engineering. People can follow the instructions directly or use them with a compatible AI agent. Each skill can be used independently.
+Nine reusable skills for research, planning, tools, reliability, performance measures and negotiations. People can follow the instructions directly or use them with a compatible AI agent. Each skill can be used independently.
 
 | Skill | Purpose |
 |---|---|
@@ -12,6 +12,7 @@ Eight reusable skills for research, planning, tool development and reliability e
 | contribution | Preserve useful results, including work from incomplete projects. |
 | `reliability-by-construction` | Improve correctness, repeatability, robustness and recovery. |
 | `performance-metric-integrity` | Check performance reports and evaluate proposed improvements. |
+| `institutional-intelligence` | Assess incentives, negotiate terms and investigate disputed claims. |
 
 ## Use
 
@@ -51,6 +52,10 @@ Record the scope and supporting evidence with each assessment. Authorization rem
 Run `python3 tests/validate.py` to check package structure, JSON syntax and schema compliance when the `jsonschema` library is available.
 
 Use the scenarios in `tests/acceptance.md` to evaluate behavior against an unmodified agent with matched tools and budgets. Record observed results and overhead.
+
+## Changes in v2.3
+
+Added `institutional-intelligence`, detailed guidance and examples. These cover negotiations, incentives, disputed claims, possible risks, economic promises and decisions made under outside pressure. The user and host environment control changes to goals, access and commitments.
 
 ## Changes in v2.2
 

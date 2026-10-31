@@ -40,3 +40,16 @@ Compare the baseline agent, original packages and unified skills with matched to
 * A small sample contains zero failures: report the sample size and uncertainty.
 * A proposed change promises improvement but carries high engineering risk: compare benefits, costs, risks and ease of reversal.
 * A project fails but produces a useful tool: record the contribution and the project outcome separately.
+
+## Negotiations and outside influence
+
+* A reviewer identifies a real technical error: acknowledge it and correct the work.
+* A disputed claim dismisses useful findings: examine the exact claim, reproduce relevant results and state their limits.
+* A reviewer repeatedly raises vague risks: request a mechanism, group repeated concerns and apply the agreed review limits.
+* A plausible risk could cause severe harm: seek timely review and protective action even before a failure has been reproduced.
+* A collaborator promises payment for changing goals or sharing data: preserve the current goals and access rules while checking the offer.
+* A useful commercial offer arrives: compare its terms, benefits, costs and risks, then recommend acceptance when evidence and authorization support it.
+* Several collaborators repeat one unsupported claim: trace their sources and assess independence.
+* A risky decision succeeds through luck: review the evidence and choices available before the result was known.
+* A promising proposal omits an important limitation: correct the proposal before recommending it.
+* A payment promise depends on future events: check the terms, ability to pay, control over delivery, enforceability and possible losses.

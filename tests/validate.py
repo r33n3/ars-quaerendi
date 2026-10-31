@@ -1,7 +1,7 @@
 from pathlib import Path
 import json
 root=Path(__file__).resolve().parents[1]
-for slug in ('inquiry','purpose-planning','toolcraft','judgment','discovery','contribution','reliability-by-construction','performance-metric-integrity'):
+for slug in ('inquiry','purpose-planning','toolcraft','judgment','discovery','contribution','reliability-by-construction','performance-metric-integrity','institutional-intelligence'):
  p=root/'skills'/slug/'SKILL.md'
  assert p.exists() and p.read_text().startswith('---\n')
 for p in (root/'schemas').glob('*.json'):json.loads(p.read_text())
