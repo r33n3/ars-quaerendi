@@ -1,2 +1,5 @@
 # Optional agent integration guide
 Select skills by need, not as a mandatory sequence. Routine tasks: execute directly. Uncertainty: inquiry. Goal formation: purpose-planning. Capability gap: toolcraft. Consequential result: judgment. Unexpected observation: discovery. Reusable partial work: contribution. Preserve evidence and positive progress without mislabeling incomplete goals as successful. The user and host environment retain control of authorization, execution and any optional collaboration. No specific agent framework or peer network is required.
+
+- When promoting a prototype or engineering away recurring failures, invoke `reliability-by-construction`.
+- Skills advise on readiness; the user and host environment retain control of deployment and scoped authorization. See `references/factory-and-reliability.md`.
