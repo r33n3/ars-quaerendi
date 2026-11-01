@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "record_kind": "illustrative",
+  "evidence_id": "EV-REPORT001",
+  "claim_id": "CL-ARRAY001",
+  "claim": "The named array contents match for the three arrays in the reported A/B comparison.",
+  "observation": "An invented report lists different complete file hashes and matching value hashes for three named arrays in A/B.",
+  "provenance": {
+    "origin": "document",
+    "source": "source.md",
+    "method": "Read the supplied invented source and retain its stated limits",
+    "artifact_ids": [
+      "source.md"
+    ]
+  },
+  "relationship": "supports",
+  "uncertainty": {
+    "limitations": [
+      "The original files and execution records are unavailable",
+      "Matching reported hashes cover only the listed arrays"
+    ],
+    "open_questions": [
+      "Do actual files reproduce the reported comparison?",
+      "How do the files behave when used?"
+    ]
+  },
+  "tested_scope": {
+    "population": "The reported A/B sample pair",
+    "coverage": "Three named arrays listed in the example report",
+    "conditions": [
+      "Results are taken from an invented source report",
+      "Independent file inspection remains open"
+    ]
+  },
+  "legacy_status": "D"
+}

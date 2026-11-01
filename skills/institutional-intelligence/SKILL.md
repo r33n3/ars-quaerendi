@@ -63,3 +63,22 @@ For evaluation examples, see [decision scenarios](../../examples/institutional-a
 Compare this supplier offer with our requirements and current agreement. Identify verified terms, uncertain promises, alternatives and questions to resolve before any commitment.
 
 For analysis of meeting comments, commitments and recurring behaviors, see [meeting notes](../../docs/meeting-notes.md).
+
+## Method contract
+
+This section matches the [shared contract registry](../../contracts/skill-contracts.json). See [evidence and handoff rules](../../references/evidence-handoff-rules.md) when another skill needs the result.
+
+* **Activation:** A consequential offer, disputed claim, negotiation, competing interest or outside pressure needs assessment.
+* **Routine handling:** Handle ordinary cooperation or a clear request directly when a separate incentives or claims review would add little value.
+* **Required inputs:** The offer, claim or interaction to assess.
+* **Helpful context:** The user's decision context and existing permissions; Participants, evidence and alternatives; Commitments, resource limits and earlier exchanges.
+* **Missing inputs:** Describe the supplied interaction and missing context. Keep interpretations tentative and limit recommendations to the supported facts.
+* **Evidence produced:** Supported observations and disputed claims; Alternative explanations and source independence; Costs, dependencies, promise conditions and uncertainty.
+* **Records produced:** Response options tied to the user purpose; Questions, authorization needs and review conditions.
+* **Recommendations:** Clarify, correct, substantiate or negotiate; Propose a limited trial, defer, decline or end discussion; Seek further review for a consequential uncertainty.
+* **Authority:** Payments, commitments, data access and changes to goals follow existing authorization. The user and host control actions beyond the current scope.
+* **Stop when:** The response options and their limits are clear; The remaining choice belongs to the user; The review budget or required access is exhausted.
+* **Outcome status:** `resolved`, `provisional`, `inconclusive`, `blocked`, `stopped`.
+* **Reopen when:** New evidence or a corrected claim; Changed terms, promises or dependencies; Changed purpose, permissions or decision context.
+* **Possible consumers:** `judgment`, `purpose-planning`, `contribution`.
+* **Failure handling:** Return supported observations, unresolved claims and a proportionate next question while preserving the user purpose and authorization.

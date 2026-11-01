@@ -27,3 +27,5 @@ For examples of research, coding, planning, operations, reporting, supplier revi
 When the user requests investigative practice or evaluation, consult `references/research-apprenticeship.md`. Choose a limited challenge, keep evaluator answers separate and record evidence of the method and result. Explanation review can help transfer significant findings to another task.
 
 Use `purpose-planning` for justified goal proposals, capability gaps, further investment review and comparison with the user's purpose. Include continuing the current goals as an option. Proactive reviews follow existing user instructions, schedules and resource limits. See `references/purpose-to-action.md`.
+
+Use `contracts/skill-contracts.json` to review activation, inputs, outputs, recommendations, authority, stopping and consumers. Each skill has a matching Method contract section. Preserve evidence references, provenance, contradictions, uncertainty and scope when passing results to another skill. See `references/evidence-handoff-rules.md`.

@@ -2,6 +2,8 @@
 
 The package provides agent meta skills for choosing methods, assessing evidence and deciding how to proceed. Regular task skills perform specific work such as extracting records, calculating figures or executing tests. One or more agents can apply both kinds during a task. See [meta skills and task skills](meta-skills.md) for the distinction.
 
+Use the [method contracts](method-contracts.md) to select a method and identify what can be passed to another skill. The [handoff walkthroughs](../examples/complete-handoffs/README.md) show how records retain their evidence, limits and authorization context throughout a chain.
+
 ## Control of the work
 
 The person or host agent controls the purpose, execution, permissions and collaboration. Each participant checks its own permissions and the evidence received from others.

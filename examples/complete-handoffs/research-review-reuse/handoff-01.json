@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "handoff_id": "research-review-reuse_1",
+  "from_skill": "inquiry",
+  "to_skill": "judgment",
+  "claim_id": "CL-ARRAY001",
+  "evidence_ids": [
+    "EV-REPORT001"
+  ],
+  "evidence_refs": {
+    "EV-REPORT001": "evidence.json"
+  },
+  "evidence_hashes": {
+    "EV-REPORT001": "ca38cb30d9d1c513792b98d2db4ee32e50aabfb0501a95bdeb5c8fc2132ab971"
+  },
+  "scope": {
+    "EV-REPORT001": {
+      "population": "The reported A/B sample pair",
+      "coverage": "Three named arrays listed in the example report",
+      "conditions": [
+        "Results are taken from an invented source report",
+        "Independent file inspection remains open"
+      ]
+    }
+  },
+  "uncertainty": {
+    "EV-REPORT001": {
+      "limitations": [
+        "The original files and execution records are unavailable",
+        "Matching reported hashes cover only the listed arrays"
+      ],
+      "open_questions": [
+        "Do actual files reproduce the reported comparison?",
+        "How do the files behave when used?"
+      ]
+    }
+  },
+  "decision": "Assess the reported component comparison",
+  "authority": "A recommendation for review. Actual actions follow existing user and host authorization.",
+  "parent_outcome": "The broader research goal remains unresolved in this invented example.",
+  "outcome_status": "provisional"
+}

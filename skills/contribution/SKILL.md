@@ -40,3 +40,22 @@ When a method is worth reusing, record what it explains, when it applies, counte
 ## Example request
 
 Preserve useful methods and tested components from this cancelled experiment. Record their evidence, limits and possible uses in future work.
+
+## Method contract
+
+This section matches the [shared contract registry](../../contracts/skill-contracts.json). See [evidence and handoff rules](../../references/evidence-handoff-rules.md) when another skill needs the result.
+
+* **Activation:** Completed, failed, stalled or redirected work contains results that may be useful to retain.
+* **Routine handling:** Keep the normal task record when a separate reuse or contribution review would add little value.
+* **Required inputs:** The work or outcome to review.
+* **Helpful context:** Evidence and artifact references; Parent goal status and restrictions; Potential uses and actual reuse records.
+* **Missing inputs:** Record candidate contributions as unverified when supporting evidence or artifacts are missing. Preserve any confirmed value.
+* **Evidence produced:** Support for each useful finding, method or component; Attribution, limitations and evidence of reuse; Unresolved parts of the parent outcome.
+* **Records produced:** A contribution record separate from the parent outcome; Retention and reuse recommendations with restrictions.
+* **Recommendations:** Discard, retain as a note, keep for the task or propose wider reuse; Test a possible transfer before claiming successful reuse.
+* **Authority:** Retention, publication, sharing and catalog changes follow existing user authorization. A useful component retains its own tested scope.
+* **Stop when:** Each candidate contribution has a documented disposition; Evidence is insufficient to establish a candidate value; The agreed review scope is complete.
+* **Outcome status:** `resolved`, `provisional`, `inconclusive`, `blocked`, `stopped`.
+* **Reopen when:** New evidence of usefulness or limitations; Actual reuse succeeds or fails; Privacy, ownership or retention conditions change.
+* **Possible consumers:** `purpose-planning`, `toolcraft`, `inquiry`.
+* **Failure handling:** Return supported contributions, uncertain candidates and missing records while keeping the parent outcome accurate.

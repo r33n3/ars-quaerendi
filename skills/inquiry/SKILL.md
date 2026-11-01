@@ -40,3 +40,22 @@ When the user requests investigative practice or evaluation, use [guided researc
 ## Example request
 
 Investigate the conflicting explanations in these reports. Trace the original sources, list the assumptions and identify a check that could resolve the disagreement.
+
+## Method contract
+
+This section matches the [shared contract registry](../../contracts/skill-contracts.json). See [evidence and handoff rules](../../references/evidence-handoff-rules.md) when another skill needs the result.
+
+* **Activation:** A question, disputed claim or unexplained behavior needs investigation.
+* **Routine handling:** Answer a simple lookup directly when the available evidence settles the question.
+* **Required inputs:** A question or observation to investigate.
+* **Helpful context:** Sources and earlier findings; Constraints and intended use; Available tools and resource limits.
+* **Missing inputs:** Clarify a missing question. Use supplied sources when access is limited and identify which conclusions remain open.
+* **Evidence produced:** Source linked findings and competing explanations; Completed checks and their scope; Conflicting evidence and open questions.
+* **Records produced:** Claim linked evidence records; An investigation summary and proposed checks.
+* **Recommendations:** Accept a conclusion within stated limits; Run a useful next check; Narrow or defer the investigation.
+* **Authority:** Research, tool use and sharing follow existing user authorization. Changes to purpose, access or commitments remain with the user and host.
+* **Stop when:** The question is answered within the agreed scope; A required source or authorization is unavailable; The agreed budget ends.
+* **Outcome status:** `resolved`, `provisional`, `inconclusive`, `blocked`, `stopped`.
+* **Reopen when:** New sources or counterexamples; Changed scope or intended use.
+* **Possible consumers:** `judgment`, `discovery`, `toolcraft`, `contribution`.
+* **Failure handling:** Preserve useful partial findings and return an inconclusive or blocked result with the missing evidence and next useful check.

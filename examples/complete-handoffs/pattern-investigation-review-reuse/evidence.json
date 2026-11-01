@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "record_kind": "illustrative",
+  "evidence_id": "EV-PATTERN001",
+  "claim_id": "CL-MEASURES001",
+  "claim": "The two reported measures always increase together in comparable samples.",
+  "observation": "An invented table reports the first measure rising from 5.5 to 56.1 while the second falls from 132 to 87 in two samples.",
+  "provenance": {
+    "origin": "document",
+    "source": "source.md",
+    "method": "Read the supplied invented source and retain its stated limits",
+    "artifact_ids": [
+      "source.md"
+    ]
+  },
+  "relationship": "contradicts",
+  "uncertainty": {
+    "limitations": [
+      "Two samples and partial element coverage",
+      "The original measurement records are unavailable"
+    ],
+    "open_questions": [
+      "Are the samples and instruments comparable?",
+      "What relationship holds across a larger population?"
+    ]
+  },
+  "tested_scope": {
+    "population": "Two samples in the invented table",
+    "coverage": "25 percent of the elements in each sample",
+    "conditions": [
+      "Comparability is reported by the source and remains unverified",
+      "Only the listed measurements are available"
+    ]
+  },
+  "legacy_status": "D"
+}

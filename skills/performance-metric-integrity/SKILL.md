@@ -47,3 +47,22 @@ For detailed guidance, see [measurement checks](../../references/metric-integrit
 ## Example request
 
 Check the reported improvement against the source records. Explain the counting rules, exclusions and differences between comparable periods.
+
+## Method contract
+
+This section matches the [shared contract registry](../../contracts/skill-contracts.json). See [evidence and handoff rules](../../references/evidence-handoff-rules.md) when another skill needs the result.
+
+* **Activation:** A material measure, trend, reported achievement or proposed improvement needs verification.
+* **Routine handling:** Provide a straightforward calculation directly when its definition and source records are already clear.
+* **Required inputs:** The measure, report or outcome being assessed.
+* **Helpful context:** Definitions and counting rules; Source records, periods and comparable groups; Earlier versions, exclusions and intended decision.
+* **Missing inputs:** State the missing definition or records. Explain which parts can be assessed and which calculations or comparisons remain unresolved.
+* **Evidence produced:** Recalculated counts and results; Definition changes, exclusions and source gaps; Related outcomes and limits on comparisons.
+* **Records produced:** A reconciled or explicitly unresolved report; Options for improvement and further verification.
+* **Recommendations:** Use a verified measure within its scope; Correct a report or collect missing records; Test an improvement or defer a decision.
+* **Authority:** Source records and scoring policies remain under existing authorization. Recommendations identify corrections and uncertainty; formal commitments and publication follow user and host controls.
+* **Stop when:** The reported result is reconciled; A specific source or definition gap remains documented; The agreed review limit is reached.
+* **Outcome status:** `resolved`, `provisional`, `inconclusive`, `blocked`, `stopped`.
+* **Reopen when:** New source records or corrected counts; Changed definitions, periods or task mix; Evidence about the effects of an improvement.
+* **Possible consumers:** `judgment`, `purpose-planning`, `institutional-intelligence`.
+* **Failure handling:** Return the calculation evidence, discrepancies, possible causes and remaining uncertainty and keep possible motives tentative.

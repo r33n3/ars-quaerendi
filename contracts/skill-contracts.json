@@ -1,0 +1,518 @@
+[
+  {
+    "contract_version": "1.0",
+    "skill_id": "inquiry",
+    "activation": "A question, disputed claim or unexplained behavior needs investigation.",
+    "non_activation": "Answer a simple lookup directly when the available evidence settles the question.",
+    "inputs": {
+      "required": [
+        "A question or observation to investigate"
+      ],
+      "helpful": [
+        "Sources and earlier findings",
+        "Constraints and intended use",
+        "Available tools and resource limits"
+      ],
+      "missing_behavior": "Clarify a missing question. Use supplied sources when access is limited and identify which conclusions remain open."
+    },
+    "outputs": {
+      "evidence": [
+        "Source linked findings and competing explanations",
+        "Completed checks and their scope",
+        "Conflicting evidence and open questions"
+      ],
+      "records": [
+        "Claim linked evidence records",
+        "An investigation summary and proposed checks"
+      ]
+    },
+    "recommendations": [
+      "Accept a conclusion within stated limits",
+      "Run a useful next check",
+      "Narrow or defer the investigation"
+    ],
+    "authority": "Research, tool use and sharing follow existing user authorization. Changes to purpose, access or commitments remain with the user and host.",
+    "stopping": [
+      "The question is answered within the agreed scope",
+      "A required source or authorization is unavailable",
+      "The agreed budget ends"
+    ],
+    "consumers": [
+      "judgment",
+      "discovery",
+      "toolcraft",
+      "contribution"
+    ],
+    "failure_behavior": "Preserve useful partial findings and return an inconclusive or blocked result with the missing evidence and next useful check.",
+    "outcome_statuses": [
+      "resolved",
+      "provisional",
+      "inconclusive",
+      "blocked",
+      "stopped"
+    ],
+    "revision_triggers": [
+      "New sources or counterexamples",
+      "Changed scope or intended use"
+    ]
+  },
+  {
+    "contract_version": "1.0",
+    "skill_id": "purpose-planning",
+    "activation": "A purpose needs goals, an opportunity needs assessment or current work needs revision or further investment review.",
+    "non_activation": "Carry out a clear task through its existing plan when an additional goal review would add little value.",
+    "inputs": {
+      "required": [
+        "The purpose expressed in the request or governing user instructions",
+        "The decision or opportunity being considered"
+      ],
+      "helpful": [
+        "Current goals and commitments",
+        "Resources, constraints and permission records",
+        "Opportunity evidence and earlier results"
+      ],
+      "missing_behavior": "Clarify the purpose when it is missing. Mark uncertain evidence and authorization as unknown and limit the proposal accordingly."
+    },
+    "outputs": {
+      "evidence": [
+        "Evidence linking opportunities and proposed goals to the purpose",
+        "Assumptions, costs, risks and unresolved questions"
+      ],
+      "records": [
+        "Goal proposals or a reason to continue existing goals",
+        "Alternatives, resource limits and reconciliation plans"
+      ]
+    },
+    "recommendations": [
+      "Propose, defer or reject a candidate goal",
+      "Continue the existing goals",
+      "Review a justified capability improvement"
+    ],
+    "authority": "Goal and capability proposals remain recommendations. Existing user and host instructions control execution, resources, adaptation and changes to purpose or permissions.",
+    "stopping": [
+      "A goal recommendation is justified",
+      "Continuing existing goals is justified",
+      "Required authorization is unavailable or the review budget ends"
+    ],
+    "consumers": [
+      "toolcraft",
+      "judgment",
+      "inquiry",
+      "institutional-intelligence",
+      "contribution",
+      "discovery"
+    ],
+    "failure_behavior": "Return the supported comparison, gaps and outcome status. Preserve the current purpose and valid commitments while unresolved decisions remain open.",
+    "outcome_statuses": [
+      "resolved",
+      "provisional",
+      "inconclusive",
+      "blocked",
+      "stopped"
+    ],
+    "revision_triggers": [
+      "Changed user purpose or priorities",
+      "New opportunity evidence",
+      "Changed costs, resources or operating conditions"
+    ]
+  },
+  {
+    "contract_version": "1.0",
+    "skill_id": "toolcraft",
+    "activation": "A defined task needs a missing capability or a way to measure relevant behavior.",
+    "non_activation": "Use a suitable available tool directly when further capability analysis is unnecessary.",
+    "inputs": {
+      "required": [
+        "The operation or capability needed",
+        "Material and access permitted for the task"
+      ],
+      "helpful": [
+        "Existing tools and interfaces",
+        "Known samples and expected behavior",
+        "Resource limits and reuse needs"
+      ],
+      "missing_behavior": "Describe the needed capability and a plan when execution or samples are unavailable. Mark execution claims as unverified."
+    },
+    "outputs": {
+      "evidence": [
+        "Observed tool or probe behavior",
+        "Comparison with known samples and failure cases",
+        "Coverage, errors and remaining checks"
+      ],
+      "records": [
+        "A chosen capability approach and useful artifacts",
+        "Test records and a reuse or disposal recommendation"
+      ]
+    },
+    "recommendations": [
+      "Reuse, configure, combine, adapt or develop a limited helper",
+      "Narrow the task, seek access or stop development"
+    ],
+    "authority": "Tool execution and changes follow existing authorization. The user and host control installation, sharing, expanded access and deployment.",
+    "stopping": [
+      "The required capability is demonstrated within scope",
+      "A simpler existing approach is sufficient",
+      "Required access is unavailable or further work has unfavorable value"
+    ],
+    "consumers": [
+      "inquiry",
+      "judgment",
+      "reliability-by-construction",
+      "contribution"
+    ],
+    "failure_behavior": "Keep any useful results and report failed probes, unsupported parts and a practical next option.",
+    "outcome_statuses": [
+      "resolved",
+      "provisional",
+      "inconclusive",
+      "blocked",
+      "stopped"
+    ],
+    "revision_triggers": [
+      "Changed format or interface version",
+      "New failures or intended uses",
+      "Evidence that reuse or maintenance value has changed"
+    ]
+  },
+  {
+    "contract_version": "1.0",
+    "skill_id": "judgment",
+    "activation": "A claim, interpretation or proposed use needs assessment against evidence and consequences.",
+    "non_activation": "Report an already established result directly when a further readiness or evidence decision is unnecessary.",
+    "inputs": {
+      "required": [
+        "The claim or proposed decision"
+      ],
+      "helpful": [
+        "Evidence records and source references",
+        "Intended use, criteria and consequences",
+        "Earlier judgments and counterexamples"
+      ],
+      "missing_behavior": "Assess the supplied claim with explicit evidence gaps. Keep intended use or readiness unresolved when its criteria are missing."
+    },
+    "outputs": {
+      "evidence": [
+        "Checks supporting or challenging the claim",
+        "Verification gaps, scope and uncertainty",
+        "Basis for the assigned judgment level"
+      ],
+      "records": [
+        "A scoped assessment and recommendation",
+        "Open checks and evidence references"
+      ]
+    },
+    "recommendations": [
+      "Proceed within supported conditions",
+      "Limit use, revise or request evidence",
+      "Seek further review or stop"
+    ],
+    "authority": "Judgment assesses support and readiness. The user and host authorize deployment, commitments, access and execution.",
+    "stopping": [
+      "The evidence supports a scoped recommendation",
+      "An explicit gap makes the assessment inconclusive",
+      "The agreed review limit is reached"
+    ],
+    "consumers": [
+      "contribution",
+      "purpose-planning",
+      "reliability-by-construction"
+    ],
+    "failure_behavior": "Return an inconclusive or provisional assessment and identify the missing checks. Preserve contradictory evidence and useful supported findings.",
+    "outcome_statuses": [
+      "resolved",
+      "provisional",
+      "inconclusive",
+      "blocked",
+      "stopped"
+    ],
+    "revision_triggers": [
+      "New evidence or counterexamples",
+      "Changed intended use, risks or criteria",
+      "A verification method or source is corrected"
+    ]
+  },
+  {
+    "contract_version": "1.0",
+    "skill_id": "discovery",
+    "activation": "An unexpected observation, recurring pattern or promising lead needs explanation.",
+    "non_activation": "Record an ordinary observation directly when it raises no useful new question.",
+    "inputs": {
+      "required": [
+        "The observation and its available source"
+      ],
+      "helpful": [
+        "The prior expectation",
+        "Comparable records and context",
+        "Measurement controls and resource limits"
+      ],
+      "missing_behavior": "Record what was supplied and which expectation or context is missing. Keep possible patterns tentative."
+    },
+    "outputs": {
+      "evidence": [
+        "Source linked anomalies and supporting examples",
+        "Alternative explanations and instrument checks",
+        "Contradictions, limitations and open tests"
+      ],
+      "records": [
+        "A lead with its evidence and scope",
+        "A proposed distinguishing check or reason to archive the lead"
+      ]
+    },
+    "recommendations": [
+      "Investigate, explain, dismiss or retain a lead",
+      "Propose a further check within existing scope"
+    ],
+    "authority": "Leads and interpretations remain tied to evidence. The user controls goal changes and sharing; novelty claims require appropriate prior work checks.",
+    "stopping": [
+      "The observation is explained or dismissed",
+      "The lead is retained with clear uncertainty",
+      "Further checks require unavailable evidence, access or budget"
+    ],
+    "consumers": [
+      "inquiry",
+      "judgment",
+      "contribution"
+    ],
+    "failure_behavior": "Preserve the observation, alternative explanations and missing checks and keep conclusions limited to supporting evidence.",
+    "outcome_statuses": [
+      "resolved",
+      "provisional",
+      "inconclusive",
+      "blocked",
+      "stopped"
+    ],
+    "revision_triggers": [
+      "New comparable observations",
+      "Corrected instruments or context",
+      "Results of the proposed distinguishing check"
+    ]
+  },
+  {
+    "contract_version": "1.0",
+    "skill_id": "contribution",
+    "activation": "Completed, failed, stalled or redirected work contains results that may be useful to retain.",
+    "non_activation": "Keep the normal task record when a separate reuse or contribution review would add little value.",
+    "inputs": {
+      "required": [
+        "The work or outcome to review"
+      ],
+      "helpful": [
+        "Evidence and artifact references",
+        "Parent goal status and restrictions",
+        "Potential uses and actual reuse records"
+      ],
+      "missing_behavior": "Record candidate contributions as unverified when supporting evidence or artifacts are missing. Preserve any confirmed value."
+    },
+    "outputs": {
+      "evidence": [
+        "Support for each useful finding, method or component",
+        "Attribution, limitations and evidence of reuse",
+        "Unresolved parts of the parent outcome"
+      ],
+      "records": [
+        "A contribution record separate from the parent outcome",
+        "Retention and reuse recommendations with restrictions"
+      ]
+    },
+    "recommendations": [
+      "Discard, retain as a note, keep for the task or propose wider reuse",
+      "Test a possible transfer before claiming successful reuse"
+    ],
+    "authority": "Retention, publication, sharing and catalog changes follow existing user authorization. A useful component retains its own tested scope.",
+    "stopping": [
+      "Each candidate contribution has a documented disposition",
+      "Evidence is insufficient to establish a candidate value",
+      "The agreed review scope is complete"
+    ],
+    "consumers": [
+      "purpose-planning",
+      "toolcraft",
+      "inquiry"
+    ],
+    "failure_behavior": "Return supported contributions, uncertain candidates and missing records while keeping the parent outcome accurate.",
+    "outcome_statuses": [
+      "resolved",
+      "provisional",
+      "inconclusive",
+      "blocked",
+      "stopped"
+    ],
+    "revision_triggers": [
+      "New evidence of usefulness or limitations",
+      "Actual reuse succeeds or fails",
+      "Privacy, ownership or retention conditions change"
+    ]
+  },
+  {
+    "contract_version": "1.0",
+    "skill_id": "reliability-by-construction",
+    "activation": "A prototype is moving toward repeated use or a relevant failure exposes a design or recovery weakness.",
+    "non_activation": "Use ordinary prototype checks when a limited experiment has no justified need for a broader readiness review.",
+    "inputs": {
+      "required": [
+        "The intended behavior or use",
+        "The artifact or system under review"
+      ],
+      "helpful": [
+        "Operating conditions and permissions",
+        "Required properties, failure records and test material",
+        "Consequences, resource limits and recovery needs"
+      ],
+      "missing_behavior": "Describe the required behavior and proposed checks. Keep readiness provisional when system details or execution evidence are missing."
+    },
+    "outputs": {
+      "evidence": [
+        "Results of relevant functional and failure checks",
+        "Recovery and containment observations",
+        "Sample sizes, coverage and unresolved risks"
+      ],
+      "records": [
+        "A readiness recommendation for a defined use",
+        "Design controls, evidence gaps and next improvements"
+      ]
+    },
+    "recommendations": [
+      "Proceed within tested limits",
+      "Revise a control, run a targeted check or limit use",
+      "Defer qualification or stop the review"
+    ],
+    "authority": "Readiness applies to the stated version, setting and use. The user and host control deployment and changes to authority.",
+    "stopping": [
+      "Evidence is sufficient for the intended stage",
+      "A specific gap prevents qualification",
+      "Required access or the agreed testing budget is exhausted"
+    ],
+    "consumers": [
+      "judgment",
+      "toolcraft",
+      "performance-metric-integrity"
+    ],
+    "failure_behavior": "Report the specific missing control or evidence, preserve prototype results and identify a useful revision or restriction.",
+    "outcome_statuses": [
+      "resolved",
+      "provisional",
+      "inconclusive",
+      "blocked",
+      "stopped"
+    ],
+    "revision_triggers": [
+      "Changed version, setting or permissions",
+      "New failures or corrected tests",
+      "A broader or more consequential intended use"
+    ]
+  },
+  {
+    "contract_version": "1.0",
+    "skill_id": "performance-metric-integrity",
+    "activation": "A material measure, trend, reported achievement or proposed improvement needs verification.",
+    "non_activation": "Provide a straightforward calculation directly when its definition and source records are already clear.",
+    "inputs": {
+      "required": [
+        "The measure, report or outcome being assessed"
+      ],
+      "helpful": [
+        "Definitions and counting rules",
+        "Source records, periods and comparable groups",
+        "Earlier versions, exclusions and intended decision"
+      ],
+      "missing_behavior": "State the missing definition or records. Explain which parts can be assessed and which calculations or comparisons remain unresolved."
+    },
+    "outputs": {
+      "evidence": [
+        "Recalculated counts and results",
+        "Definition changes, exclusions and source gaps",
+        "Related outcomes and limits on comparisons"
+      ],
+      "records": [
+        "A reconciled or explicitly unresolved report",
+        "Options for improvement and further verification"
+      ]
+    },
+    "recommendations": [
+      "Use a verified measure within its scope",
+      "Correct a report or collect missing records",
+      "Test an improvement or defer a decision"
+    ],
+    "authority": "Source records and scoring policies remain under existing authorization. Recommendations identify corrections and uncertainty; formal commitments and publication follow user and host controls.",
+    "stopping": [
+      "The reported result is reconciled",
+      "A specific source or definition gap remains documented",
+      "The agreed review limit is reached"
+    ],
+    "consumers": [
+      "judgment",
+      "purpose-planning",
+      "institutional-intelligence"
+    ],
+    "failure_behavior": "Return the calculation evidence, discrepancies, possible causes and remaining uncertainty and keep possible motives tentative.",
+    "outcome_statuses": [
+      "resolved",
+      "provisional",
+      "inconclusive",
+      "blocked",
+      "stopped"
+    ],
+    "revision_triggers": [
+      "New source records or corrected counts",
+      "Changed definitions, periods or task mix",
+      "Evidence about the effects of an improvement"
+    ]
+  },
+  {
+    "contract_version": "1.0",
+    "skill_id": "institutional-intelligence",
+    "activation": "A consequential offer, disputed claim, negotiation, competing interest or outside pressure needs assessment.",
+    "non_activation": "Handle ordinary cooperation or a clear request directly when a separate incentives or claims review would add little value.",
+    "inputs": {
+      "required": [
+        "The offer, claim or interaction to assess"
+      ],
+      "helpful": [
+        "The user's decision context and existing permissions",
+        "Participants, evidence and alternatives",
+        "Commitments, resource limits and earlier exchanges"
+      ],
+      "missing_behavior": "Describe the supplied interaction and missing context. Keep interpretations tentative and limit recommendations to the supported facts."
+    },
+    "outputs": {
+      "evidence": [
+        "Supported observations and disputed claims",
+        "Alternative explanations and source independence",
+        "Costs, dependencies, promise conditions and uncertainty"
+      ],
+      "records": [
+        "Response options tied to the user purpose",
+        "Questions, authorization needs and review conditions"
+      ]
+    },
+    "recommendations": [
+      "Clarify, correct, substantiate or negotiate",
+      "Propose a limited trial, defer, decline or end discussion",
+      "Seek further review for a consequential uncertainty"
+    ],
+    "authority": "Payments, commitments, data access and changes to goals follow existing authorization. The user and host control actions beyond the current scope.",
+    "stopping": [
+      "The response options and their limits are clear",
+      "The remaining choice belongs to the user",
+      "The review budget or required access is exhausted"
+    ],
+    "consumers": [
+      "judgment",
+      "purpose-planning",
+      "contribution"
+    ],
+    "failure_behavior": "Return supported observations, unresolved claims and a proportionate next question while preserving the user purpose and authorization.",
+    "outcome_statuses": [
+      "resolved",
+      "provisional",
+      "inconclusive",
+      "blocked",
+      "stopped"
+    ],
+    "revision_triggers": [
+      "New evidence or a corrected claim",
+      "Changed terms, promises or dependencies",
+      "Changed purpose, permissions or decision context"
+    ]
+  }
+]

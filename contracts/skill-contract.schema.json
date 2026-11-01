@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "contract_version": {
+      "const": "1.0"
+    },
+    "skill_id": {
+      "enum": [
+        "inquiry",
+        "purpose-planning",
+        "toolcraft",
+        "judgment",
+        "discovery",
+        "contribution",
+        "reliability-by-construction",
+        "performance-metric-integrity",
+        "institutional-intelligence"
+      ]
+    },
+    "activation": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "non_activation": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "required": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "helpful": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "missing_behavior": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "required",
+        "helpful",
+        "missing_behavior"
+      ],
+      "additionalProperties": false
+    },
+    "outputs": {
+      "type": "object",
+      "properties": {
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "evidence",
+        "records"
+      ],
+      "additionalProperties": false
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "authority": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "stopping": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "consumers": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "inquiry",
+          "purpose-planning",
+          "toolcraft",
+          "judgment",
+          "discovery",
+          "contribution",
+          "reliability-by-construction",
+          "performance-metric-integrity",
+          "institutional-intelligence"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "failure_behavior": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "outcome_statuses": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "resolved",
+          "provisional",
+          "inconclusive",
+          "blocked",
+          "stopped"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "revision_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "contract_version",
+    "skill_id",
+    "activation",
+    "non_activation",
+    "inputs",
+    "outputs",
+    "recommendations",
+    "authority",
+    "stopping",
+    "consumers",
+    "failure_behavior",
+    "outcome_statuses",
+    "revision_triggers"
+  ],
+  "additionalProperties": false
+}

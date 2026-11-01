@@ -72,3 +72,22 @@ See [purpose and goal review](../../references/purpose-to-action.md), the [worke
 ## Example request
 
 Replan this project after the supplier delay. Compare continuing the current goals with a revised outcome or a limited capability improvement. State the evidence, alternatives, resource limits and authorization needed.
+
+## Method contract
+
+This section matches the [shared contract registry](../../contracts/skill-contracts.json). See [evidence and handoff rules](../../references/evidence-handoff-rules.md) when another skill needs the result.
+
+* **Activation:** A purpose needs goals, an opportunity needs assessment or current work needs revision or further investment review.
+* **Routine handling:** Carry out a clear task through its existing plan when an additional goal review would add little value.
+* **Required inputs:** The purpose expressed in the request or governing user instructions; The decision or opportunity being considered.
+* **Helpful context:** Current goals and commitments; Resources, constraints and permission records; Opportunity evidence and earlier results.
+* **Missing inputs:** Clarify the purpose when it is missing. Mark uncertain evidence and authorization as unknown and limit the proposal accordingly.
+* **Evidence produced:** Evidence linking opportunities and proposed goals to the purpose; Assumptions, costs, risks and unresolved questions.
+* **Records produced:** Goal proposals or a reason to continue existing goals; Alternatives, resource limits and reconciliation plans.
+* **Recommendations:** Propose, defer or reject a candidate goal; Continue the existing goals; Review a justified capability improvement.
+* **Authority:** Goal and capability proposals remain recommendations. Existing user and host instructions control execution, resources, adaptation and changes to purpose or permissions.
+* **Stop when:** A goal recommendation is justified; Continuing existing goals is justified; Required authorization is unavailable or the review budget ends.
+* **Outcome status:** `resolved`, `provisional`, `inconclusive`, `blocked`, `stopped`.
+* **Reopen when:** Changed user purpose or priorities; New opportunity evidence; Changed costs, resources or operating conditions.
+* **Possible consumers:** `toolcraft`, `judgment`, `inquiry`, `institutional-intelligence`, `contribution`, `discovery`.
+* **Failure handling:** Return the supported comparison, gaps and outcome status. Preserve the current purpose and valid commitments while unresolved decisions remain open.

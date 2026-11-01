@@ -1,0 +1,266 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "handoff_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "from_skill": {
+      "enum": [
+        "inquiry",
+        "purpose-planning",
+        "toolcraft",
+        "judgment",
+        "discovery",
+        "contribution",
+        "reliability-by-construction",
+        "performance-metric-integrity",
+        "institutional-intelligence"
+      ]
+    },
+    "to_skill": {
+      "enum": [
+        "inquiry",
+        "purpose-planning",
+        "toolcraft",
+        "judgment",
+        "discovery",
+        "contribution",
+        "reliability-by-construction",
+        "performance-metric-integrity",
+        "institutional-intelligence"
+      ]
+    },
+    "claim_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "evidence_refs": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
+    },
+    "evidence_hashes": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "scope": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "population": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "coverage": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "population",
+          "coverage",
+          "conditions"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "uncertainty": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "open_questions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "limitations",
+          "open_questions"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "decision": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "authority": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "judgment_level": {
+      "enum": [
+        "J0",
+        "J1",
+        "J2",
+        "J3",
+        "J4"
+      ]
+    },
+    "assessment_basis": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "verification_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "qualification_ref": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "change_basis": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "parent_outcome": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "outcome_status": {
+      "enum": [
+        "resolved",
+        "provisional",
+        "inconclusive",
+        "blocked",
+        "stopped"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "handoff_id",
+    "from_skill",
+    "to_skill",
+    "claim_id",
+    "evidence_ids",
+    "evidence_refs",
+    "evidence_hashes",
+    "scope",
+    "uncertainty",
+    "decision",
+    "authority",
+    "outcome_status"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "required": [
+          "judgment_level"
+        ]
+      },
+      "then": {
+        "required": [
+          "assessment_basis"
+        ]
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "judgment_level"
+        ],
+        "properties": {
+          "judgment_level": {
+            "enum": [
+              "J3",
+              "J4"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "verification_evidence_ids"
+        ]
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "judgment_level"
+        ],
+        "properties": {
+          "judgment_level": {
+            "const": "J4"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "qualification_ref"
+        ]
+      }
+    }
+  ]
+}

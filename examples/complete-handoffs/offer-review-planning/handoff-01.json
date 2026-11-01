@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "handoff_id": "offer-review-planning_1",
+  "from_skill": "institutional-intelligence",
+  "to_skill": "judgment",
+  "claim_id": "CL-PAYMENT001",
+  "evidence_ids": [
+    "EV-OFFER001"
+  ],
+  "evidence_refs": {
+    "EV-OFFER001": "evidence.json"
+  },
+  "evidence_hashes": {
+    "EV-OFFER001": "bb4a8470a418d4f4ee5add8611f1fb0dcbc28f98fb1861d8679874b3709cda61"
+  },
+  "scope": {
+    "EV-OFFER001": {
+      "population": "One invented collaborator offer",
+      "coverage": "The supplied message text",
+      "conditions": [
+        "Identity, payment capacity and permission records have yet to be verified"
+      ]
+    }
+  },
+  "uncertainty": {
+    "EV-OFFER001": {
+      "limitations": [
+        "The message provides a promise and a request",
+        "Payment and authorization records are unavailable"
+      ],
+      "open_questions": [
+        "Can the collaborator deliver payment?",
+        "What terms and current authorization apply?"
+      ]
+    }
+  },
+  "decision": "Assess support for the conditional payment promise",
+  "authority": "A recommendation for review. Actual actions follow existing user and host authorization.",
+  "parent_outcome": "A decision about accepting the offer remains open for the user.",
+  "outcome_status": "provisional"
+}

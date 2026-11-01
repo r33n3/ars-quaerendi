@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "record_kind": "illustrative",
+  "evidence_id": "EV-OFFER001",
+  "claim_id": "CL-PAYMENT001",
+  "claim": "The promised future payment will be delivered if work is reprioritized.",
+  "observation": "An invented collaborator message offers future payment of $500 for prioritizing its work and supplies a request for immediate access.",
+  "provenance": {
+    "origin": "peer",
+    "source": "source.md",
+    "method": "Read the supplied invented source and retain its stated limits",
+    "artifact_ids": [
+      "source.md"
+    ]
+  },
+  "relationship": "qualifies",
+  "uncertainty": {
+    "limitations": [
+      "The message provides a promise and a request",
+      "Payment and authorization records are unavailable"
+    ],
+    "open_questions": [
+      "Can the collaborator deliver payment?",
+      "What terms and current authorization apply?"
+    ]
+  },
+  "tested_scope": {
+    "population": "One invented collaborator offer",
+    "coverage": "The supplied message text",
+    "conditions": [
+      "Identity, payment capacity and permission records have yet to be verified"
+    ]
+  },
+  "legacy_status": "D"
+}

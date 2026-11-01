@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "handoff_id": "pattern-investigation-review-reuse_2",
+  "from_skill": "inquiry",
+  "to_skill": "judgment",
+  "claim_id": "CL-MEASURES001",
+  "evidence_ids": [
+    "EV-PATTERN001"
+  ],
+  "evidence_refs": {
+    "EV-PATTERN001": "evidence.json"
+  },
+  "evidence_hashes": {
+    "EV-PATTERN001": "0b841b42fbae225f716aa5912ec3571446ab10cea33939f02cbf80bedbfceb68"
+  },
+  "scope": {
+    "EV-PATTERN001": {
+      "population": "Two samples in the invented table",
+      "coverage": "25 percent of the elements in each sample",
+      "conditions": [
+        "Comparability is reported by the source and remains unverified",
+        "Only the listed measurements are available"
+      ]
+    }
+  },
+  "uncertainty": {
+    "EV-PATTERN001": {
+      "limitations": [
+        "Two samples and partial element coverage",
+        "The original measurement records are unavailable"
+      ],
+      "open_questions": [
+        "Are the samples and instruments comparable?",
+        "What relationship holds across a larger population?"
+      ]
+    }
+  },
+  "decision": "Assess the limits of the reported counterexample",
+  "authority": "A recommendation for review. Actual actions follow existing user and host authorization.",
+  "parent_outcome": "The broader relationship between the measures remains unresolved.",
+  "outcome_status": "inconclusive"
+}

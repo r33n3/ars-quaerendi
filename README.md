@@ -1,4 +1,4 @@
-# Ars Quaerendi Agent Meta Skills v2.6
+# Ars Quaerendi Agent Meta Skills v2.7
 
 A package of nine agent meta skills for investigating questions, planning work, assessing evidence, improving tools, reviewing performance and understanding negotiations or disagreements. An agent or several agents can use each skill to carry out a defined part of a task using the material and tools available in the session.
 
@@ -24,6 +24,16 @@ The categories describe a skill's main role. Both kinds can be reused across pro
 Inquiry, Purpose Planning, Judgment, Discovery and Contribution provide general meta skills. Toolcraft, Reliability by Construction, Performance and Metric Integrity, and Institutional Intelligence focus those methods on particular areas of work.
 
 See [how meta skills work with task skills](docs/meta-skills.md) for examples and a guide to reviewing the distinction.
+
+## Method contracts and evidence handoffs
+
+Each of the nine meta skills declares when it is useful, its minimum inputs and helpful context, evidence and records it produces, recommendations it can make, authority boundaries, stopping conditions, possible consumers and failure handling. The contract also records outcome states and reasons to reopen an assessment.
+
+The [contract registry](contracts/skill-contracts.json) is the source for matching sections in each skill file. See [method contracts](docs/method-contracts.md) for the field definitions and update process.
+
+Shared evidence records separate provenance, the relationship to a claim, uncertainty and tested scope. Handoffs carry stable identifiers, record references, content hashes and scope and uncertainty snapshots. Agents preserve earlier findings and limits when another skill uses the result.
+
+See the [complete handoff walkthroughs](examples/complete-handoffs/README.md) for research and reuse, offer review and planning, and investigation of an unexpected pattern. The walkthroughs use invented source records and leave their verification limits explicit. The [handoff rules](references/evidence-handoff-rules.md) describe the checks and judgment requirements.
 
 ## Skill names and selection
 
@@ -168,7 +178,13 @@ Run `python3 tests/validate.py` to check package structure, JSON syntax and sche
 
 Run `python3 tests/test_goal_proposals.py` for the goal record checks. These cover proposed goals, unchanged goals, evidence references, resource limits and authorization fields.
 
+Run `python3 tests/validate_v27.py` to check contract synchronization, shared evidence schemas and bundled handoff records. Run `python3 tests/test_interoperability.py` for altered records, missing evidence, scope changes and unsupported verification upgrades. Full schema validation uses the optional `jsonschema` library.
+
 Use the scenarios in `tests/acceptance.md` to evaluate behavior against an unmodified agent with matched tools and budgets. Record observed results and overhead.
+
+## Changes in v2.7
+
+Added contracts for all nine meta skills, a shared evidence schema and a handoff schema. Added three complete illustrative walkthroughs with seven handoffs. The checks now compare contract text with the JSON registry and verify references, hashes, scope, uncertainty, consumers, authority context and judgment requirements. The earlier research record schema remains available for existing records.
 
 ## Changes in v2.6
 

@@ -38,3 +38,22 @@ See `references/` in the package for extended methods.
 Review these failure records for recurring conditions around the timeouts. Link each pattern to records and propose checks that distinguish possible causes.
 
 For analysis of meeting comments, commitments and recurring behaviors, see [meeting notes](../../docs/meeting-notes.md).
+
+## Method contract
+
+This section matches the [shared contract registry](../../contracts/skill-contracts.json). See [evidence and handoff rules](../../references/evidence-handoff-rules.md) when another skill needs the result.
+
+* **Activation:** An unexpected observation, recurring pattern or promising lead needs explanation.
+* **Routine handling:** Record an ordinary observation directly when it raises no useful new question.
+* **Required inputs:** The observation and its available source.
+* **Helpful context:** The prior expectation; Comparable records and context; Measurement controls and resource limits.
+* **Missing inputs:** Record what was supplied and which expectation or context is missing. Keep possible patterns tentative.
+* **Evidence produced:** Source linked anomalies and supporting examples; Alternative explanations and instrument checks; Contradictions, limitations and open tests.
+* **Records produced:** A lead with its evidence and scope; A proposed distinguishing check or reason to archive the lead.
+* **Recommendations:** Investigate, explain, dismiss or retain a lead; Propose a further check within existing scope.
+* **Authority:** Leads and interpretations remain tied to evidence. The user controls goal changes and sharing; novelty claims require appropriate prior work checks.
+* **Stop when:** The observation is explained or dismissed; The lead is retained with clear uncertainty; Further checks require unavailable evidence, access or budget.
+* **Outcome status:** `resolved`, `provisional`, `inconclusive`, `blocked`, `stopped`.
+* **Reopen when:** New comparable observations; Corrected instruments or context; Results of the proposed distinguishing check.
+* **Possible consumers:** `inquiry`, `judgment`, `contribution`.
+* **Failure handling:** Preserve the observation, alternative explanations and missing checks and keep conclusions limited to supporting evidence.

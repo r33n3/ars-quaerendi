@@ -42,3 +42,22 @@ When a significant result or research challenge needs explanation, compare the a
 Review this proposed release using the test results and known limits. State which uses the evidence supports and which checks remain open.
 
 For analysis of meeting comments, commitments and recurring behaviors, see [meeting notes](../../docs/meeting-notes.md).
+
+## Method contract
+
+This section matches the [shared contract registry](../../contracts/skill-contracts.json). See [evidence and handoff rules](../../references/evidence-handoff-rules.md) when another skill needs the result.
+
+* **Activation:** A claim, interpretation or proposed use needs assessment against evidence and consequences.
+* **Routine handling:** Report an already established result directly when a further readiness or evidence decision is unnecessary.
+* **Required inputs:** The claim or proposed decision.
+* **Helpful context:** Evidence records and source references; Intended use, criteria and consequences; Earlier judgments and counterexamples.
+* **Missing inputs:** Assess the supplied claim with explicit evidence gaps. Keep intended use or readiness unresolved when its criteria are missing.
+* **Evidence produced:** Checks supporting or challenging the claim; Verification gaps, scope and uncertainty; Basis for the assigned judgment level.
+* **Records produced:** A scoped assessment and recommendation; Open checks and evidence references.
+* **Recommendations:** Proceed within supported conditions; Limit use, revise or request evidence; Seek further review or stop.
+* **Authority:** Judgment assesses support and readiness. The user and host authorize deployment, commitments, access and execution.
+* **Stop when:** The evidence supports a scoped recommendation; An explicit gap makes the assessment inconclusive; The agreed review limit is reached.
+* **Outcome status:** `resolved`, `provisional`, `inconclusive`, `blocked`, `stopped`.
+* **Reopen when:** New evidence or counterexamples; Changed intended use, risks or criteria; A verification method or source is corrected.
+* **Possible consumers:** `contribution`, `purpose-planning`, `reliability-by-construction`.
+* **Failure handling:** Return an inconclusive or provisional assessment and identify the missing checks. Preserve contradictory evidence and useful supported findings.

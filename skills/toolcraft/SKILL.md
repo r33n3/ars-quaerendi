@@ -40,3 +40,22 @@ For an authorized research challenge, choose a small instrument that can disting
 ## Example request
 
 Find a way to read this unfamiliar data export. Check existing parsers first, test the approach on the supplied sample and record unsupported parts.
+
+## Method contract
+
+This section matches the [shared contract registry](../../contracts/skill-contracts.json). See [evidence and handoff rules](../../references/evidence-handoff-rules.md) when another skill needs the result.
+
+* **Activation:** A defined task needs a missing capability or a way to measure relevant behavior.
+* **Routine handling:** Use a suitable available tool directly when further capability analysis is unnecessary.
+* **Required inputs:** The operation or capability needed; Material and access permitted for the task.
+* **Helpful context:** Existing tools and interfaces; Known samples and expected behavior; Resource limits and reuse needs.
+* **Missing inputs:** Describe the needed capability and a plan when execution or samples are unavailable. Mark execution claims as unverified.
+* **Evidence produced:** Observed tool or probe behavior; Comparison with known samples and failure cases; Coverage, errors and remaining checks.
+* **Records produced:** A chosen capability approach and useful artifacts; Test records and a reuse or disposal recommendation.
+* **Recommendations:** Reuse, configure, combine, adapt or develop a limited helper; Narrow the task, seek access or stop development.
+* **Authority:** Tool execution and changes follow existing authorization. The user and host control installation, sharing, expanded access and deployment.
+* **Stop when:** The required capability is demonstrated within scope; A simpler existing approach is sufficient; Required access is unavailable or further work has unfavorable value.
+* **Outcome status:** `resolved`, `provisional`, `inconclusive`, `blocked`, `stopped`.
+* **Reopen when:** Changed format or interface version; New failures or intended uses; Evidence that reuse or maintenance value has changed.
+* **Possible consumers:** `inquiry`, `judgment`, `reliability-by-construction`, `contribution`.
+* **Failure handling:** Keep any useful results and report failed probes, unsupported parts and a practical next option.
