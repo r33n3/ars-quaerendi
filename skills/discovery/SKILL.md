@@ -57,3 +57,8 @@ This section matches the [shared contract registry](../../contracts/skill-contra
 * **Reopen when:** New comparable observations; Corrected instruments or context; Results of the proposed distinguishing check.
 * **Possible consumers:** `inquiry`, `judgment`, `contribution`.
 * **Failure handling:** Preserve the observation, alternative explanations and missing checks and keep conclusions limited to supporting evidence.
+* **Optional methods:** `optional-archetypal-lenses`.
+
+## Optional reasoning lenses
+
+When the user requests them or an approved evaluation includes them, agents can use [reasoning lenses](../../references/archetypal-reasoning.md) to generate candidate perspectives and falsifiers. Preserve the user's purpose, evidence requirements and stopping rules. One agent can apply the functions sequentially. Creating separate agents follows the user's and host's actual authorization. Treat the labels' benefit as unmeasured until evaluated.

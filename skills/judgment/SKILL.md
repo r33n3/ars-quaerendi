@@ -61,3 +61,8 @@ This section matches the [shared contract registry](../../contracts/skill-contra
 * **Reopen when:** New evidence or counterexamples; Changed intended use, risks or criteria; A verification method or source is corrected.
 * **Possible consumers:** `contribution`, `purpose-planning`, `reliability-by-construction`.
 * **Failure handling:** Return an inconclusive or provisional assessment and identify the missing checks. Preserve contradictory evidence and useful supported findings.
+* **Optional methods:** `epistemic-boundary-awareness`.
+
+## Optional evidence boundary review
+
+Agents can use [evidence boundaries](../../references/epistemic-boundaries.md) when a claim extends beyond measured conditions or a model reaches its limits. Record the observed domain, proposed transfer, alternatives and uncertainty. Distinguish thought experiments, simulation results, software tests and physical observations. Assess verification within the domain actually tested. Return a scoped conclusion, a next test or an underdetermined result.

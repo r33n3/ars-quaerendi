@@ -52,6 +52,8 @@ def render_contract(contract):
         ("Possible consumers", ", ".join(f"`{item}`" for item in contract["consumers"]) + "."),
         ("Failure handling", contract["failure_behavior"]),
     ]
+    if contract.get("optional_methods"):
+        rows.append(("Optional methods", ", ".join(f"`{item}`" for item in contract["optional_methods"]) + "."))
     heading = "## Method contract\n\n"
     reference = (
         "This section matches the [shared contract registry](../../contracts/skill-contracts.json). "
@@ -105,6 +107,30 @@ def make_validators(root):
     return validators
 
 
+def validate_method_extensions(root, contracts):
+    index = load_json(root / "contracts/v28-method-extensions.json")
+    require(set(index) == {"version", "optional_methods", "method_references", "experimental_opt_in_methods", "global_invariants"}, "Unexpected optional method index fields")
+    require(index["version"] == "2.8", "Unknown optional method index version")
+    methods = index["optional_methods"]
+    require(isinstance(methods, dict) and set(methods) <= set(contracts), "Unknown optional method owner")
+    identifiers = []
+    for skill, contract in contracts.items():
+        owned = methods.get(skill, [])
+        require(isinstance(owned, list) and all(isinstance(item, str) and item.strip() for item in owned), "Invalid optional method identifiers")
+        require(contract.get("optional_methods", []) == owned, "Optional methods differ from the contract registry")
+        identifiers.extend(owned)
+    require(len(identifiers) == len(set(identifiers)), "Optional method identifier reused")
+    require(set(index["method_references"]) == set(identifiers), "Optional method references differ from identifiers")
+    for reference in index["method_references"].values():
+        local_reference(root, reference, root)
+    opt_in = index["experimental_opt_in_methods"]
+    require(isinstance(opt_in, list) and len(opt_in) == len(set(opt_in)), "Invalid experimental selection list")
+    require(set(opt_in) == {"optional-archetypal-lenses", "evidence-linked-narrative-representation"}, "Experimental lens and narrative methods require explicit selection")
+    require(set(opt_in) <= set(identifiers), "Unknown experimental method")
+    invariants = index["global_invariants"]
+    require(isinstance(invariants, list) and bool(invariants) and all(isinstance(item, str) and item.strip() for item in invariants), "Missing method invariants")
+
+
 def validate_chain(directory, contracts, validators, root=ROOT, registry=None):
     registry = {} if registry is None else registry
     files = sorted(directory.glob("handoff-*.json"))
@@ -116,6 +142,8 @@ def validate_chain(directory, contracts, validators, root=ROOT, registry=None):
         handoff = load_json(path)
         if validators:
             validators["handoff"].validate(handoff)
+        for reference in handoff.get("related_artifacts", []):
+            local_reference(path.parent, reference, root)
         require(handoff["handoff_id"] not in handoff_ids, "Duplicate handoff identifier")
         handoff_ids.add(handoff["handoff_id"])
         source = handoff["from_skill"]
@@ -150,6 +178,7 @@ def validate_chain(directory, contracts, validators, root=ROOT, registry=None):
             require(previous["to_skill"] == source, "Handoff chain is disconnected")
             require(previous["claim_id"] == handoff["claim_id"], "Claim changed within the chain")
             require(previous["authority"] == handoff["authority"], "Authority context changed within the chain")
+            require(previous.get("decision_domain") == handoff.get("decision_domain"), "Decision domain changed within the chain")
             previous_ids = set(previous["evidence_ids"])
             require(previous_ids <= expected_ids, "Earlier evidence was removed from the handoff")
             new_ids = expected_ids - previous_ids
@@ -172,6 +201,9 @@ def validate_chain(directory, contracts, validators, root=ROOT, registry=None):
                 record = records[evidence_id]
                 require(record["record_kind"] == "operational", "Illustrative records cannot establish actual verification")
                 require(record["provenance"]["origin"] in ("direct", "independent_reproduction"), "Reported material cannot establish direct verification")
+                domain = record["tested_scope"].get("domain")
+                require(domain in ("real_world", "software", "simulation"), "Verification requires an explicit observed domain")
+                require(domain == handoff.get("decision_domain"), "Verification evidence is outside the decision domain")
         if level == "J4":
             local_reference(path.parent, handoff["qualification_ref"], root)
         previous_level = level
@@ -191,6 +223,7 @@ def validate_package(root=ROOT, sync_contracts=False):
             validators["contract"].validate(contract)
         require(set(contract["consumers"]) <= names, "Unknown contract consumer")
         render_contract(contract)
+    validate_method_extensions(root, contracts)
     for contract in items:
         path = root / "skills" / contract["skill_id"] / "SKILL.md"
         if sync_contracts:
@@ -201,7 +234,8 @@ def validate_package(root=ROOT, sync_contracts=False):
     seen_handoffs = set()
     count = 0
     directories = sorted(path for path in (root / "examples/complete-handoffs").iterdir() if path.is_dir())
-    require(len(directories) == 3, "Expected three bundled handoff walkthroughs")
+    expected = {"research-review-reuse", "offer-review-planning", "pattern-investigation-review-reuse", "model-experiment-review-reuse"}
+    require(expected <= {path.name for path in directories}, "Missing bundled handoff walkthrough")
     for directory in directories:
         size, identifiers = validate_chain(directory, contracts, validators, root, registry)
         require(not seen_handoffs.intersection(identifiers), "Handoff identifier reused across walkthroughs")

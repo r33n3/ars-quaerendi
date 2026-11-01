@@ -1,4 +1,4 @@
-# Ars Quaerendi Agent Meta Skills v2.7
+# Ars Quaerendi Agent Meta Skills v2.8
 
 A package of nine agent meta skills for investigating questions, planning work, assessing evidence, improving tools, reviewing performance and understanding negotiations or disagreements. An agent or several agents can use each skill to carry out a defined part of a task using the material and tools available in the session.
 
@@ -33,7 +33,17 @@ The [contract registry](contracts/skill-contracts.json) is the source for matchi
 
 Shared evidence records separate provenance, the relationship to a claim, uncertainty and tested scope. Handoffs carry stable identifiers, record references, content hashes and scope and uncertainty snapshots. Agents preserve earlier findings and limits when another skill uses the result.
 
-See the [complete handoff walkthroughs](examples/complete-handoffs/README.md) for research and reuse, offer review and planning, and investigation of an unexpected pattern. The walkthroughs use invented source records and leave their verification limits explicit. The [handoff rules](references/evidence-handoff-rules.md) describe the checks and judgment requirements.
+See the [complete handoff walkthroughs](examples/complete-handoffs/README.md) for research and reuse, offer review and planning, investigation of an unexpected pattern, and a proposed experiment. The walkthroughs use invented source records and leave their verification limits explicit. The [handoff rules](references/evidence-handoff-rules.md) describe the checks and judgment requirements.
+
+## Optional models, experiments and evidence boundaries
+
+Agents can use Inquiry to form competing explanatory models, Toolcraft to design discriminating tests and Judgment to assess where the evidence applies. These methods help with unfamiliar software behavior, scientific questions and other tasks where several explanations remain possible. Select them when they help answer the current question.
+
+See [model formation](references/scientific-model-formation.md), [experimental environments](references/experimental-environment-synthesis.md) and [evidence boundaries](references/epistemic-boundaries.md). The [conversion example](examples/frontier-model-handoff.md) keeps a proposed test separate from its documentary input evidence and unresolved causal claim.
+
+[Reasoning lenses and narrative summaries](references/archetypal-reasoning.md) are experimental options requiring a user request or an approved evaluation that includes them. Their benefit remains unmeasured. The labels describe reasoning and presentation functions. One agent can use them within the current task and permissions. The [method index](contracts/v28-method-extensions.json) maps these optional methods to the existing skills and references.
+
+The package still contains nine meta skills. These additions provide methods and record conventions. The user and host supply execution, tools and authorization.
 
 ## Skill names and selection
 
@@ -180,7 +190,13 @@ Run `python3 tests/test_goal_proposals.py` for the goal record checks. These cov
 
 Run `python3 tests/validate_v27.py` to check contract synchronization, shared evidence schemas and bundled handoff records. Run `python3 tests/test_interoperability.py` for altered records, missing evidence, scope changes and unsupported verification upgrades. Full schema validation uses the optional `jsonschema` library.
 
+Run `python3 tests/test_experimental_methods.py` for evidence domains and optional method checks. The scenarios in `tests/v28-experimental-scenarios.md` cover host behavior for the new methods.
+
 Use the scenarios in `tests/acceptance.md` to evaluate behavior against an unmodified agent with matched tools and budgets. Record observed results and overhead.
+
+## Changes in v2.8
+
+Added optional model formation, experiment design, evidence boundary review and requested reasoning lenses or narrative summaries. Added a fourth illustrative walkthrough that keeps a proposed experiment separate from observed evidence. Evidence and handoff schema version 1.1 records the evidence domain and intended decision domain. Existing version 1.0 records remain readable; verification requires an explicit domain. Added checks for domain transfer and optional method references.
 
 ## Changes in v2.7
 

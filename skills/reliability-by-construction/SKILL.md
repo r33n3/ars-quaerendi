@@ -40,7 +40,7 @@ Choose methods that fit the tools and access available in the current session. W
 ## Output
 Report the operating conditions, required behavior, possible failures, test results, coverage and remaining risks. State whether the system is ready for the intended use and identify the next useful improvement.
 
-For extended promotion guidance, see [factory-and-reliability.md](../../references/factory-and-reliability.md) in the full package. Keep this reference available if installing the skill separately.
+For extended promotion guidance, see [factory and reliability guidance](../../references/factory-and-reliability.md) in the full package. Keep this reference available if installing the skill separately.
 
 ## Example request
 

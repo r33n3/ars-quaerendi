@@ -54,6 +54,10 @@
     "revision_triggers": [
       "New sources or counterexamples",
       "Changed scope or intended use"
+    ],
+    "optional_methods": [
+      "scientific-model-formation",
+      "epistemic-boundary-exploration"
     ]
   },
   {
@@ -172,6 +176,9 @@
       "Changed format or interface version",
       "New failures or intended uses",
       "Evidence that reuse or maintenance value has changed"
+    ],
+    "optional_methods": [
+      "experimental-environment-synthesis"
     ]
   },
   {
@@ -229,6 +236,9 @@
       "New evidence or counterexamples",
       "Changed intended use, risks or criteria",
       "A verification method or source is corrected"
+    ],
+    "optional_methods": [
+      "epistemic-boundary-awareness"
     ]
   },
   {
@@ -285,6 +295,9 @@
       "New comparable observations",
       "Corrected instruments or context",
       "Results of the proposed distinguishing check"
+    ],
+    "optional_methods": [
+      "optional-archetypal-lenses"
     ]
   },
   {
@@ -341,6 +354,9 @@
       "New evidence of usefulness or limitations",
       "Actual reuse succeeds or fails",
       "Privacy, ownership or retention conditions change"
+    ],
+    "optional_methods": [
+      "evidence-linked-narrative-representation"
     ]
   },
   {

@@ -1,0 +1,41 @@
+{
+  "version": "2.8",
+  "optional_methods": {
+    "inquiry": [
+      "scientific-model-formation",
+      "epistemic-boundary-exploration"
+    ],
+    "toolcraft": [
+      "experimental-environment-synthesis"
+    ],
+    "judgment": [
+      "epistemic-boundary-awareness"
+    ],
+    "discovery": [
+      "optional-archetypal-lenses"
+    ],
+    "contribution": [
+      "evidence-linked-narrative-representation"
+    ]
+  },
+  "method_references": {
+    "scientific-model-formation": "references/scientific-model-formation.md",
+    "epistemic-boundary-exploration": "references/epistemic-boundaries.md",
+    "experimental-environment-synthesis": "references/experimental-environment-synthesis.md",
+    "epistemic-boundary-awareness": "references/epistemic-boundaries.md",
+    "optional-archetypal-lenses": "references/archetypal-reasoning.md",
+    "evidence-linked-narrative-representation": "references/archetypal-reasoning.md"
+  },
+  "experimental_opt_in_methods": [
+    "optional-archetypal-lenses",
+    "evidence-linked-narrative-representation"
+  ],
+  "global_invariants": [
+    "Hypotheses retain their speculative status until assessed against observations.",
+    "Verification retains the domain and conditions actually tested.",
+    "Lens labels confer presentation roles only.",
+    "Scope, provenance and uncertainty survive every handoff.",
+    "Unknown and underdetermined are valid outcomes.",
+    "The user and host control permissions, collaboration and resource limits."
+  ]
+}

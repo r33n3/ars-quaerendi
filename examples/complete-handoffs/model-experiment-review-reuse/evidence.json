@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.1",
+  "record_kind": "illustrative",
+  "evidence_id": "E-101",
+  "claim_id": "C-101",
+  "claim": "Numerical rounding alone caused the changed output.",
+  "observation": "An invented report describes changed output alongside different runtime versions and tokenizer settings.",
+  "provenance": {
+    "origin": "document",
+    "source": "source.md",
+    "method": "Read the invented report and retain its confounders",
+    "artifact_ids": [
+      "source.md"
+    ]
+  },
+  "relationship": "qualifies",
+  "uncertainty": {
+    "limitations": [
+      "One prompt and two reported artifacts",
+      "Original artifacts and execution logs are unavailable",
+      "Several variables changed together"
+    ],
+    "open_questions": [
+      "Which mechanism caused the changed output?",
+      "Can the proposed controls distinguish the candidate mechanisms?"
+    ]
+  },
+  "tested_scope": {
+    "domain": "software",
+    "population": "Two artifacts described in the invented report",
+    "coverage": "One reported prompt comparison",
+    "conditions": [
+      "The comparison is documented in an invented source",
+      "Runtime versions and tokenizer settings differ"
+    ]
+  },
+  "legacy_status": "D"
+}

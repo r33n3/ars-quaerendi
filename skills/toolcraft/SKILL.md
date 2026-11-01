@@ -59,3 +59,8 @@ This section matches the [shared contract registry](../../contracts/skill-contra
 * **Reopen when:** Changed format or interface version; New failures or intended uses; Evidence that reuse or maintenance value has changed.
 * **Possible consumers:** `inquiry`, `judgment`, `reliability-by-construction`, `contribution`.
 * **Failure handling:** Keep any useful results and report failed probes, unsupported parts and a practical next option.
+* **Optional methods:** `experimental-environment-synthesis`.
+
+## Optional experiment design
+
+Agents can use [experimental environments](../../references/experimental-environment-synthesis.md) to design a limited test that distinguishes candidate mechanisms. Include controls, measurement validity, resource limits, actual authorization and execution status. Keep proposed tests separate from observed results. An exploratory branch using unusual assumptions requires a user request or an approved evaluation that includes it.

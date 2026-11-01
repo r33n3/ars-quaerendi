@@ -12,7 +12,7 @@ The [evidence record schema](../schemas/evidence-record.schema.json) records:
 * `provenance`: where the evidence came from, how it was obtained and which artifacts are relevant.
 * `relationship`: whether the evidence supports, contradicts, qualifies or is neutral toward the claim, or leaves the relationship undetermined.
 * `uncertainty`: limitations and open questions.
-* `tested_scope`: population or system, coverage and conditions.
+* `tested_scope`: population or system, coverage, conditions and evidence domain.
 * `legacy_status`: the familiar D, O, R, H, U or X summary for existing consumers.
 
 Keep provenance, relationship, uncertainty and scope separate. An observed measurement may remain valid while contradicting an earlier explanation. The legacy status summarizes a record; use the separate fields for detailed interpretation.
@@ -50,3 +50,13 @@ The bundled examples use J1 or J2 for conclusions supported within their supplie
 The earlier `research-state.schema.json` remains available for existing records. New detailed evidence and handoffs use the separate schemas described here.
 
 The optional package validator checks schemas, identifiers, references, content hashes, snapshots, route continuity and structural requirements for judgment levels. It also checks that the Markdown contracts match the JSON registry. These checks establish consistency of the supplied records. Truth of observations, adequacy of experimental methods and behavior under real host conditions require evaluation using the relevant source material and execution records.
+
+## Evidence domains and proposed tests
+
+Version `1.1` requires `tested_scope.domain` in each evidence record and scope snapshot, plus `decision_domain` in a handoff. Use `software` for program behavior, `simulation` for results within a simulated system, `real_world` for physical or other observed external events, `conceptual` for reasoning alone and `unknown` when the domain is unresolved. Documentary provenance and illustrative status remain separate fields. A supplied report about software still concerns the software domain.
+
+Carry the decision domain unchanged through a chain. A transfer to another domain starts a new chain with a claim about that transfer and evidence appropriate to it. J3 and J4 require an explicit, matching evidence and decision domain drawn from software, simulation or real world observations. The method still needs to assess whether the test actually supports the claim. A matching domain alone establishes a structural prerequisite.
+
+A simulation can verify a result within its simulated conditions. Claims about physical behavior require relevant real world observations. Conceptual reasoning supplies hypotheses and predictions. Mark proposed experiments as plans and link them through `related_artifacts` when useful. Only executed work can produce result evidence. Keep input evidence unchanged and assign new identifiers to later observations.
+
+Version `1.0` remains readable. Missing domain information leaves domain verification unresolved. Retain historical records as they were created; use new identifiers for revised evidence. The new model experiment walkthrough uses version `1.1`. Earlier walkthroughs retain their version `1.0` records and content hashes.

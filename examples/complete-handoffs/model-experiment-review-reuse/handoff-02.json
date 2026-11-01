@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.1",
+  "handoff_id": "HO-MODEL002",
+  "from_skill": "toolcraft",
+  "to_skill": "judgment",
+  "claim_id": "C-101",
+  "evidence_ids": [
+    "E-101"
+  ],
+  "evidence_refs": {
+    "E-101": "evidence.json"
+  },
+  "evidence_hashes": {
+    "E-101": "9937d83e0d5a0f91ba7cc6e099eaa77a3876c041f151f6c05d835293d3415894"
+  },
+  "scope": {
+    "E-101": {
+      "domain": "software",
+      "population": "Two artifacts described in the invented report",
+      "coverage": "One reported prompt comparison",
+      "conditions": [
+        "The comparison is documented in an invented source",
+        "Runtime versions and tokenizer settings differ"
+      ]
+    }
+  },
+  "uncertainty": {
+    "E-101": {
+      "limitations": [
+        "One prompt and two reported artifacts",
+        "Original artifacts and execution logs are unavailable",
+        "Several variables changed together"
+      ],
+      "open_questions": [
+        "Which mechanism caused the changed output?",
+        "Can the proposed controls distinguish the candidate mechanisms?"
+      ]
+    }
+  },
+  "decision_domain": "software",
+  "decision": "Review the proposed experiment while retaining its unperformed status.",
+  "authority": "Planning and assessment only. Execution follows the user and host permissions.",
+  "outcome_status": "inconclusive",
+  "parent_outcome": "Incomplete investigation",
+  "related_artifacts": [
+    "experiment-plan.md"
+  ]
+}

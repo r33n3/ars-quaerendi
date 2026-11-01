@@ -25,6 +25,7 @@ The contracts are reference material. The host continues to provide discovery, t
 | `consumers` | Skills that can use its output when another question needs a method. |
 | `failure_behavior` | How the method reports gaps, failed checks and useful partial results. |
 | `outcome_statuses` | The state of this method's result. |
+| `optional_methods` | Optional method identifiers mapped to shared references in the method index. |
 | `revision_triggers` | Changes that justify reopening the assessment. |
 
 The contract version identifies this field structure. Skill identifiers retain their existing names.
@@ -43,10 +44,14 @@ Record the reason, limitations and open checks with the status. This status desc
 
 Use the [evidence and handoff rules](../references/evidence-handoff-rules.md) when another skill needs the result. Preserve claim identity, provenance, contradictions, uncertainty and tested scope. Include evidence references and the actual authorization context.
 
-The [walkthroughs](../examples/complete-handoffs/README.md) show three complete routes: research and reuse, offer review and planning, and investigation of an unexpected pattern. Each uses invented source material and retains its limits at every step.
+The [walkthroughs](../examples/complete-handoffs/README.md) show four complete routes: research and reuse, offer review and planning, investigation of an unexpected pattern, and a proposed discriminating experiment. Each uses invented source material and retains its limits at every step.
 
 ## Updating contracts
 
 Edit the JSON registry, then run `python3 tests/validate_v27.py --sync-contracts` to update the matching skill sections. Run `python3 tests/validate_v27.py` for a check that leaves files unchanged. These optional maintenance commands use Python; full schema validation uses `jsonschema`.
 
 Run `python3 tests/test_interoperability.py` for cases that deliberately change records, remove evidence, broaden scope or attempt unsupported verification upgrades. The checks support package maintenance. Host behavior evaluation uses the scenarios in `tests/handoff-invariants.md`.
+
+## Optional method index
+
+The [optional method index](../contracts/v28-method-extensions.json) maps identifiers to owning skills and references. The validator compares these identifiers with the contract registry and checks local references. Experimental lenses and narrative summaries require a user request or an approved evaluation that includes them. The agent and host apply selection and permission rules during use.

@@ -3,7 +3,10 @@
   "type": "object",
   "properties": {
     "schema_version": {
-      "const": "1.0"
+      "enum": [
+        "1.0",
+        "1.1"
+      ]
     },
     "handoff_id": {
       "type": "string",
@@ -93,6 +96,15 @@
             },
             "minItems": 1,
             "uniqueItems": true
+          },
+          "domain": {
+            "enum": [
+              "real_world",
+              "software",
+              "simulation",
+              "conceptual",
+              "unknown"
+            ]
           }
         },
         "required": [
@@ -194,6 +206,25 @@
         "blocked",
         "stopped"
       ]
+    },
+    "decision_domain": {
+      "enum": [
+        "real_world",
+        "software",
+        "simulation",
+        "conceptual",
+        "unknown"
+      ]
+    },
+    "related_artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
     }
   },
   "required": [
@@ -260,6 +291,29 @@
         "required": [
           "qualification_ref"
         ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "schema_version": {
+            "const": "1.1"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "decision_domain"
+        ],
+        "properties": {
+          "scope": {
+            "additionalProperties": {
+              "required": [
+                "domain"
+              ]
+            }
+          }
+        }
       }
     }
   ]
