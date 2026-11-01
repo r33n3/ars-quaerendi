@@ -1,0 +1,22 @@
+{
+  "goal_id": "REVIEW002",
+  "purpose_clause": "Complete the already agreed report",
+  "opportunity": "This invented review offers an optional reporting extension while the agreed work is still in progress",
+  "goal": null,
+  "goal_type": null,
+  "success_criterion": null,
+  "evidence_status": "H",
+  "evidence_refs": [
+    "examples/purpose-to-action.md"
+  ],
+  "capability_gap": null,
+  "proposed_improvement": null,
+  "alternatives": [
+    "Continue the existing plan",
+    "Reconsider the extension when new evidence or priorities justify it"
+  ],
+  "authorization_status": "unknown",
+  "decision": "no_new_goal",
+  "stop_condition": "End the proposal review and preserve the existing plan",
+  "reconciliation_plan": "Revisit if the user changes priorities or new evidence shows a material gap"
+}

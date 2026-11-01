@@ -25,3 +25,5 @@ For consequential negotiations, promises, disputed claims or decisions about con
 For examples of research, coding, planning, operations, reporting, supplier review, learning and meeting agents, consult `docs/agent-examples.md`.
 
 When the user requests investigative practice or evaluation, consult `references/research-apprenticeship.md`. Choose a limited challenge, keep evaluator answers separate and record evidence of the method and result. Explanation review can help transfer significant findings to another task.
+
+Use `purpose-planning` for justified goal proposals, capability gaps, further investment review and comparison with the user's purpose. Include continuing the current goals as an option. Proactive reviews follow existing user instructions, schedules and resource limits. See `references/purpose-to-action.md`.

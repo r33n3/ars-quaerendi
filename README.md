@@ -1,4 +1,4 @@
-# Ars Quaerendi Agent Meta Skills v2.5
+# Ars Quaerendi Agent Meta Skills v2.6
 
 A package of nine agent meta skills for investigating questions, planning work, assessing evidence, improving tools, reviewing performance and understanding negotiations or disagreements. An agent or several agents can use each skill to carry out a defined part of a task using the material and tools available in the session.
 
@@ -32,7 +32,7 @@ The titles describe each skill's role. The identifiers match the folder names an
 | Meta skill | Identifier | Choose it for |
 |---|---|---|
 | [Inquiry: Research and Source Checking](skills/inquiry/SKILL.md) | `inquiry` | Investigating an open question, disputed fact or uncertain explanation. |
-| [Purpose Planning: Goals and Work Plans](skills/purpose-planning/SKILL.md) | `purpose-planning` | Choosing goals, setting priorities and planning follow up. |
+| [Purpose Planning: Goals and Work Plans](skills/purpose-planning/SKILL.md) | `purpose-planning` | Assessing opportunities, justifying goals, planning work and reviewing further investment. |
 | [Toolcraft: Finding and Building Tools](skills/toolcraft/SKILL.md) | `toolcraft` | Finding a practical way to supply a missing capability. |
 | [Judgment: Evidence and Readiness Review](skills/judgment/SKILL.md) | `judgment` | Assessing a conclusion, proposed action or interpretation. |
 | [Discovery: Unexpected Findings and New Leads](skills/discovery/SKILL.md) | `discovery` | Investigating surprising observations and recurring patterns. |
@@ -52,6 +52,8 @@ Expect findings with sources, competing explanations, unresolved questions and a
 ### Purpose Planning
 
 Agents can use `purpose-planning` to connect goals to the user's purpose, compare priorities and build a plan with milestones, dependencies and limits. The method supports revising plans as evidence changes and identifying decisions that need authorization.
+
+It also compares new opportunities with continuing current goals, identifies what is blocking progress and assesses whether a capability improvement is justified. See the [goal review examples](examples/purpose-to-action.md) for a proposed investigation and a decision to continue existing work.
 
 Expect proposed goals, priorities, owners where agreed, missing ownership, review points and stopping conditions. For example, agents can replan after a delay or organize a broad request into achievable work.
 
@@ -164,7 +166,13 @@ The Python validator is an optional check for people maintaining the package. Th
 
 Run `python3 tests/validate.py` to check package structure, JSON syntax and schema compliance when the `jsonschema` library is available.
 
+Run `python3 tests/test_goal_proposals.py` for the goal record checks. These cover proposed goals, unchanged goals, evidence references, resource limits and authorization fields.
+
 Use the scenarios in `tests/acceptance.md` to evaluate behavior against an unmodified agent with matched tools and budgets. Record observed results and overhead.
+
+## Changes in v2.6
+
+Expanded `purpose-planning` to assess opportunities, justify goals, investigate capability gaps and review further investment. Added a goal proposal schema, examples of proposing a goal and continuing existing work, and acceptance scenarios. Proposals preserve the user's purpose, current authorization and resource limits. The collection still contains nine meta skills.
 
 ## Changes in v2.5
 

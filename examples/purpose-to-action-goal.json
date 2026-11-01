@@ -1,0 +1,28 @@
+{
+  "goal_id": "GOAL001",
+  "purpose_clause": "Keep the scheduled data import accurate and dependable",
+  "opportunity": "In this invented scenario, repeated delivery may create duplicate records",
+  "goal": "Investigate whether duplicate request handling preserves the expected import result",
+  "goal_type": "outcome",
+  "success_criterion": "Compare baseline and candidate handling on repeated requests and ordinary requests; record correctness, failures and coverage",
+  "evidence_status": "H",
+  "evidence_refs": [
+    "examples/purpose-to-action.md"
+  ],
+  "expected_contribution": "Evidence about duplicate handling and a reusable test method",
+  "capability_gap": "Existing checks have yet to establish behavior under repeated delivery",
+  "proposed_improvement": "Reuse existing checks first, then propose a limited diagnostic helper if needed",
+  "alternatives": [
+    "Use existing checks",
+    "Ask an authorized collaborator to review the records",
+    "Limit the work to an investigation plan",
+    "Continue with current goals"
+  ],
+  "cost_and_opportunity_cost": "An example review budget of 30 minutes competes with existing maintenance work",
+  "risk_and_reversibility": "Use copies of invented inputs in an isolated test area; retain the earlier implementation",
+  "resource_limit": "Example proposed limit of 30 minutes and 20 local test cases, subject to actual user authorization",
+  "authorization_status": "unknown",
+  "decision": "propose",
+  "stop_condition": "Stop at the authorized limit, if required access is unavailable, or when the comparison answers the question",
+  "reconciliation_plan": "Compare results with the baseline and preserve useful tests, unresolved questions and partial findings"
+}

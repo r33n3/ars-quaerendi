@@ -1,0 +1,280 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Purpose and Goal Proposal",
+  "type": "object",
+  "required": [
+    "goal_id",
+    "purpose_clause",
+    "opportunity",
+    "goal",
+    "success_criterion",
+    "evidence_status",
+    "authorization_status",
+    "decision",
+    "alternatives",
+    "stop_condition",
+    "evidence_refs"
+  ],
+  "properties": {
+    "goal_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose_clause": {
+      "type": "string",
+      "minLength": 1
+    },
+    "opportunity": {
+      "type": "string",
+      "minLength": 1
+    },
+    "goal": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "goal_type": {
+      "enum": [
+        "outcome",
+        "developmental",
+        null
+      ]
+    },
+    "success_criterion": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1
+    },
+    "evidence_status": {
+      "enum": [
+        "D",
+        "O",
+        "R",
+        "H",
+        "U",
+        "X"
+      ]
+    },
+    "expected_contribution": {
+      "type": "string"
+    },
+    "capability_gap": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "proposed_improvement": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "cost_and_opportunity_cost": {
+      "type": "string",
+      "minLength": 1
+    },
+    "risk_and_reversibility": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization_status": {
+      "enum": [
+        "within_existing_scope",
+        "approval_required",
+        "prohibited",
+        "unknown"
+      ]
+    },
+    "decision": {
+      "enum": [
+        "propose",
+        "defer",
+        "reject",
+        "no_new_goal"
+      ]
+    },
+    "stop_condition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reconciliation_plan": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resource_limit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "authorization_basis": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "no_new_goal"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "goal": {
+            "const": null
+          },
+          "success_criterion": {
+            "const": null
+          },
+          "goal_type": {
+            "const": null
+          },
+          "capability_gap": {
+            "const": null
+          },
+          "proposed_improvement": {
+            "const": null
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "goal": {
+            "type": "string"
+          },
+          "success_criterion": {
+            "type": "string"
+          },
+          "goal_type": {
+            "enum": [
+              "outcome",
+              "developmental"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "propose"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "resource_limit",
+          "cost_and_opportunity_cost",
+          "risk_and_reversibility",
+          "reconciliation_plan"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "authorization_status": {
+            "const": "within_existing_scope"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "authorization_basis"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "authorization_status": {
+            "const": "prohibited"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "decision": {
+            "enum": [
+              "reject",
+              "no_new_goal"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "evidence_status": {
+            "enum": [
+              "D",
+              "O",
+              "R",
+              "X"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "evidence_refs": {
+            "minItems": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "required": [
+          "goal_type"
+        ],
+        "properties": {
+          "goal_type": {
+            "const": "developmental"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "capability_gap",
+          "proposed_improvement"
+        ],
+        "properties": {
+          "capability_gap": {
+            "type": "string",
+            "minLength": 1
+          },
+          "proposed_improvement": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -28,3 +28,14 @@ try:
  print('Metric report schema: passed')
 except ImportError:
  print('Metric report schema: JSON syntax checked; install jsonschema for schema validation')
+
+goal_schema=json.loads((root/'schemas'/'goal-proposal.schema.json').read_text(encoding='utf-8'))
+goal_examples=[json.loads((root/'examples'/name).read_text(encoding='utf-8')) for name in ('purpose-to-action-goal.json','purpose-to-action-no-goal.json')]
+try:
+ import jsonschema
+ jsonschema.Draft202012Validator.check_schema(goal_schema)
+ for goal_example in goal_examples:
+  jsonschema.validate(goal_example,goal_schema)
+ print('Goal proposal schemas: passed')
+except ImportError:
+ print('Goal proposal schemas: JSON syntax checked; install jsonschema for schema validation')

@@ -52,3 +52,9 @@ For difficult decisions about collaborators, promises, shared sources, accountab
 ## Guided research practice
 
 When requested, an agent can practice investigation through a challenge with clear limits, recorded evidence and separate evaluation criteria. Use explanation review to document how a result was obtained and test a proposed transfer on another task. See [guided research practice](../references/research-apprenticeship.md).
+
+## From purpose to a proposed action
+
+Use Purpose Planning to compare candidate goals with the user's purpose, current work and authorization. Include continuing existing goals as an option. Supply the goal proposal and its evidence to Judgment when a particular decision needs assessment. Use Toolcraft for a demonstrated capability gap and Contribution or Discovery for useful results or unexpected findings. The user and host control execution and deployment. Choose the methods that help answer the current question.
+
+See [purpose and goal review](../references/purpose-to-action.md) for the record format, boundaries and review conditions.
