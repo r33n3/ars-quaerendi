@@ -66,3 +66,7 @@ This section matches the [shared contract registry](../../contracts/skill-contra
 ## Optional evidence boundary review
 
 Agents can use [evidence boundaries](../../references/epistemic-boundaries.md) when a claim extends beyond measured conditions or a model reaches its limits. Record the observed domain, proposed transfer, alternatives and uncertainty. Distinguish thought experiments, simulation results, software tests and physical observations. Assess verification within the domain actually tested. Return a scoped conclusion, a next test or an underdetermined result.
+
+## Optional adaptation assessment
+
+Agents can use [method comparison](../../references/adaptive-variation-selection.md) to assess whether a candidate meets stated criteria within tested conditions. Retain contrary evidence, regressions and unresolved transfer. A selection recommendation identifies the tested candidate and supporting comparison. User and host controls govern subsequent actions.

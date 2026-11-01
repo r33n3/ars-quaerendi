@@ -1,0 +1,24 @@
+{
+  "version": "3.0",
+  "optional_methods": {
+    "purpose-planning": [
+      "adaptive-variation-selection"
+    ],
+    "reliability-by-construction": [
+      "diversity-and-recovery"
+    ]
+  },
+  "method_references": {
+    "adaptive-variation-selection": "references/adaptive-variation-selection.md",
+    "diversity-and-recovery": "references/evolutionary-diversity-and-recovery.md"
+  },
+  "experimental_opt_in_methods": [],
+  "global_invariants": [
+    "The user controls purpose and commitments.",
+    "Execution and deployment follow actual user and host authorization.",
+    "Proposed variants retain their unperformed status.",
+    "Selection recommendations identify tested candidates and comparison evidence.",
+    "Recovery, adaptation and cumulative improvement retain distinct evidence requirements.",
+    "Earlier methods, contrary findings, scope and uncertainty remain available."
+  ]
+}

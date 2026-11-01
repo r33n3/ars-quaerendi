@@ -66,3 +66,7 @@ This section matches the [shared contract registry](../../contracts/skill-contra
 * **Reopen when:** New source records or corrected counts; Changed definitions, periods or task mix; Evidence about the effects of an improvement.
 * **Possible consumers:** `judgment`, `purpose-planning`, `institutional-intelligence`.
 * **Failure handling:** Return the calculation evidence, discrepancies, possible causes and remaining uncertainty and keep possible motives tentative.
+
+## Optional comparison of variants
+
+Agents can use [method comparison](../../references/adaptive-variation-selection.md) to compare useful outcomes, total resource cost, regressions and correlated failures under comparable conditions. Assess recovery and cumulative improvement through distinct measures. Preserve coverage limits, baseline results and uncertain findings.

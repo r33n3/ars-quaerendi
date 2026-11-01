@@ -181,7 +181,9 @@
           "resource-homeostasis",
           "associative-evidence-recall",
           "memory-consolidation-reinvestment",
-          "significance-weighted-memory"
+          "significance-weighted-memory",
+          "adaptive-variation-selection",
+          "diversity-and-recovery"
         ]
       }
     }

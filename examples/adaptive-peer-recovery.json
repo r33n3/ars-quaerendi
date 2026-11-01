@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "record_kind": "illustrative",
+  "adaptation_id": "ADAPT-001",
+  "purpose_ref": "adaptation-purpose.md",
+  "claim_id": "C-PEER-001",
+  "baseline": {
+    "method": "One remote worker with a completion acknowledgement",
+    "conditions": [
+      "One interrupted task in the invented report"
+    ],
+    "status": "documented",
+    "evidence_ids": [
+      "E-PEER-001"
+    ]
+  },
+  "environment_delta": {
+    "description": "A connection interruption left final execution state unresolved.",
+    "status": "reported",
+    "evidence_ids": [
+      "E-PEER-001"
+    ]
+  },
+  "variants": [
+    {
+      "id": "V1",
+      "method": "Checkpoint and resume after the original worker recovers",
+      "mechanism": "Reconstruct pending state and reconcile actual completion before deciding on a retry.",
+      "status": "proposed",
+      "predictions": [
+        "A retained checkpoint may reduce reconstruction work while the original worker is unavailable."
+      ],
+      "evidence_ids": []
+    },
+    {
+      "id": "V2",
+      "method": "Use an authorized alternative worker after state reconciliation",
+      "mechanism": "Change the worker while retaining the same task identity, completion checks and operating limits.",
+      "status": "proposed",
+      "predictions": [
+        "An available alternative worker may reduce waiting time while preserving completion and duplicate action controls."
+      ],
+      "evidence_ids": []
+    }
+  ],
+  "acceptance_criteria": [
+    "Reconcile final task state before a retry",
+    "Complete the authorized task within the agreed test budget",
+    "Retain source evidence and report duplicate effects, human intervention and elapsed time"
+  ],
+  "selection": {
+    "decision": "inconclusive",
+    "selected_variant_id": null,
+    "rationale": "The invented source motivates a proposed comparison. Both variants remain unperformed.",
+    "retained_alternative_ids": [
+      "V1",
+      "V2"
+    ]
+  },
+  "evidence_ids": [
+    "E-PEER-001"
+  ],
+  "evidence_refs": {
+    "E-PEER-001": "memory-sources/peer-interruption-evidence.json"
+  },
+  "evidence_hashes": {
+    "E-PEER-001": "4596a803190c908ff3a66aa288c53f15b826abe8812c47ef82efa3692ac06b24"
+  },
+  "tested_scope": {
+    "E-PEER-001": {
+      "domain": "software",
+      "population": "One remote task in an invented report",
+      "coverage": "One reported connection interruption",
+      "conditions": [
+        "Completion acknowledgement was unavailable",
+        "Final execution state remained unresolved"
+      ]
+    }
+  },
+  "uncertainty": {
+    "E-PEER-001": {
+      "limitations": [
+        "The source is an invented report about one task",
+        "Original task logs and independent system observations are unavailable"
+      ],
+      "open_questions": [
+        "Did the task finish before the connection was interrupted?",
+        "What completion check would be available in the actual host?"
+      ]
+    }
+  },
+  "decision_domain": "software",
+  "authority_context": "Planning and assessment in an invented example. Current user and host controls govern any later execution.",
+  "resource_limit": "One design review. Agree an execution budget before running a test.",
+  "resource_cost": "Execution is unperformed and observed runtime cost remains unknown.",
+  "retest_triggers": [
+    "An authorized controlled interruption test becomes available",
+    "New completion evidence changes the recovery assumptions"
+  ]
+}

@@ -64,7 +64,12 @@ This section matches the [shared contract registry](../../contracts/skill-contra
 * **Reopen when:** Changed version, setting or permissions; New failures or corrected tests; A broader or more consequential intended use.
 * **Possible consumers:** `judgment`, `toolcraft`, `performance-metric-integrity`.
 * **Failure handling:** Report the specific missing control or evidence, preserve prototype results and identify a useful revision or restriction.
+* **Optional methods:** `diversity-and-recovery`.
 
 ## Optional incident lessons
 
 Agents can use [significant event records](../../references/significance-weighted-memory.md) to derive controls for an observed failure mode. Preserve the tested conditions and review corrections before reuse. Use [continuity review](../../references/resource-homeostasis.md) to reconcile interrupted operations with actual state before a retry. Current session permissions govern resumed actions.
+
+## Optional diversity and recovery review
+
+Agents can use [diversity and recovery](../../references/evolutionary-diversity-and-recovery.md) to check shared dependencies and correlated failures. Assess recovery, changed behavior and improved outcomes as separate claims. Compare alternatives under stated conditions and resource limits, preserving the baseline and failure evidence.

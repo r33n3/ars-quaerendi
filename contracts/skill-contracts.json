@@ -121,7 +121,8 @@
       "Changed costs, resources or operating conditions"
     ],
     "optional_methods": [
-      "resource-homeostasis"
+      "resource-homeostasis",
+      "adaptive-variation-selection"
     ]
   },
   {
@@ -421,6 +422,9 @@
       "Changed version, setting or permissions",
       "New failures or corrected tests",
       "A broader or more consequential intended use"
+    ],
+    "optional_methods": [
+      "diversity-and-recovery"
     ]
   },
   {

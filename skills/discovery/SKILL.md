@@ -66,3 +66,7 @@ When the user requests them or an approved evaluation includes them, agents can 
 ## Optional recall cues
 
 Agents can use [significant event records](../../references/significance-weighted-memory.md) to index an unexpected finding by context and mechanism. Preserve source evidence and possible counterexamples. Assess a recalled finding against the current conditions before developing a new lead.
+
+## Optional alternative methods
+
+Agents can use [method comparison](../../references/adaptive-variation-selection.md) to propose distinct explanations or approaches after an observed anomaly or environmental change. Preserve unexpected variants as hypotheses with predictions and useful next checks. Assess support through the resulting evidence.

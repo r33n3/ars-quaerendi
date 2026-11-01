@@ -68,3 +68,7 @@ When the user requests a narrative or an approved evaluation includes it, agents
 ## Optional knowledge and event records
 
 Agents can use [knowledge consolidation](../../references/memory-consolidation-reinvestment.md) and [significant event records](../../references/significance-weighted-memory.md) to preserve useful evidence, mechanisms and scoped lessons. Keep significance separate from reliability, relevance and recommended influence. Record corrections as new versions linked to retained earlier records. Verify storage through the available host mechanism or state that persistence remains unresolved.
+
+## Optional retained alternatives
+
+Agents can use [method comparison](../../references/adaptive-variation-selection.md) to preserve selected and rejected methods, their mechanisms, evidence and operating limits. Keep proposed alternatives distinct from tested results. Revisit a retained method when changed conditions justify another assessment.

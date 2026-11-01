@@ -1,4 +1,4 @@
-# Ars Quaerendi Agent Meta Skills v2.9
+# Ars Quaerendi Agent Meta Skills v3.0
 
 A package of nine agent meta skills for investigating questions, planning work, assessing evidence, improving tools, reviewing performance and understanding negotiations or disagreements. An agent or several agents can use each skill to carry out a defined part of a task using the material and tools available in the session.
 
@@ -50,6 +50,14 @@ The package still contains nine meta skills. These additions provide methods and
 Agents can use [resource and continuity review](references/resource-homeostasis.md) to prepare for interruptions, [evidence recall](references/associative-evidence-recall.md) to reconstruct earlier findings, and [knowledge consolidation](references/memory-consolidation-reinvestment.md) to retain useful methods. [Significant event records](references/significance-weighted-memory.md) preserve consequential lessons with their evidence and limits. Significance, reliability, relevance and recommended responses remain separate.
 
 These methods use the storage, search and telemetry available in the host. People can also supply retained records in a chat. A checkpoint records historical context; resumed work follows current instructions, permissions and actual task state. The package still contains nine meta skills. See the [method mapping](contracts/v29-method-extensions.json) and [memory record guide](docs/memory-records.md).
+
+## Optional adaptation and recovery methods
+
+Agents can use [method comparison](references/adaptive-variation-selection.md) when changed conditions or repeated failures justify a limited test of alternatives. Record the baseline, predictions, acceptance criteria, resource limit, results and rejected approaches. [Diversity and recovery](references/evolutionary-diversity-and-recovery.md) helps assess shared dependencies and distinguish restored service from better outcomes.
+
+The [adaptation example](examples/adaptive-peer-recovery.json) keeps both variants proposed and the selection inconclusive. Its source is explicitly invented. The [record schema](schemas/adaptation-record.schema.json) and validator check candidate identity, evidence references, hashes, scope, execution prerequisites and selection consistency. Actual measurement validity and benefits remain questions for the method and host evaluation.
+
+These additions remain optional methods within the existing nine meta skills. See the [method mapping](contracts/v30-method-extensions.json). The user and host control purpose, execution, deployment and resource limits.
 
 ## Skill names and selection
 
@@ -200,7 +208,13 @@ Run `python3 tests/test_experimental_methods.py` for evidence domains and option
 
 Run `python3 tests/validate_v29.py` for the memory examples and `python3 tests/test_memory_records.py` for altered checkpoints, missing sources and unsupported reliability claims. The scenarios in `tests/v29-memory-scenarios.md` describe host behavior to evaluate.
 
+Run `python3 tests/validate_v30.py` for adaptation records and `python3 tests/test_adaptation_records.py` for valid comparisons and invalid selections. The scenarios in `tests/v30-evolution-scenarios.md` describe host behavior to evaluate.
+
 Use the scenarios in `tests/acceptance.md` to evaluate behavior against an unmodified agent with matched tools and budgets. Record observed results and overhead.
+
+## Changes in v3.0
+
+Added bounded comparison of alternative methods and guidance on diversity, recovery and cumulative improvement. Added an adaptation record, a proposed recovery example and checks for unsupported selections, missing evidence and inconsistent records. Preserved the reviewed contracts, evidence domains, memory methods, examples and earlier tests. The package still contains nine meta skills.
 
 ## Changes in v2.9
 

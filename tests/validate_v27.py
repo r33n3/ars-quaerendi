@@ -110,7 +110,7 @@ def make_validators(root):
 def validate_method_extensions(root, contracts):
     combined = {skill: [] for skill in contracts}
     all_ids = []
-    for version, filename in (("2.8", "v28-method-extensions.json"), ("2.9", "v29-method-extensions.json")):
+    for version, filename in (("2.8", "v28-method-extensions.json"), ("2.9", "v29-method-extensions.json"), ("3.0", "v30-method-extensions.json")):
         index = load_json(root / "contracts" / filename)
         require(set(index) == {"version", "optional_methods", "method_references", "experimental_opt_in_methods", "global_invariants"}, "Unexpected optional method index fields")
         require(index["version"] == version, "Unknown optional method index version")
