@@ -29,7 +29,7 @@ The [handoff schema](../schemas/handoff.schema.json) identifies the sending skil
 
 Each evidence identifier has a record reference, content hash, scope snapshot and uncertainty snapshot. The maps in `evidence_refs`, `evidence_hashes`, `scope` and `uncertainty` use the identifiers in `evidence_ids` as their keys. In the bundled examples, references are relative to the handoff file.
 
-Calculate the content hash using SHA256 over the complete evidence record serialized as JSON with sorted keys, compact separators and ASCII escapes. The validator provides the same calculation. This makes changes to provenance, relationship, observations and other fields visible during transfer.
+Calculate the content hash using SHA256 over the complete evidence record serialized as JSON with sorted keys, compact separators and ASCII escapes. This makes changes to provenance, relationship, observations and other fields visible during transfer.
 
 Preserve earlier evidence, including contradictions and qualifications, when adding records. Explain new evidence through `change_basis`. Create a new evidence identifier for changed content, including a corrected interpretation, and retain the earlier record. Distinguish a new interpretation from a new measurement through its provenance and status.
 
@@ -47,9 +47,9 @@ The bundled examples use J1 or J2 for conclusions supported within their supplie
 
 ## Compatibility and checks
 
-The earlier `research-state.schema.json` remains available for existing records. New detailed evidence and handoffs use the separate schemas described here.
+Use the separate evidence and handoff schemas described here for retained findings and transfers.
 
-The optional package validator checks schemas, identifiers, references, content hashes, snapshots, route continuity and structural requirements for judgment levels. It also checks that the Markdown contracts match the JSON registry. These checks establish consistency of the supplied records. Truth of observations, adequacy of experimental methods and behavior under real host conditions require evaluation using the relevant source material and execution records.
+Check record structure, identifiers, references, content hashes, snapshots, route continuity and evidence requirements for judgment levels. Keep the skill contracts consistent with the JSON registry. These checks establish record consistency. Truth of observations, adequacy of experimental methods and behavior under real host conditions require the relevant source material and execution records.
 
 ## Evidence domains and proposed tests
 

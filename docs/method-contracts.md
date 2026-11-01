@@ -4,7 +4,7 @@ Each meta skill declares a method contract describing when it is useful, what it
 
 ## Contract source
 
-The [JSON registry](../contracts/skill-contracts.json) contains the nine contracts. The [contract schema](../contracts/skill-contract.schema.json) describes their structure. Each skill has a matching Method contract section generated from that registry.
+The [JSON registry](../contracts/skill-contracts.json) contains the nine contracts. The [contract schema](../contracts/skill-contract.schema.json) describes their structure. Each skill has a matching Method contract section.
 
 The contracts are reference material. The host continues to provide discovery, tools, execution controls and authorization. Select the methods relevant to the current question.
 
@@ -48,10 +48,8 @@ The [walkthroughs](../examples/complete-handoffs/README.md) show four complete r
 
 ## Updating contracts
 
-Edit the JSON registry, then run `python3 tests/validate_v27.py --sync-contracts` to update the matching skill sections. Run `python3 tests/validate_v27.py` for a check that leaves files unchanged. These optional maintenance commands use Python; full schema validation uses `jsonschema`.
-
-Run `python3 tests/test_interoperability.py` for cases that deliberately change records, remove evidence, broaden scope or attempt unsupported verification upgrades. The checks support package maintenance. Host behavior evaluation uses the scenarios in `tests/handoff-invariants.md`.
+Keep the registry, schema and corresponding skill section consistent when changing a contract. Preserve the skill identifiers and record version when its structure remains compatible. Check consumers, required inputs, authority, stopping conditions and outcome definitions together.
 
 ## Optional method index
 
-The [model and experiment index](../contracts/v28-method-extensions.json), [memory method index](../contracts/v29-method-extensions.json) and [adaptation method index](../contracts/v30-method-extensions.json) map identifiers to owning skills and references. The validator compares these identifiers with the contract registry and checks local references. Experimental lenses and narrative summaries require a user request or an approved evaluation that includes them. The agent and host apply selection and permission rules during use.
+The [model and experiment index](../contracts/v28-method-extensions.json), [memory method index](../contracts/v29-method-extensions.json) and [adaptation method index](../contracts/v30-method-extensions.json) map identifiers to owning skills and references. Keep these identifiers consistent with the contract registry and preserve access to their referenced files. Experimental lenses and narrative summaries require a user request or an approved evaluation that includes them. The agent and host apply selection and permission rules during use.

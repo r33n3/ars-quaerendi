@@ -14,7 +14,7 @@ Use this method when evidence shows that an approach has degraded under changed 
 
 The [adaptation record](../schemas/adaptation-record.schema.json) links the purpose, baseline, environmental change, predictions, criteria, variants, comparison evidence, recommendation and resource limit. Use shared evidence identifiers, hashes and snapshots. Proposed variants remain labeled proposed until execution evidence exists. A completed comparison records its baseline and variant evidence separately, conditions, criterion assessment, observed outcome and regressions.
 
-Selecting a variant recommends a tested candidate by identifier. The package checks record consistency and evidence prerequisites. The method still needs to assess measurement validity, representative coverage and whether the evidence supports the recommendation. Human and host controls govern adoption, execution, deployment and commitments.
+Selecting a variant recommends a tested candidate by identifier. Check record consistency and evidence prerequisites. The method still needs to assess measurement validity, representative coverage and whether the evidence supports the recommendation. Human and host controls govern adoption, execution, deployment and commitments.
 
 For correlated failures and recovery claims, consult [diversity and recovery](evolutionary-diversity-and-recovery.md). See the [proposed recovery comparison](../examples/adaptive-peer-recovery.json) for a plan whose results remain unresolved.
 

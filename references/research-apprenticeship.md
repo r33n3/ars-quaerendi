@@ -35,8 +35,4 @@ Preserve completed and unresolved investigations as records when the user author
 
 Present another task with a similar underlying structure. Ask the investigator to explain the proposed connection, test whether the method applies and record the result. Keep an untested analogy marked as a hypothesis. Record the source of any reused method and the evidence of successful reuse.
 
-## Challenge example and evaluator material
-
-For investigator instructions, use [the file comparison challenge](../examples/research-challenge.md). When preparing or scoring the challenge, consult [evaluator notes](research-challenge-evaluation.md). Keep evaluator material separate from the material supplied to the investigator.
-
 Apply ordinary task methods directly when practice or evaluation is outside the user's request. Explanation review is useful when it helps clarify or reuse a finding. Authorization for tools, publication and deployment follows the user's existing instructions and the host's controls.

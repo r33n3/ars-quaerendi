@@ -56,7 +56,7 @@ At meaningful checkpoints, assess whether the next investment of time, money or 
 
 Evaluate decisions using the evidence available when they were made. Record later results separately, including the effects of luck. Check the assistant's own claims, promises and omissions using the same standards applied to others. Record uncertainty, alternative explanations, credible objections and authorization limits.
 
-For evaluation examples, see [decision scenarios](../../examples/institutional-adversarial-tests.md).
+For a worked application, see [offer review and planning](../../examples/complete-handoffs/offer-review-planning/README.md).
 
 ## Example request
 

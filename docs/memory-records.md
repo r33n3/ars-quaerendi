@@ -1,6 +1,6 @@
 # Checkpoints and significant event records
 
-Use these records when continuity or reuse would help the task. The host supplies storage, search, telemetry and execution controls. Reading the methods and supplying records in a chat requires access to the text. Schema validation is optional package maintenance.
+Use these records when continuity or reuse would help the task. The host supplies storage, search, telemetry and execution controls. Reading the methods and supplying records in a chat requires access to the text. Use the schemas when structured records would help the task.
 
 ## Shared evidence
 
@@ -22,6 +22,8 @@ Record significance rationale, evidence reliability, current relevance and recom
 
 Corrections create a new record with a new identifier and `revision_refs` pointing to earlier records. Keep the earlier files and evidence available. Review the corrected lesson against the current task. Archiving and retention follow the user's instructions and available storage.
 
-## Validation
+## Checking records
 
-Run `python3 tests/validate_v29.py` to check the supplied records, references, content hashes, snapshots and structural requirements for reliability and recovery. Run `python3 tests/test_memory_records.py` for altered records and missing material. Full schema validation uses the optional `jsonschema` library. These checks assess record consistency. Actual reconstruction, successful persistence, suitability of a lesson and effects on agent behavior require execution evidence in the host.
+Check record structure against the schemas. Confirm evidence identifiers, source references, content hashes, scope, uncertainty and the requirements for reliability or recovery claims. Keep earlier records available when adding a correction.
+
+Record consistency and actual performance require separate evidence. Reconstruction, persistence, suitability of a lesson and effects on agent behavior need observations in the relevant host.
