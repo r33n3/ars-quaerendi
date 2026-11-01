@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "record_kind": "illustrative",
+  "evidence_ids": [
+    "E-101"
+  ],
+  "evidence_refs": {
+    "E-101": "complete-handoffs/model-experiment-review-reuse/evidence.json"
+  },
+  "evidence_hashes": {
+    "E-101": "9937d83e0d5a0f91ba7cc6e099eaa77a3876c041f151f6c05d835293d3415894"
+  },
+  "tested_scope": {
+    "E-101": {
+      "domain": "software",
+      "population": "Two artifacts described in the invented report",
+      "coverage": "One reported prompt comparison",
+      "conditions": [
+        "The comparison is documented in an invented source",
+        "Runtime versions and tokenizer settings differ"
+      ]
+    }
+  },
+  "uncertainty": {
+    "E-101": {
+      "limitations": [
+        "One prompt and two reported artifacts",
+        "Original artifacts and execution logs are unavailable",
+        "Several variables changed together"
+      ],
+      "open_questions": [
+        "Which mechanism caused the changed output?",
+        "Can the proposed controls distinguish the candidate mechanisms?"
+      ]
+    }
+  },
+  "checkpoint_id": "CK-001",
+  "purpose_ref": "complete-handoffs/model-experiment-review-reuse/README.md",
+  "goal_ref": "complete-handoffs/model-experiment-review-reuse/experiment-plan.md",
+  "unknowns": [
+    "The causal mechanism remains unresolved",
+    "Original artifacts and execution logs remain unavailable"
+  ],
+  "contradictions": [],
+  "next_action": "Reconstruct the source evidence, inspect the proposed design and check current authorization before considering execution.",
+  "authority_context": "The invented example permits planning and assessment only. Current instructions and host controls govern resumed work.",
+  "experiment_state": "X-101 is proposed and remains unperformed.",
+  "pending_actions": [
+    "Agree execution conditions and a runtime budget before testing"
+  ],
+  "resource_snapshot": {
+    "source": "unknown",
+    "metrics": {
+      "context_remaining": null
+    }
+  },
+  "recovery_status": "unverified"
+}

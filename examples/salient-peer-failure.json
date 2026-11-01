@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "record_kind": "illustrative",
+  "evidence_ids": [
+    "E-PEER-001"
+  ],
+  "evidence_refs": {
+    "E-PEER-001": "memory-sources/peer-interruption-evidence.json"
+  },
+  "evidence_hashes": {
+    "E-PEER-001": "4596a803190c908ff3a66aa288c53f15b826abe8812c47ef82efa3692ac06b24"
+  },
+  "tested_scope": {
+    "E-PEER-001": {
+      "domain": "software",
+      "population": "One remote task in an invented report",
+      "coverage": "One reported connection interruption",
+      "conditions": [
+        "Completion acknowledgement was unavailable",
+        "Final execution state remained unresolved"
+      ]
+    }
+  },
+  "uncertainty": {
+    "E-PEER-001": {
+      "limitations": [
+        "The source is an invented report about one task",
+        "Original task logs and independent system observations are unavailable"
+      ],
+      "open_questions": [
+        "Did the task finish before the connection was interrupted?",
+        "What completion check would be available in the actual host?"
+      ]
+    }
+  },
+  "event_id": "EV-PEER-001",
+  "event_type": "failure",
+  "salience": {
+    "level": "high",
+    "rationale": "The reported interruption illustrates a consequential gap in completion and retry decisions."
+  },
+  "reliability": "unverified",
+  "relevance": "Relevant when a current task has an interrupted connection and unresolved completion state.",
+  "behavioral_influence": "Recommend a completion check and applicability review before an authorized retry.",
+  "recall_cues": [
+    "remote execution",
+    "connection interruption",
+    "completion reconciliation"
+  ],
+  "lesson": "Reconcile actual completion state after reconnection before deciding whether to retry an operation that changes external state.",
+  "scope": {
+    "applies_to": [
+      "Interrupted remote tasks with an uncertain completion state"
+    ],
+    "counterexamples": [
+      "A task with a verified completion record or a documented safe retry mechanism may require a different response."
+    ]
+  },
+  "limitations": [
+    "The lesson is proposed from an invented report and remains untested."
+  ],
+  "revision_status": "active"
+}

@@ -59,8 +59,12 @@ This section matches the [shared contract registry](../../contracts/skill-contra
 * **Reopen when:** New evidence of usefulness or limitations; Actual reuse succeeds or fails; Privacy, ownership or retention conditions change.
 * **Possible consumers:** `purpose-planning`, `toolcraft`, `inquiry`.
 * **Failure handling:** Return supported contributions, uncertain candidates and missing records while keeping the parent outcome accurate.
-* **Optional methods:** `evidence-linked-narrative-representation`.
+* **Optional methods:** `evidence-linked-narrative-representation`, `memory-consolidation-reinvestment`, `significance-weighted-memory`.
 
 ## Optional narrative summaries
 
 When the user requests a narrative or an approved evaluation includes it, agents can use [narrative summaries](../../references/archetypal-reasoning.md) to explain retained results. Keep the structured records available and link factual statements to evidence identifiers. Preserve uncertainty, scope, failed checks and the parent outcome. Record hypothetical events as hypothetical. Assess reuse and improvement through observed evidence.
+
+## Optional knowledge and event records
+
+Agents can use [knowledge consolidation](../../references/memory-consolidation-reinvestment.md) and [significant event records](../../references/significance-weighted-memory.md) to preserve useful evidence, mechanisms and scoped lessons. Keep significance separate from reliability, relevance and recommended influence. Record corrections as new versions linked to retained earlier records. Verify storage through the available host mechanism or state that persistence remains unresolved.

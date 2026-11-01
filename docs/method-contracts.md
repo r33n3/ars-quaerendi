@@ -54,4 +54,4 @@ Run `python3 tests/test_interoperability.py` for cases that deliberately change 
 
 ## Optional method index
 
-The [optional method index](../contracts/v28-method-extensions.json) maps identifiers to owning skills and references. The validator compares these identifiers with the contract registry and checks local references. Experimental lenses and narrative summaries require a user request or an approved evaluation that includes them. The agent and host apply selection and permission rules during use.
+The [model and experiment index](../contracts/v28-method-extensions.json) and [memory method index](../contracts/v29-method-extensions.json) map identifiers to owning skills and references. The validator compares these identifiers with the contract registry and checks local references. Experimental lenses and narrative summaries require a user request or an approved evaluation that includes them. The agent and host apply selection and permission rules during use.

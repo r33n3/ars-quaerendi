@@ -57,7 +57,8 @@
     ],
     "optional_methods": [
       "scientific-model-formation",
-      "epistemic-boundary-exploration"
+      "epistemic-boundary-exploration",
+      "associative-evidence-recall"
     ]
   },
   {
@@ -118,6 +119,9 @@
       "Changed user purpose or priorities",
       "New opportunity evidence",
       "Changed costs, resources or operating conditions"
+    ],
+    "optional_methods": [
+      "resource-homeostasis"
     ]
   },
   {
@@ -356,7 +360,9 @@
       "Privacy, ownership or retention conditions change"
     ],
     "optional_methods": [
-      "evidence-linked-narrative-representation"
+      "evidence-linked-narrative-representation",
+      "memory-consolidation-reinvestment",
+      "significance-weighted-memory"
     ]
   },
   {

@@ -1,0 +1,272 @@
+{
+  "type": "object",
+  "properties": {
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "evidence_refs": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      }
+    },
+    "evidence_hashes": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      }
+    },
+    "uncertainty": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "open_questions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "limitations",
+          "open_questions"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_kind": {
+      "enum": [
+        "illustrative",
+        "operational"
+      ]
+    },
+    "tested_scope": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "population": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "coverage": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "domain": {
+            "enum": [
+              "real_world",
+              "software",
+              "simulation",
+              "conceptual",
+              "unknown"
+            ]
+          }
+        },
+        "required": [
+          "population",
+          "coverage",
+          "conditions",
+          "domain"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "event_type": {
+      "enum": [
+        "failure",
+        "discovery",
+        "correction",
+        "achievement",
+        "incident",
+        "other"
+      ]
+    },
+    "salience": {
+      "type": "object",
+      "properties": {
+        "level": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "level",
+        "rationale"
+      ],
+      "additionalProperties": false
+    },
+    "reliability": {
+      "enum": [
+        "unverified",
+        "observed",
+        "reproduced",
+        "contradicted",
+        "mixed"
+      ]
+    },
+    "relevance": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "behavioral_influence": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "recall_cues": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "lesson": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "scope": {
+      "type": "object",
+      "properties": {
+        "applies_to": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "counterexamples": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "applies_to",
+        "counterexamples"
+      ],
+      "additionalProperties": false
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "revision_status": {
+      "enum": [
+        "active",
+        "under_review",
+        "superseded",
+        "archived"
+      ]
+    },
+    "revision_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "\\S"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "evidence_ids",
+    "evidence_refs",
+    "evidence_hashes",
+    "uncertainty",
+    "schema_version",
+    "record_kind",
+    "tested_scope",
+    "event_id",
+    "event_type",
+    "salience",
+    "reliability",
+    "relevance",
+    "behavioral_influence",
+    "recall_cues",
+    "lesson",
+    "scope",
+    "limitations",
+    "revision_status"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

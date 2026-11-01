@@ -1,4 +1,4 @@
-# Ars Quaerendi Agent Meta Skills v2.8
+# Ars Quaerendi Agent Meta Skills v2.9
 
 A package of nine agent meta skills for investigating questions, planning work, assessing evidence, improving tools, reviewing performance and understanding negotiations or disagreements. An agent or several agents can use each skill to carry out a defined part of a task using the material and tools available in the session.
 
@@ -44,6 +44,12 @@ See [model formation](references/scientific-model-formation.md), [experimental e
 [Reasoning lenses and narrative summaries](references/archetypal-reasoning.md) are experimental options requiring a user request or an approved evaluation that includes them. Their benefit remains unmeasured. The labels describe reasoning and presentation functions. One agent can use them within the current task and permissions. The [method index](contracts/v28-method-extensions.json) maps these optional methods to the existing skills and references.
 
 The package still contains nine meta skills. These additions provide methods and record conventions. The user and host supply execution, tools and authorization.
+
+## Optional recall and continuity methods
+
+Agents can use [resource and continuity review](references/resource-homeostasis.md) to prepare for interruptions, [evidence recall](references/associative-evidence-recall.md) to reconstruct earlier findings, and [knowledge consolidation](references/memory-consolidation-reinvestment.md) to retain useful methods. [Significant event records](references/significance-weighted-memory.md) preserve consequential lessons with their evidence and limits. Significance, reliability, relevance and recommended responses remain separate.
+
+These methods use the storage, search and telemetry available in the host. People can also supply retained records in a chat. A checkpoint records historical context; resumed work follows current instructions, permissions and actual task state. The package still contains nine meta skills. See the [method mapping](contracts/v29-method-extensions.json) and [memory record guide](docs/memory-records.md).
 
 ## Skill names and selection
 
@@ -192,7 +198,13 @@ Run `python3 tests/validate_v27.py` to check contract synchronization, shared ev
 
 Run `python3 tests/test_experimental_methods.py` for evidence domains and optional method checks. The scenarios in `tests/v28-experimental-scenarios.md` cover host behavior for the new methods.
 
+Run `python3 tests/validate_v29.py` for the memory examples and `python3 tests/test_memory_records.py` for altered checkpoints, missing sources and unsupported reliability claims. The scenarios in `tests/v29-memory-scenarios.md` describe host behavior to evaluate.
+
 Use the scenarios in `tests/acceptance.md` to evaluate behavior against an unmodified agent with matched tools and budgets. Record observed results and overhead.
+
+## Changes in v2.9
+
+Added optional resource review, evidence recall, knowledge consolidation and significant event records within the existing skills. Added checkpoint and memory schemas, linked illustrative examples and validation of source references, hashes, scope and reliability requirements. Current authorization and execution state are reviewed on resumption. Earlier evidence records remain unchanged.
 
 ## Changes in v2.8
 

@@ -1,0 +1,29 @@
+{
+  "version": "2.9",
+  "optional_methods": {
+    "purpose-planning": [
+      "resource-homeostasis"
+    ],
+    "inquiry": [
+      "associative-evidence-recall"
+    ],
+    "contribution": [
+      "memory-consolidation-reinvestment",
+      "significance-weighted-memory"
+    ]
+  },
+  "method_references": {
+    "resource-homeostasis": "references/resource-homeostasis.md",
+    "associative-evidence-recall": "references/associative-evidence-recall.md",
+    "memory-consolidation-reinvestment": "references/memory-consolidation-reinvestment.md",
+    "significance-weighted-memory": "references/significance-weighted-memory.md"
+  },
+  "experimental_opt_in_methods": [],
+  "global_invariants": [
+    "Recall preserves provenance, uncertainty, contradictions and tested scope.",
+    "Significance, reliability, relevance and recommended influence remain separate.",
+    "Current user instructions and host permissions control resumed work.",
+    "Missing telemetry and unavailable persistence remain explicitly unknown.",
+    "Corrections retain the earlier record and its source evidence."
+  ]
+}

@@ -59,8 +59,12 @@ This section matches the [shared contract registry](../../contracts/skill-contra
 * **Reopen when:** New sources or counterexamples; Changed scope or intended use.
 * **Possible consumers:** `judgment`, `discovery`, `toolcraft`, `contribution`.
 * **Failure handling:** Preserve useful partial findings and return an inconclusive or blocked result with the missing evidence and next useful check.
-* **Optional methods:** `scientific-model-formation`, `epistemic-boundary-exploration`.
+* **Optional methods:** `scientific-model-formation`, `epistemic-boundary-exploration`, `associative-evidence-recall`.
 
 ## Optional model formation
 
 Agents can use [model formation](../../references/scientific-model-formation.md) when surprising observations or competing mechanisms require discriminating predictions. Record operational definitions, alternatives, falsifiers and a useful next test. Use [evidence boundaries](../../references/epistemic-boundaries.md) to preserve the observed domain and proposed transfer. Return an underdetermined result when available observations leave the models unresolved.
+
+## Optional evidence recall
+
+Agents can use [evidence recall](../../references/associative-evidence-recall.md) to reconstruct earlier conclusions and compare their applicability with the current task. Preserve source records, contradictions, scope and uncertainty. Search by mechanism and constraints as well as familiar terms. Mark missing sources unreconstructable and keep verification unresolved.

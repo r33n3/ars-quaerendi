@@ -108,27 +108,33 @@ def make_validators(root):
 
 
 def validate_method_extensions(root, contracts):
-    index = load_json(root / "contracts/v28-method-extensions.json")
-    require(set(index) == {"version", "optional_methods", "method_references", "experimental_opt_in_methods", "global_invariants"}, "Unexpected optional method index fields")
-    require(index["version"] == "2.8", "Unknown optional method index version")
-    methods = index["optional_methods"]
-    require(isinstance(methods, dict) and set(methods) <= set(contracts), "Unknown optional method owner")
-    identifiers = []
+    combined = {skill: [] for skill in contracts}
+    all_ids = []
+    for version, filename in (("2.8", "v28-method-extensions.json"), ("2.9", "v29-method-extensions.json")):
+        index = load_json(root / "contracts" / filename)
+        require(set(index) == {"version", "optional_methods", "method_references", "experimental_opt_in_methods", "global_invariants"}, "Unexpected optional method index fields")
+        require(index["version"] == version, "Unknown optional method index version")
+        methods = index["optional_methods"]
+        require(isinstance(methods, dict) and set(methods) <= set(contracts), "Unknown optional method owner")
+        identifiers = []
+        for skill, owned in methods.items():
+            require(isinstance(owned, list) and bool(owned) and all(isinstance(item, str) and item.strip() for item in owned), "Invalid optional method identifiers")
+            combined[skill].extend(owned)
+            identifiers.extend(owned)
+        require(set(index["method_references"]) == set(identifiers), "Optional method references differ from identifiers")
+        for reference in index["method_references"].values():
+            local_reference(root, reference, root)
+        opt_in = index["experimental_opt_in_methods"]
+        require(isinstance(opt_in, list) and len(opt_in) == len(set(opt_in)), "Invalid experimental selection list")
+        expected = {"optional-archetypal-lenses", "evidence-linked-narrative-representation"} if version == "2.8" else set()
+        require(set(opt_in) == expected, "Experimental selection differs from declared method requirements")
+        require(set(opt_in) <= set(identifiers), "Unknown experimental method")
+        invariants = index["global_invariants"]
+        require(isinstance(invariants, list) and bool(invariants) and all(isinstance(item, str) and item.strip() for item in invariants), "Missing method invariants")
+        all_ids.extend(identifiers)
+    require(len(all_ids) == len(set(all_ids)), "Optional method identifier reused")
     for skill, contract in contracts.items():
-        owned = methods.get(skill, [])
-        require(isinstance(owned, list) and all(isinstance(item, str) and item.strip() for item in owned), "Invalid optional method identifiers")
-        require(contract.get("optional_methods", []) == owned, "Optional methods differ from the contract registry")
-        identifiers.extend(owned)
-    require(len(identifiers) == len(set(identifiers)), "Optional method identifier reused")
-    require(set(index["method_references"]) == set(identifiers), "Optional method references differ from identifiers")
-    for reference in index["method_references"].values():
-        local_reference(root, reference, root)
-    opt_in = index["experimental_opt_in_methods"]
-    require(isinstance(opt_in, list) and len(opt_in) == len(set(opt_in)), "Invalid experimental selection list")
-    require(set(opt_in) == {"optional-archetypal-lenses", "evidence-linked-narrative-representation"}, "Experimental lens and narrative methods require explicit selection")
-    require(set(opt_in) <= set(identifiers), "Unknown experimental method")
-    invariants = index["global_invariants"]
-    require(isinstance(invariants, list) and bool(invariants) and all(isinstance(item, str) and item.strip() for item in invariants), "Missing method invariants")
+        require(contract.get("optional_methods", []) == combined[skill], "Optional methods differ from the contract registry")
 
 
 def validate_chain(directory, contracts, validators, root=ROOT, registry=None):

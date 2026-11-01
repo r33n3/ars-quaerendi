@@ -91,3 +91,8 @@ This section matches the [shared contract registry](../../contracts/skill-contra
 * **Reopen when:** Changed user purpose or priorities; New opportunity evidence; Changed costs, resources or operating conditions.
 * **Possible consumers:** `toolcraft`, `judgment`, `inquiry`, `institutional-intelligence`, `contribution`, `discovery`.
 * **Failure handling:** Return the supported comparison, gaps and outcome status. Preserve the current purpose and valid commitments while unresolved decisions remain open.
+* **Optional methods:** `resource-homeostasis`.
+
+## Optional resource and continuity review
+
+Agents can use [resource and continuity review](../../references/resource-homeostasis.md) for long tasks or likely interruptions. Use actual host telemetry, mark missing values unknown and distinguish forecasts from measurements. Preserve a checkpoint through an available authorized mechanism. Review current goals, permissions and pending actions before resuming. Earlier significant events can inform a proposal within the user's purpose.

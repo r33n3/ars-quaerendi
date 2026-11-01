@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.1",
+  "record_kind": "illustrative",
+  "evidence_id": "E-PEER-001",
+  "claim_id": "C-PEER-001",
+  "claim": "An interrupted remote task may require state reconciliation before retrying.",
+  "observation": "An invented report describes a connection interruption and an unknown final execution state for one delegated task.",
+  "provenance": {
+    "origin": "document",
+    "source": "peer-interruption.md",
+    "method": "Read the invented report and retain its unresolved completion state",
+    "artifact_ids": [
+      "peer-interruption.md"
+    ]
+  },
+  "relationship": "supports",
+  "uncertainty": {
+    "limitations": [
+      "The source is an invented report about one task",
+      "Original task logs and independent system observations are unavailable"
+    ],
+    "open_questions": [
+      "Did the task finish before the connection was interrupted?",
+      "What completion check would be available in the actual host?"
+    ]
+  },
+  "tested_scope": {
+    "domain": "software",
+    "population": "One remote task in an invented report",
+    "coverage": "One reported connection interruption",
+    "conditions": [
+      "Completion acknowledgement was unavailable",
+      "Final execution state remained unresolved"
+    ]
+  },
+  "legacy_status": "D"
+}
